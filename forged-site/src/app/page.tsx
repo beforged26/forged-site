@@ -186,7 +186,7 @@ export default function Home() {
             <p className="text-[13px] text-light leading-[1.6]">
               You&rsquo;ve outgrown what&rsquo;s available to you. You want
               honest feedback — not comfortable praise. You want to be in a
-              room where everyone is serious. This is that room.
+              room where everyone is committed. This is that room.
             </p>
           </FadeUp>
           <FadeUp className="bg-dark p-9 border-t-2 border-transparent transition-colors hover:border-gold-m hover:bg-dark2">
