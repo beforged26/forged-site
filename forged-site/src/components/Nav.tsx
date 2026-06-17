@@ -66,8 +66,6 @@ export default function Nav() {
         <div
           ref={dropdownRef}
           className="relative"
-          onMouseEnter={() => setRegisterOpen(true)}
-          onMouseLeave={() => setRegisterOpen(false)}
         >
           <button
             className="text-[11px] font-semibold tracking-[0.18em] uppercase text-light hover:text-gold transition-colors flex items-center gap-1.5"
