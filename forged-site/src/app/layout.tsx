@@ -28,11 +28,11 @@ const cormorant = Cormorant_Garamond({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://beforged.co"),
-  title: "FORGED — Not a Camp. A Movement.",
+  title: "FORGED — Built Different. By Design.",
   description:
     "FORGED is an elite athlete, coach, and expert development summit. First event: Phoenix, AZ, November 26–29, 2026 — Indoor Volleyball. Expanding across all sports.",
   openGraph: {
-    title: "FORGED — Not a Camp. A Movement.",
+    title: "FORGED — Built Different. By Design.",
     description:
       "FORGED is an elite athlete, coach, and expert development summit. First event: Phoenix, AZ, Nov 26–29, 2026 — Indoor Volleyball. Expanding across all sports.",
     type: "website",
