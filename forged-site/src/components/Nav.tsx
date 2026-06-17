@@ -103,7 +103,7 @@ export default function Nav() {
           href="/register/athlete"
           className="text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-6 py-2.5 hover:bg-gold-m transition-colors"
         >
-          Apply Now
+          Register
         </Link>
       </div>
 
