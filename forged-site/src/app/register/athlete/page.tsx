@@ -64,7 +64,7 @@ export default function AthleteRegister() {
         </h1>
         <p className="font-serif italic text-[clamp(18px,3vw,26px)] text-light max-w-[640px] mx-auto relative z-[1] leading-[1.5]">
           You've outgrown what's available to you. FORGED is where athletes who
-          are serious about what's next come to find out what they're made of.
+          are committed to what's next come to find out what they're made of.
         </p>
         <p className="text-[11px] tracking-[0.2em] uppercase text-muted mt-6 relative z-[1]">
           Phoenix, AZ &nbsp;·&nbsp; Nov 26–29, 2026 &nbsp;·&nbsp; Indoor Volleyball
