@@ -71,11 +71,11 @@ export default function Home() {
         </p>
 
         <h1 className="font-display text-[clamp(72px,14vw,160px)] leading-[0.9] tracking-[0.04em] text-cream mb-6 relative z-[1]">
-          NOT A
+          BUILT
           <br />
-          CAMP.
+          DIFFERENT.
           <br />
-          A <span className="gold-gradient-text">STANDARD.</span>
+          BY <span className="gold-gradient-text">DESIGN.</span>
         </h1>
 
         <p className="font-serif italic text-[clamp(18px,3vw,26px)] text-light max-w-[560px] mx-auto mb-10 leading-[1.5] relative z-[1]">
@@ -118,7 +118,7 @@ export default function Home() {
       <FadeUp className="max-w-[1100px] mx-auto px-6 md:px-10 py-24">
         <p className="section-eyebrow">What is FORGED</p>
         <h2 className="font-display text-[clamp(42px,7vw,80px)] tracking-[0.04em] leading-[0.95] text-cream mb-5">
-          NOT A CAMP.
+          NOT A SHORTCUT.
           <br />
           A DEVELOPMENT SYSTEM.
         </h2>
