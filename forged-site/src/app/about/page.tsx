@@ -203,7 +203,7 @@ export default function About() {
             href="/register"
             className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-7 py-3.5 hover:bg-gold-m transition-colors"
           >
-            Apply Now
+            Register
           </Link>
           <Link
             href="/partner"
