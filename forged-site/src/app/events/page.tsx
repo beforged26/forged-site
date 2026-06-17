@@ -90,7 +90,7 @@ export default function Events() {
             href="/register"
             className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-7 py-3.5 hover:bg-gold-m transition-colors"
           >
-            Apply Now
+            Register
           </Link>
         </FadeUp>
       </section>
@@ -190,8 +190,8 @@ export default function Events() {
         </FadeUp>
         <FadeUp>
           <p className="text-sm text-muted tracking-[0.08em] mb-12 max-w-[560px] mx-auto">
-            Spots for the inaugural FORGED summit are limited. Apply now to
-            reserve your place — no payment required.
+            Spots for the inaugural FORGED summit are limited. Register now to
+            reserve your place.
           </p>
         </FadeUp>
         <FadeUp>
@@ -199,7 +199,7 @@ export default function Events() {
             href="/register"
             className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-7 py-3.5 hover:bg-gold-m transition-colors"
           >
-            Apply Now
+            Register
           </Link>
         </FadeUp>
       </div>
