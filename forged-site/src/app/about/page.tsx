@@ -5,7 +5,7 @@ import FadeUp from "@/components/FadeUp";
 export const metadata: Metadata = {
   title: "About — FORGED",
   description:
-    "FORGED is an elite athlete, coach, and expert development summit founded by Pri Piantadosi-Lima. Not a camp. A movement.",
+    "FORGED is an elite athlete, coach, and expert development summit founded by Pri Piantadosi-Lima. Built different. By design.",
 };
 
 const pillars = [
@@ -36,7 +36,7 @@ const stats = [
 const differentiators = [
   {
     title: "We See What's Underneath",
-    desc: "Every other camp sells reps and exposure. FORGED addresses the doubt, fear, and uncertainty every athlete carries but nobody talks about. We develop the person, not just the player.",
+    desc: "The fire that builds you. FORGED addresses the doubt, fear, and uncertainty every athlete carries but nobody talks about. We develop the person, not just the player.",
   },
   {
     title: "Coaches Are People Too",
@@ -44,7 +44,7 @@ const differentiators = [
   },
   {
     title: "Built For The Long Term",
-    desc: "This isn't a camp. It's the beginning of a lifelong network. Athletes, coaches, and families who find FORGED don't leave. The community compounds over time.",
+    desc: "Development that doesn't stop when you leave. It's the beginning of a lifelong network. Athletes, coaches, and families who find FORGED don't leave. The community compounds over time.",
   },
   {
     title: "Access Is Non-Negotiable",
@@ -68,8 +68,8 @@ export default function About() {
           About FORGED
         </p>
         <h1 className="font-display text-[clamp(56px,11vw,130px)] leading-[0.95] tracking-[0.04em] text-cream mb-6 relative z-[1]">
-          NOT A CAMP.
-          <br />A <span className="gold-gradient-text">MOVEMENT.</span>
+          BUILT DIFFERENT.
+          <br />BY <span className="gold-gradient-text">DESIGN.</span>
         </h1>
         <p className="font-serif italic text-[clamp(18px,3vw,26px)] text-light max-w-[660px] mx-auto relative z-[1] leading-[1.5]">
           The world teaches athletes how to compete. It teaches coaches how to
@@ -85,9 +85,9 @@ export default function About() {
       <FadeUp className="max-w-[1100px] mx-auto px-6 md:px-10 py-24">
         <p className="section-eyebrow">Who We Are</p>
         <h2 className="font-display text-[clamp(42px,7vw,80px)] tracking-[0.04em] leading-[0.95] text-cream mb-5">
-          NOT A CAMP.
+          BUILT DIFFERENT.
           <br />
-          A MOVEMENT.
+          BY DESIGN.
         </h2>
         <p className="font-serif italic text-[clamp(18px,2.5vw,22px)] text-light max-w-[760px] leading-[1.6] mb-14">
           Every part of FORGED is built around three commitments — to
