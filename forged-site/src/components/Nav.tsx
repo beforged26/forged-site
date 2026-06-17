@@ -7,8 +7,6 @@ import { useEffect, useState, useRef } from "react";
 const links = [
   { href: "/about", label: "About" },
   { href: "/events", label: "Events" },
-  { href: "/partner", label: "Partner" },
-  { href: "/contact", label: "Contact" },
 ];
 
 const registerDropdown = [
@@ -100,6 +98,18 @@ export default function Nav() {
         </div>
 
         <Link
+          href="/partner"
+          className="text-[11px] font-semibold tracking-[0.18em] uppercase text-light hover:text-gold transition-colors"
+        >
+          Partner
+        </Link>
+        <Link
+          href="/contact"
+          className="text-[11px] font-semibold tracking-[0.18em] uppercase text-light hover:text-gold transition-colors"
+        >
+          Contact
+        </Link>
+        <Link
           href="/register/athlete"
           className="text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-6 py-2.5 hover:bg-gold-m transition-colors"
         >
@@ -160,6 +170,8 @@ export default function Nav() {
               {item.label}
             </Link>
           ))}
+          <Link href="/partner" onClick={() => setOpen(false)} className="text-[11px] font-semibold tracking-[0.18em] uppercase text-light hover:text-gold transition-colors px-6 py-4 border-t border-gold/5">Partner</Link>
+          <Link href="/contact" onClick={() => setOpen(false)} className="text-[11px] font-semibold tracking-[0.18em] uppercase text-light hover:text-gold transition-colors px-6 py-4 border-t border-gold/5">Contact</Link>
         </div>
       )}
     </nav>
