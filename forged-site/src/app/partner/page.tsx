@@ -197,8 +197,8 @@ export default function Partner() {
           Partnership &amp; Sponsorship Opportunities
         </p>
         <h1 className="font-display text-[clamp(56px,11vw,130px)] leading-[0.95] tracking-[0.04em] text-cream mb-6 relative z-[1]">
-          NOT A CAMP.
-          <br />A <span className="gold-gradient-text">MOVEMENT.</span>
+          BUILT DIFFERENT.
+          <br />BY <span className="gold-gradient-text">DESIGN.</span>
         </h1>
         <p className="font-serif italic text-[clamp(18px,3vw,26px)] text-light max-w-[660px] mx-auto relative z-[1] leading-[1.5] mb-10">
           The world teaches athletes how to compete. It teaches coaches how to
