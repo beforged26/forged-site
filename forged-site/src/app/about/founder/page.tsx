@@ -1,0 +1,99 @@
+import type { Metadata } from "next";
+import FadeUp from "@/components/FadeUp";
+
+export const metadata: Metadata = {
+  title: "Founder — FORGED",
+  description:
+    "Pri Piantadosi-Lima — Former professional athlete, Division I Head Coach, USAV Club Coach of the Year, and founder of FORGED.",
+};
+
+export default function Founder() {
+  return (
+    <>
+      {/* HERO */}
+      <section className="hero-anim min-h-[60vh] flex flex-col items-center justify-center text-center px-6 pt-36 pb-16 relative overflow-hidden">
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              "radial-gradient(ellipse 60% 50% at 50% 60%, rgba(201,148,26,0.07) 0%, transparent 70%)",
+          }}
+        />
+        <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-gold-m mb-5 relative z-[1]">
+          Founder
+        </p>
+        <h1 className="font-display text-[clamp(48px,9vw,110px)] leading-[0.95] tracking-[0.04em] text-cream mb-6 relative z-[1]">
+          PRI
+          <br />
+          <span className="gold-gradient-text">PIANTADOSI-LIMA.</span>
+        </h1>
+        <p className="text-[11px] tracking-[0.2em] uppercase text-muted relative z-[1]">
+          Founder &nbsp;·&nbsp; FORGED
+        </p>
+      </section>
+
+      <div className="gold-rule" />
+
+      {/* BIO */}
+      <FadeUp className="max-w-[860px] mx-auto px-6 md:px-10 py-24">
+        <p className="section-eyebrow">The Story</p>
+        <h2 className="font-display text-[clamp(36px,6vw,64px)] tracking-[0.04em] leading-[0.95] text-cream mb-10">
+          THE SHORTCUT
+          <br />
+          <span className="gold-gradient-text">SHE NEVER HAD.</span>
+        </h2>
+
+        <div className="font-serif italic text-[clamp(18px,2.5vw,22px)] text-light leading-[1.7] space-y-6">
+          <p>
+            Pri Piantadosi-Lima navigated elite sport alone. No mentor telling her what to expect. No community to fall back on. No framework for the doubt, fear, and uncertainty that came with competing at the highest level.
+          </p>
+          <p>
+            She figured it out — and then spent her career making sure the athletes and coaches around her didn&rsquo;t have to.
+          </p>
+          <p>
+            As a former professional athlete, Division I Head Coach, USAV Club Coach of the Year, and USAV National Team Development Program Coach and Scout, Pri has seen elite sport from every angle. She knows what it takes to get to the next level — and she knows exactly what&rsquo;s missing for most athletes and coaches who are trying to get there.
+          </p>
+          <p>
+            FORGED is her answer to that gap. Not a weekend of reps and exposure — a development ecosystem that addresses the whole person, builds real community, and creates access for the athletes who deserve it most but have had the least.
+          </p>
+          <p>
+            She built FORGED because the shortcut she never had should exist for everyone.
+          </p>
+        </div>
+      </FadeUp>
+
+      {/* CREDENTIALS */}
+      <div className="bg-dark border-y border-gold/10 py-20 px-6 md:px-10">
+        <FadeUp className="max-w-[860px] mx-auto">
+          <p className="section-eyebrow">Credentials</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-[2px] bg-gold/[0.08] mt-8">
+            {[
+              { label: "Background", value: "Former Professional Athlete" },
+              { label: "Coaching", value: "Former Division I Head Coach" },
+              { label: "Recognition", value: "USAV Club Coach of the Year" },
+              { label: "National Program", value: "USAV NTDP Coach & Scout" },
+              { label: "Focus", value: "Indoor Volleyball — expanding across all sports" },
+              { label: "Founded", value: "FORGED — inaugural summit, Phoenix AZ, Nov 2026" },
+            ].map((item) => (
+              <div key={item.label} className="bg-dark p-7 hover:bg-dark2 transition-colors">
+                <div className="text-[10px] font-semibold tracking-[0.2em] uppercase text-gold-m mb-1">{item.label}</div>
+                <div className="text-[14px] text-cream font-medium">{item.value}</div>
+              </div>
+            ))}
+          </div>
+        </FadeUp>
+      </div>
+
+      {/* QUOTE */}
+      <FadeUp className="px-6 md:px-10 py-24 text-center">
+        <div className="font-serif text-[80px] text-gold-d leading-[0.5] mb-6">&ldquo;</div>
+        <p className="font-serif italic text-[clamp(22px,3.5vw,38px)] text-cream max-w-[780px] mx-auto mb-6 leading-[1.45]">
+          I built FORGED because I navigated elite sport alone. FORGED is the shortcut I never had — given to everyone.
+        </p>
+        <p className="text-[11px] tracking-[0.15em] uppercase text-gold-m">
+          Pri Piantadosi-Lima &nbsp;·&nbsp; Founder, FORGED
+        </p>
+      </FadeUp>
+    </>
+  );
+}
