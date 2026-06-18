@@ -45,16 +45,19 @@ export default function Founder() {
 
         <div className="font-serif italic text-[clamp(18px,2.5vw,22px)] text-light leading-[1.7] space-y-6">
           <p>
-            Pri Piantadosi-Lima navigated elite sport alone. No mentor telling her what to expect. No community to fall back on. No framework for the doubt, fear, and uncertainty that came with competing at the highest level.
+            Pri Piantadosi-Lima navigated the early stages of her elite sport career largely on her own. No one handed her a roadmap. No mentor sat her down and explained what the best athletes in the world were actually doing to get there. So she did what driven people do — she watched, she researched, she tried to reverse-engineer the habits and routines of Olympians from whatever she could find, and she quietly tried to replicate them.
           </p>
           <p>
-            She figured it out — and then spent her career making sure the athletes and coaches around her didn&rsquo;t have to.
+            Slowly, throughout her career, she started to discover the tools that actually move the needle: strength coaches, mental performance work, sports psychology, nutrition, life coaches, mentors who had been where she was trying to go. And as finances allowed — one piece at a time — she built her own support system from scratch. She paid for it herself. She sought it out herself. She assembled a team around herself at every stop of her career, because no one was going to do it for her.
           </p>
           <p>
-            As a former professional athlete, Division I Head Coach, USAV Club Coach of the Year, and USAV National Team Development Program Coach and Scout, Pri has seen elite sport from every angle. She knows what it takes to get to the next level — and she knows exactly what&rsquo;s missing for most athletes and coaches who are trying to get there.
+            Eventually, she got there. And when she did, she looked back at how long it took — and how much harder it was than it had to be — and she knew exactly what she wanted to build next.
           </p>
           <p>
-            FORGED is her answer to that gap. Not a weekend of reps and exposure — a development ecosystem that addresses the whole person, builds real community, and creates access for the athletes who deserve it most but have had the least.
+            As a former professional athlete, Division I Head Coach, USAV Club Coach of the Year, and USAV National Team Development Program Coach, Pri has seen elite sport from every angle. She knows what it takes. She also knows exactly what&rsquo;s missing for most athletes and coaches trying to get there — because she lived it.
+          </p>
+          <p>
+            FORGED is her answer to that gap. Not a weekend of reps and exposure — a development ecosystem that hands athletes and coaches the team, the tools, and the community she had to spend years building on her own. Everything she figured out the hard way, given to the next generation from day one.
           </p>
           <p>
             She built FORGED because the shortcut she never had should exist for everyone.
@@ -71,7 +74,7 @@ export default function Founder() {
               { label: "Background", value: "Former Professional Athlete" },
               { label: "Coaching", value: "Former Division I Head Coach" },
               { label: "Recognition", value: "USAV Club Coach of the Year" },
-              { label: "National Program", value: "USAV NTDP Coach & Scout" },
+              { label: "National Program", value: "USAV NTDP Coach" },
               { label: "Focus", value: "Indoor Volleyball — expanding across all sports" },
               { label: "Founded", value: "FORGED — inaugural summit, Phoenix AZ, Nov 2026" },
             ].map((item) => (
