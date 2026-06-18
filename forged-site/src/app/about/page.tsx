@@ -171,13 +171,14 @@ export default function About() {
       >
         <div className="font-serif text-[80px] text-gold-d leading-[0.5] mb-6">&ldquo;</div>
         <p className="font-serif italic text-[clamp(22px,3.5vw,38px)] text-cream max-w-[780px] mx-auto mb-6 leading-[1.45]">
-          I built FORGED because I navigated elite sport alone. FORGED is the
-          shortcut I never had — given to everyone.
+          I spent years building my own support system from scratch — one coach,
+          one mentor, one piece at a time. FORGED exists so no athlete or coach
+          ever has to do that alone again.
         </p>
         <p className="text-[11px] tracking-[0.15em] uppercase text-gold-m max-w-[700px] mx-auto leading-[1.9]">
           Founded by Pri Piantadosi-Lima &nbsp;·&nbsp; Former Professional
           Athlete &nbsp;·&nbsp; Former Division I Head Coach &nbsp;·&nbsp; USAV
-          Club Coach of the Year &nbsp;·&nbsp; USAV NTDP Coach &amp; Scout
+          Club Coach of the Year &nbsp;·&nbsp; USAV NTDP Coach
         </p>
       </FadeUp>
 
