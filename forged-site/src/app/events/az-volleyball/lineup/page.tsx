@@ -22,48 +22,65 @@ const coaches = [
 // ── ADD EXPERTS HERE ──────────────────────────────────────────────────────────
 const experts = [
   {
-    name: "Sport Psychologist",
-    role: "Mental Performance & Confidence",
-    bio: "Expert in mental performance, pressure management, and building the mindset that separates good from elite.",
+    name: "Priscilla Tallman",
+    role: "Mental Performance Coach",
+    bio: "Specialist in mental performance, pressure management, and building the mindset that separates good from elite. Priscilla works with athletes to develop the mental tools that drive sustainable high performance.",
     website: "",
   },
   {
-    name: "Sport Nutritionist",
-    role: "Fueling for Performance",
-    bio: "Specialist in athlete nutrition, fueling strategies, recovery, and sustainable performance.",
+    name: "Sara Putt",
+    role: "Sport Nutritionist — Fueling for Performance",
+    bio: "Expert in athlete nutrition, fueling strategies, recovery, and long-term performance. Sara helps athletes understand how to fuel their bodies to perform at their highest level — and sustain it.",
     website: "",
   },
   {
-    name: "Body Image Mentor",
-    role: "Athlete Identity & Healthy Body Relationship",
-    bio: "Expert in athlete identity, body image, and navigating the mental side of physical performance.",
+    name: "Kamila Tan",
+    role: "Body Image Mentor — Athlete Identity",
+    bio: "Specialist in athlete identity, body image, and the mental side of physical performance. Kamila guides athletes through the often unspoken challenges of how they see and relate to their own bodies.",
+    website: "",
+  },
+  {
+    name: "Karlee Owens",
+    role: "Primal Movement Coach — Body Assessment",
+    bio: "Movement specialist focused on assessing and optimizing how athletes move — reducing injury risk and unlocking performance potential from the ground up.",
+    website: "",
+  },
+  {
+    name: "Falyn Fonoimoana",
+    role: "Social Media Expert — Personal Brand & Recruiting",
+    bio: "Helping athletes build their digital presence, understand recruiting optics, and use social media as a competitive advantage — because how you show up online matters as much as how you show up on the court.",
+    website: "",
+  },
+  {
+    name: "Tree",
+    role: "Culture Coach — Leadership & Team Culture",
+    bio: "Expert in building high-performance team cultures — for athletes and coaches alike. Tree works with teams to develop the leadership, trust, and accountability that separate good programs from great ones.",
+    website: "",
+  },
+  {
+    name: "Benjamin",
+    role: "FirstBeat — Heart Rate & Performance Monitoring",
+    bio: "Using FirstBeat technology to give athletes real-time insight into their physiological performance, recovery, and readiness. Data-driven development that shows you exactly where you are and how to get better.",
+    website: "",
+  },
+  {
+    name: "Mike",
+    role: "Ver — AI Eye Tracking & Performance",
+    bio: "Leveraging cutting-edge AI eye-tracking technology to personalize athletic development. Ver's system analyzes visual patterns to enhance on-court decision-making, reaction time, and performance.",
     website: "",
   },
   {
     name: "Agility Coach",
-    role: "Speed & Footwork",
-    bio: "Elite-level speed and agility training with a focus on volleyball-specific movement patterns.",
+    role: "Speed & Footwork — Coming Soon",
+    bio: "Elite-level speed and agility training with a focus on volleyball-specific movement patterns. Confirmation coming soon.",
     website: "",
   },
   {
-    name: "Primal Movement Coach",
-    role: "Body Assessment & Movement Optimization",
-    bio: "Movement specialist focused on assessing and optimizing how athletes use their bodies to prevent injury and maximize performance.",
+    name: "Olympic Performance Coach",
+    role: "Olympic-Level Performance — Coming Soon",
+    bio: "An Olympic-level coach bringing elite performance frameworks to FORGED athletes. Confirmation coming soon.",
     website: "",
   },
-  {
-    name: "Social Media Expert",
-    role: "Personal Brand & Recruiting Optics",
-    bio: "Helping athletes build their digital presence, understand recruiting optics, and use social media as a competitive advantage.",
-    website: "",
-  },
-  {
-    name: "Culture Coach",
-    role: "Leadership & Team Culture",
-    bio: "Building high-performance team cultures — for athletes and coaches alike.",
-    website: "",
-  },
-  // Duplicate and fill in for each expert
 ];
 
 function PersonCard({ person }: { person: typeof coaches[0] }) {
