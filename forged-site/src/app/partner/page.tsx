@@ -136,7 +136,7 @@ const benefits = [
   },
   {
     title: "Community Access",
-    desc: "Year-round visibility inside the FORGED athlete and coach community — not just a 3.5-day event. Your brand stays present between summits.",
+    desc: "Year-round visibility inside the FORGED athlete and coach community — not just a 4-day event. Your brand stays present between summits.",
   },
   {
     title: "Scholarship Naming Rights",
@@ -165,7 +165,7 @@ const businessReasons = [
   },
   {
     title: "Year-Round Visibility",
-    desc: "Your brand lives in the FORGED community between summits — not just during 3.5 days. Ongoing presence, ongoing value.",
+    desc: "Your brand lives in the FORGED community between summits — not just during 4 days. Ongoing presence, ongoing value.",
   },
   {
     title: "Founding Partner Pricing",
