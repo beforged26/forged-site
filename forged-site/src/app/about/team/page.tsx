@@ -1,4 +1,3 @@
-
 import type { Metadata } from "next";
 import FadeUp from "@/components/FadeUp";
 
@@ -12,7 +11,7 @@ const team = [
   {
     name: "Pri Piantadosi-Lima",
     role: "Founder & Director",
-    bio: "Former professional athlete, Division I Head Coach, USAV Club Coach of the Year, and USAV NTDP Coach & Scout. Pri built FORGED to give every athlete and coach the shortcut she never had.",
+    bio: "Former professional athlete, Division I Head Coach, USAV Club Coach of the Year, and USAV NTDP Coach. Pri built FORGED to give every athlete and coach the shortcut she never had.",
     website: "https://beforged.co",
   },
   // Add more team members below:
