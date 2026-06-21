@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "AZ — Volleyball | FORGED",
   description:
-    "FORGED inaugural summit — Phoenix, Arizona. November 26–29, 2026. Indoor Volleyball. 3.5 days of elite athlete and coach development.",
+    "FORGED inaugural summit — Phoenix, Arizona. November 26–29, 2026. Indoor Volleyball. 4 days of elite athlete and coach development.",
 };
 
 const schedule = [
@@ -39,7 +39,7 @@ export default function AZVolleyball() {
           Phoenix, AZ &nbsp;·&nbsp; Nov 26–29, 2026 &nbsp;·&nbsp; Indoor Volleyball
         </p>
         <p className="font-serif italic text-[clamp(16px,2.5vw,22px)] text-light max-w-[580px] mx-auto relative z-[1] leading-[1.6] mb-10">
-          3.5 days. Elite coaches. World-class experts. The inaugural FORGED summit — and the beginning of something that expands across all sports.
+          4 days. Elite coaches. World-class experts. The inaugural FORGED summit — and the beginning of something that expands across all sports.
         </p>
         <div className="flex items-center justify-center gap-4 flex-wrap relative z-[1]">
           <Link href="/register/athlete" className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-7 py-3.5 hover:bg-gold-m transition-colors">
@@ -58,7 +58,7 @@ export default function AZVolleyball() {
         <div className="max-w-[900px] mx-auto grid gap-10 text-center" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))" }}>
           {[
             { num: "120", label: "Athletes Expected" },
-            { num: "3.5", label: "Day Immersive" },
+            { num: "4", label: "Day Immersive" },
             { num: "6+", label: "Expert Sessions" },
             { num: "2026", label: "Inaugural Year" },
           ].map((s) => (
@@ -102,7 +102,7 @@ export default function AZVolleyball() {
             <span className="gold-gradient-text">LINEUP.</span>
           </h2>
           <p className="font-serif italic text-[clamp(16px,2vw,20px)] text-light max-w-[560px] mx-auto mb-10 leading-[1.6]">
-            Elite coaches and world-class experts — all under one roof for 3.5 days. See who&apos;s joining FORGED Year 1.
+            Elite coaches and world-class experts — all under one roof for 4 days. See who&apos;s joining FORGED Year 1.
           </p>
           <Link href="/events/az-volleyball/lineup" className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-8 py-3.5 hover:bg-gold-m transition-colors">
             View Full Lineup
