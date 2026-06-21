@@ -17,7 +17,7 @@ const foundingFamily: { name: string; note?: string }[] = [
 // ─────────────────────────────────────────────────────────────────────────────
 
 // ── STRIPE LINK ──────────────────────────────────────────────────────────────
-const STRIPE_LINK = "YOUR_STRIPE_LINK_HERE";
+const STRIPE_LINK = "https://donate.stripe.com/fZudR9aRK4ul71U52H3AY0f";
 // ─────────────────────────────────────────────────────────────────────────────
 
 export default function FoundingFamily() {
