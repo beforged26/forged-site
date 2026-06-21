@@ -81,7 +81,7 @@ export default function Events() {
           <span className="gold-gradient-text">NOV 26–29, 2026.</span>
         </h1>
         <p className="font-serif italic text-[clamp(18px,3vw,26px)] text-light max-w-[640px] mx-auto relative z-[1] leading-[1.5] mb-10">
-          A 3.5-day immersive development experience for athletes, coaches,
+          A 4-day immersive development experience for athletes, coaches,
           and performance professionals. Sport focus, year one: Indoor
           Volleyball.
         </p>
