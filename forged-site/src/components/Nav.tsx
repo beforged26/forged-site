@@ -11,6 +11,11 @@ const aboutDropdown = [
   { href: "/about/team", label: "Our Team" },
 ];
 
+const eventsDropdown = [
+  { href: "/events/az-volleyball", label: "AZ — Volleyball" },
+  { href: "/events/az-volleyball/lineup", label: "AZ — Lineup" },
+];
+
 const registerDropdown = [
   { href: "/register/athlete", label: "Athletes" },
   { href: "/register/coach", label: "Coaches" },
@@ -26,10 +31,13 @@ export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
+  const [eventsOpen, setEventsOpen] = useState(false);
   const [registerOpen, setRegisterOpen] = useState(false);
   const [mobileAboutOpen, setMobileAboutOpen] = useState(false);
+  const [mobileEventsOpen, setMobileEventsOpen] = useState(false);
   const [mobileRegisterOpen, setMobileRegisterOpen] = useState(false);
   const aboutRef = useRef<HTMLDivElement>(null);
+  const eventsRef = useRef<HTMLDivElement>(null);
   const registerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -41,6 +49,7 @@ export default function Nav() {
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       if (aboutRef.current && !aboutRef.current.contains(e.target as Node)) setAboutOpen(false);
+      if (eventsRef.current && !eventsRef.current.contains(e.target as Node)) setEventsOpen(false);
       if (registerRef.current && !registerRef.current.contains(e.target as Node)) setRegisterOpen(false);
     };
     document.addEventListener("mousedown", handleClickOutside);
@@ -77,7 +86,21 @@ export default function Nav() {
           )}
         </div>
 
-        <Link href="/events" className={navLinkClass}>Events</Link>
+        {/* Events dropdown */}
+        <div ref={eventsRef} className="relative">
+          <button className={dropdownBtnClass} onClick={() => setEventsOpen((o) => !o)}>
+            Events <ChevronIcon open={eventsOpen} />
+          </button>
+          {eventsOpen && (
+            <div className={dropdownClass}>
+              {eventsDropdown.map((item) => (
+                <Link key={item.href} href={item.href} onClick={() => setEventsOpen(false)} className={dropdownLinkClass}>
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+          )}
+        </div>
 
         {/* Register dropdown */}
         <div ref={registerRef} className="relative">
@@ -123,7 +146,15 @@ export default function Nav() {
             </Link>
           ))}
 
-          <Link href="/events" onClick={() => setOpen(false)} className="text-[11px] font-semibold tracking-[0.18em] uppercase text-light hover:text-gold transition-colors px-6 py-4 border-t border-gold/5">Events</Link>
+          {/* Mobile Events */}
+          <button onClick={() => setMobileEventsOpen((o) => !o)} className="text-[11px] font-semibold tracking-[0.18em] uppercase text-light hover:text-gold transition-colors px-6 py-4 border-t border-gold/5 flex items-center justify-between">
+            Events <ChevronIcon open={mobileEventsOpen} />
+          </button>
+          {mobileEventsOpen && eventsDropdown.map((item) => (
+            <Link key={item.href} href={item.href} onClick={() => { setOpen(false); setMobileEventsOpen(false); }} className="text-[11px] font-semibold tracking-[0.18em] uppercase text-gold transition-colors pl-10 pr-6 py-3.5 border-t border-gold/5 bg-dark">
+              {item.label}
+            </Link>
+          ))}
 
           {/* Mobile Register */}
           <button onClick={() => setMobileRegisterOpen((o) => !o)} className="text-[11px] font-semibold tracking-[0.18em] uppercase text-light hover:text-gold transition-colors px-6 py-4 border-t border-gold/5 flex items-center justify-between">
