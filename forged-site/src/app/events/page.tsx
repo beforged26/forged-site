@@ -1,66 +1,21 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import FadeUp from "@/components/FadeUp";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Events — FORGED",
+  title: "AZ — Volleyball | FORGED",
   description:
-    "FORGED 2026 — the inaugural elite athlete and coach development summit. Phoenix, AZ, November 26–29, 2026. Indoor Volleyball, expanding to all sports.",
+    "FORGED inaugural summit — Phoenix, Arizona. November 26–29, 2026. Indoor Volleyball. 3.5 days of elite athlete and coach development.",
 };
 
 const schedule = [
-  {
-    day: "Day 1",
-    title: "Arrival & Foundations",
-    desc: "Check-in, welcome session, and baseline assessments. Athletes and coaches meet their pods and set personal development goals for the summit.",
-  },
-  {
-    day: "Day 2",
-    title: "Elite Performance & Mental Game",
-    desc: "Sport-specific training blocks led by expert coaches, paired with sports psychology and mindset sessions woven directly into the day.",
-  },
-  {
-    day: "Day 3",
-    title: "Wellness & Mentorship",
-    desc: "Sports nutrition, body image, and athlete identity workshops, plus structured mentorship pairings between athletes, coaches, and performance experts.",
-  },
-  {
-    day: "Day 4",
-    title: "Showcase & Send-Off",
-    desc: "Final training showcase, recognition ceremony, and the start of a year-round community that doesn't end when the summit does.",
-  },
+  { day: "Day 1", date: "Nov 26", label: "Arrival & Orientation", desc: "Check-in, welcome session, team building, opening dinner." },
+  { day: "Day 2", date: "Nov 27", label: "Performance & Mindset", desc: "Morning training, mental performance sessions, nutrition workshop, expert panels." },
+  { day: "Day 3", date: "Nov 28", label: "Development & Access", desc: "Advanced skill sessions, recruiting education, coach development track, evening community gathering." },
+  { day: "Day 4", date: "Nov 29", label: "Integration & Send-Off", desc: "Final training session, leadership workshop, closing ceremony, alumni network launch." },
 ];
 
-const expansion = [
-  { stat: "120", label: "Athletes — Year One (2026)" },
-  { stat: "600+", label: "Athletes — Year Three Target" },
-  { stat: "Multi-City", label: "Expansion — Year Five Vision" },
-];
-
-const sports = [
-  {
-    title: "Indoor Volleyball",
-    desc: "The sport focus for the inaugural 2026 summit in Phoenix, AZ. Ages 13–23.",
-    tag: "2026 — Year One",
-  },
-  {
-    title: "Beach Volleyball",
-    desc: "Expanding the FORGED model to beach volleyball athletes and coaches in subsequent years.",
-    tag: "Coming Soon",
-  },
-  {
-    title: "Pickleball",
-    desc: "Bringing the FORGED development standard to one of the fastest-growing sports in the country.",
-    tag: "Coming Soon",
-  },
-  {
-    title: "All Sports",
-    desc: "The long-term vision: a development ecosystem for athletes, coaches, and experts across every sport.",
-    tag: "Long-Term Vision",
-  },
-];
-
-export default function Events() {
+export default function AZVolleyball() {
   return (
     <>
       {/* HERO */}
@@ -73,133 +28,103 @@ export default function Events() {
           }}
         />
         <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-gold-m mb-5 relative z-[1]">
-          The Inaugural Summit
+          Inaugural Event
         </p>
-        <h1 className="font-display text-[clamp(56px,11vw,130px)] leading-[0.95] tracking-[0.04em] text-cream mb-6 relative z-[1]">
-          PHOENIX, AZ
+        <h1 className="font-display text-[clamp(52px,10vw,120px)] leading-[0.95] tracking-[0.04em] text-cream mb-4 relative z-[1]">
+          ARIZONA
           <br />
-          <span className="gold-gradient-text">NOV 26–29, 2026.</span>
+          <span className="gold-gradient-text">VOLLEYBALL.</span>
         </h1>
-        <p className="font-serif italic text-[clamp(18px,3vw,26px)] text-light max-w-[640px] mx-auto relative z-[1] leading-[1.5] mb-10">
-          A 3.5-day immersive development experience for athletes, coaches,
-          and performance professionals. Sport focus, year one: Indoor
-          Volleyball.
+        <p className="text-[11px] tracking-[0.25em] uppercase text-muted mb-8 relative z-[1]">
+          Phoenix, AZ &nbsp;·&nbsp; Nov 26–29, 2026 &nbsp;·&nbsp; Indoor Volleyball
         </p>
-        <FadeUp className="relative z-[1]">
-          <Link
-            href="/register"
-            className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-7 py-3.5 hover:bg-gold-m transition-colors"
-          >
-            Register
+        <p className="font-serif italic text-[clamp(16px,2.5vw,22px)] text-light max-w-[580px] mx-auto relative z-[1] leading-[1.6] mb-10">
+          3.5 days. Elite coaches. World-class experts. The inaugural FORGED summit — and the beginning of something that expands across all sports.
+        </p>
+        <div className="flex items-center justify-center gap-4 flex-wrap relative z-[1]">
+          <Link href="/register/athlete" className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-7 py-3.5 hover:bg-gold-m transition-colors">
+            Register as Athlete
           </Link>
-        </FadeUp>
+          <Link href="/register/coach" className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-gold border border-gold/40 px-7 py-3.5 hover:border-gold transition-colors">
+            Register as Coach
+          </Link>
+        </div>
       </section>
 
       <div className="gold-rule" />
 
+      {/* QUICK STATS */}
+      <div className="bg-dark border-y border-gold/10 py-16 px-6 md:px-10">
+        <div className="max-w-[900px] mx-auto grid gap-10 text-center" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))" }}>
+          {[
+            { num: "120", label: "Athletes Expected" },
+            { num: "3.5", label: "Day Immersive" },
+            { num: "6+", label: "Expert Sessions" },
+            { num: "2026", label: "Inaugural Year" },
+          ].map((s) => (
+            <FadeUp key={s.label}>
+              <div className="font-display text-[clamp(40px,6vw,64px)] tracking-[0.04em] gold-gradient-text leading-none mb-2">{s.num}</div>
+              <div className="text-[10px] font-semibold tracking-[0.2em] uppercase text-muted">{s.label}</div>
+            </FadeUp>
+          ))}
+        </div>
+      </div>
+
       {/* SCHEDULE */}
-      <FadeUp className="max-w-[1100px] mx-auto px-6 md:px-10 py-24">
-        <p className="section-eyebrow">The Schedule</p>
-        <h2 className="font-display text-[clamp(42px,7vw,80px)] tracking-[0.04em] leading-[0.95] text-cream mb-5">
+      <FadeUp className="max-w-[1000px] mx-auto px-6 md:px-10 py-24">
+        <p className="section-eyebrow">Schedule Overview</p>
+        <h2 className="font-display text-[clamp(36px,6vw,64px)] tracking-[0.04em] leading-[0.95] text-cream mb-14">
           FOUR DAYS.
           <br />
           ONE STANDARD.
         </h2>
-        <p className="font-serif italic text-[clamp(18px,2.5vw,22px)] text-light max-w-[640px] leading-[1.6] mb-14">
-          Every day is intentional — built around elite performance, mental
-          performance, wellness, and mentorship.
-        </p>
-
         <div className="grid gap-[2px] bg-gold/[0.08] grid-cols-1 md:grid-cols-2">
           {schedule.map((s) => (
-            <FadeUp key={s.day} className="bg-dark p-9 border-t-2 border-transparent transition-colors hover:border-gold-m hover:bg-dark2">
-              <div className="font-display text-2xl tracking-[0.1em] text-gold-m mb-1">{s.day}</div>
-              <div className="font-display text-xl tracking-[0.1em] text-gold mb-2.5">{s.title}</div>
+            <FadeUp key={s.day} className="bg-dark p-8 border-t-2 border-transparent hover:border-gold-m hover:bg-dark2 transition-colors">
+              <div className="flex items-center gap-3 mb-3">
+                <span className="font-display text-gold text-lg tracking-[0.1em]">{s.day}</span>
+                <span className="text-[11px] text-muted tracking-[0.15em] uppercase">{s.date}</span>
+              </div>
+              <div className="font-display text-lg tracking-[0.08em] text-cream mb-2">{s.label}</div>
               <p className="text-[13px] text-light leading-[1.6]">{s.desc}</p>
             </FadeUp>
           ))}
         </div>
-        <p className="text-[12px] text-muted text-center mt-8 tracking-[0.05em]">
-          Full hour-by-hour schedule will be shared with registered
-          athletes, coaches, and families closer to the event.
-        </p>
       </FadeUp>
 
-      {/* SPORT FOCUS / EXPANSION */}
-      <div className="bg-dark border-y border-gold/10 py-24 px-6 md:px-10">
-        <div className="max-w-[1100px] mx-auto">
-          <p className="section-eyebrow center justify-center">Sport Focus &amp; Expansion</p>
-          <h2 className="font-display text-center text-[clamp(42px,7vw,80px)] tracking-[0.04em] leading-[0.95] text-cream mb-5">
-            ONE SPORT FIRST.
+      {/* LINEUP CTA */}
+      <div className="bg-dark border-y border-gold/10 py-20 px-6 md:px-10 text-center">
+        <FadeUp>
+          <p className="section-eyebrow center justify-center">Who You&apos;ll Learn From</p>
+          <h2 className="font-display text-[clamp(36px,6vw,64px)] tracking-[0.04em] leading-[0.95] text-cream mb-5">
+            MEET THE
             <br />
-            ALL SPORTS NEXT.
+            <span className="gold-gradient-text">LINEUP.</span>
           </h2>
-          <p className="font-serif italic text-[clamp(18px,2.5vw,22px)] text-light max-w-[640px] mx-auto text-center leading-[1.6] mb-14">
-            FORGED launches with Indoor Volleyball in 2026 — and the model is
-            built to expand.
+          <p className="font-serif italic text-[clamp(16px,2vw,20px)] text-light max-w-[560px] mx-auto mb-10 leading-[1.6]">
+            Elite coaches and world-class experts — all under one roof for 3.5 days. See who&apos;s joining FORGED Year 1.
           </p>
-
-          <div className="grid gap-[2px] bg-gold/[0.08] grid-cols-1 md:grid-cols-2 mb-16">
-            {sports.map((s) => (
-              <FadeUp key={s.title} className="bg-black p-9 border-t-2 border-transparent transition-colors hover:border-gold-m">
-                <div className="font-display text-xl tracking-[0.1em] text-gold mb-2.5">{s.title}</div>
-                <p className="text-[13px] text-light leading-[1.6] mb-3">{s.desc}</p>
-                <span className="inline-block text-[10px] tracking-[0.2em] uppercase text-gold-m">{s.tag}</span>
-              </FadeUp>
-            ))}
-          </div>
-
-          <div className="grid gap-10 text-center" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))" }}>
-            {expansion.map((e) => (
-              <FadeUp key={e.label}>
-                <div className="font-display text-[clamp(36px,5vw,60px)] tracking-[0.04em] gold-gradient-text leading-none mb-2">
-                  {e.stat}
-                </div>
-                <div className="text-[10px] font-semibold tracking-[0.2em] uppercase text-muted">{e.label}</div>
-              </FadeUp>
-            ))}
-          </div>
-        </div>
+          <Link href="/events/az-volleyball/lineup" className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-8 py-3.5 hover:bg-gold-m transition-colors">
+            View Full Lineup
+          </Link>
+        </FadeUp>
       </div>
 
-      {/* LOCATION */}
-      <FadeUp className="max-w-[1100px] mx-auto px-6 md:px-10 py-24 text-center">
-        <p className="section-eyebrow center justify-center">Location</p>
-        <h2 className="font-display text-[clamp(42px,7vw,80px)] tracking-[0.04em] leading-[0.95] text-cream mb-5">
-          PHOENIX,
-          <br />
-          ARIZONA.
-        </h2>
-        <p className="font-serif italic text-[clamp(18px,2.5vw,22px)] text-light max-w-[640px] mx-auto leading-[1.6]">
-          Thanksgiving weekend, 2026. Exact venue details, travel
-          recommendations, and lodging information will be shared directly
-          with registered athletes, coaches, and families.
-        </p>
-      </FadeUp>
-
-      <div className="gold-rule" />
-
       {/* BOTTOM CTA */}
-      <div className="px-6 md:px-10 py-28 text-center bg-black">
+      <div className="px-6 md:px-10 py-24 text-center">
         <FadeUp>
-          <h2 className="font-display text-[clamp(48px,9vw,110px)] tracking-[0.04em] leading-[0.95] mb-5">
-            SAVE YOUR
+          <h2 className="font-display text-[clamp(42px,7vw,90px)] tracking-[0.04em] leading-[0.95] text-cream mb-5">
+            SECURE YOUR
             <br />
             <span className="gold-gradient-text">SPOT.</span>
           </h2>
         </FadeUp>
-        <FadeUp>
-          <p className="text-sm text-muted tracking-[0.08em] mb-12 max-w-[560px] mx-auto">
-            Spots for the inaugural FORGED summit are limited. Register now to
-            reserve your place.
-          </p>
-        </FadeUp>
-        <FadeUp>
-          <Link
-            href="/register"
-            className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-7 py-3.5 hover:bg-gold-m transition-colors"
-          >
-            Register
+        <FadeUp className="flex items-center justify-center gap-4 flex-wrap mt-8">
+          <Link href="/register/athlete" className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-7 py-3.5 hover:bg-gold-m transition-colors">
+            Athlete — Early Bird $757
+          </Link>
+          <Link href="/register/coach" className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-gold border border-gold/40 px-7 py-3.5 hover:border-gold transition-colors">
+            Coach — $250
           </Link>
         </FadeUp>
       </div>
