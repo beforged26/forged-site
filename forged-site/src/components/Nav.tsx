@@ -12,8 +12,13 @@ const aboutDropdown = [
 ];
 
 const eventsDropdown = [
-  { href: "/events/az-volleyball", label: "AZ — Volleyball" },
-  { href: "/events/az-volleyball/lineup", label: "AZ — Lineup" },
+  {
+    label: "AZ — Volleyball",
+    children: [
+      { href: "/events/az-volleyball", label: "Overview" },
+      { href: "/events/az-volleyball/lineup", label: "Lineup" },
+    ],
+  },
 ];
 
 const registerDropdown = [
@@ -32,6 +37,7 @@ export default function Nav() {
   const [open, setOpen] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
   const [eventsOpen, setEventsOpen] = useState(false);
+  const [eventsFlyout, setEventsFlyout] = useState<string | null>(null);
   const [registerOpen, setRegisterOpen] = useState(false);
   const [mobileAboutOpen, setMobileAboutOpen] = useState(false);
   const [mobileEventsOpen, setMobileEventsOpen] = useState(false);
@@ -88,15 +94,37 @@ export default function Nav() {
 
         {/* Events dropdown */}
         <div ref={eventsRef} className="relative">
-          <button className={dropdownBtnClass} onClick={() => setEventsOpen((o) => !o)}>
+          <button className={dropdownBtnClass} onClick={() => { setEventsOpen((o) => !o); setEventsFlyout(null); }}>
             Events <ChevronIcon open={eventsOpen} />
           </button>
           {eventsOpen && (
             <div className={dropdownClass}>
               {eventsDropdown.map((item) => (
-                <Link key={item.href} href={item.href} onClick={() => setEventsOpen(false)} className={dropdownLinkClass}>
-                  {item.label}
-                </Link>
+                <div key={item.label} className="relative">
+                  <button
+                    className={`${dropdownLinkClass} w-full text-left flex items-center justify-between`}
+                    onClick={() => setEventsFlyout(eventsFlyout === item.label ? null : item.label)}
+                  >
+                    {item.label}
+                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none" className="ml-2 flex-shrink-0">
+                      <path d="M2 1.5L5.5 4L2 6.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </button>
+                  {eventsFlyout === item.label && (
+                    <div className="absolute left-full top-0 bg-black border border-gold/20 min-w-[140px]">
+                      {item.children.map((child) => (
+                        <Link
+                          key={child.href}
+                          href={child.href}
+                          onClick={() => { setEventsOpen(false); setEventsFlyout(null); }}
+                          className={dropdownLinkClass}
+                        >
+                          {child.label}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
               ))}
             </div>
           )}
@@ -151,9 +179,14 @@ export default function Nav() {
             Events <ChevronIcon open={mobileEventsOpen} />
           </button>
           {mobileEventsOpen && eventsDropdown.map((item) => (
-            <Link key={item.href} href={item.href} onClick={() => { setOpen(false); setMobileEventsOpen(false); }} className="text-[11px] font-semibold tracking-[0.18em] uppercase text-gold transition-colors pl-10 pr-6 py-3.5 border-t border-gold/5 bg-dark">
-              {item.label}
-            </Link>
+            <div key={item.label}>
+              <div className="text-[11px] font-semibold tracking-[0.18em] uppercase text-gold/60 pl-10 pr-6 py-2.5 border-t border-gold/5 bg-dark">{item.label}</div>
+              {item.children.map((child) => (
+                <Link key={child.href} href={child.href} onClick={() => { setOpen(false); setMobileEventsOpen(false); }} className="text-[11px] font-semibold tracking-[0.18em] uppercase text-gold transition-colors pl-14 pr-6 py-3 border-t border-gold/5 bg-dark block">
+                  {child.label}
+                </Link>
+              ))}
+            </div>
           ))}
 
           {/* Mobile Register */}
