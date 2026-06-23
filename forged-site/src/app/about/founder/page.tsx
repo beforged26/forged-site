@@ -57,6 +57,9 @@ export default function Founder() {
             As a former professional athlete, Division I Head Coach, USAV Club Coach of the Year, and USAV National Team Development Program Coach, Pri has seen elite sport from every angle. She knows what it takes. She also knows exactly what&rsquo;s missing for most athletes and coaches trying to get there — because she lived it.
           </p>
           <p>
+            She still coaches at the professional level today. Among her athletes, Kim Hildreth — a USA Beach Volleyball representative competing on the FIVB Beach Pro Tour — has earned Gold at the BPT Futures Pompano Beach and reached multiple Elite 16 podiums, the highest level of international beach volleyball below the Olympics. Pro coaching isn&rsquo;t something Pri did. It&rsquo;s something she does.
+          </p>
+          <p>
             FORGED is her answer to that gap. Not a weekend of reps and exposure — a development ecosystem that hands athletes and coaches the team, the tools, and the community she had to spend years building on her own. Everything she figured out the hard way, given to the next generation from day one.
           </p>
           <p>
@@ -73,6 +76,7 @@ export default function Founder() {
             {[
               { label: "Background", value: "Former Professional Athlete" },
               { label: "Coaching", value: "Former Division I Head Coach" },
+              { label: "Pro Coaching", value: "Active — FIVB Beach Pro Tour Athletes" },
               { label: "Recognition", value: "USAV Club Coach of the Year" },
               { label: "National Program", value: "USAV NTDP Coach" },
               { label: "Inaugural Sport", value: "Indoor Volleyball — expanding across all sports" },
