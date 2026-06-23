@@ -45,7 +45,7 @@ const team: { name: string; role: string; bio: string[]; website?: string; photo
     photo: "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/usf.sidearmsports.com/images/2026/2/13/Josie_Sek.jpg",
     bio: [
       "Josie is an NCAA National Champion — she earned that title at TCU, where she became one of the most decorated beach volleyball players in the program. What makes her story personal to FORGED: Pri trained Josie at Optimum Beach during her senior year of high school, helping prepare her for the jump to college. And for her final collegiate season, Josie came full circle — playing under Pri at USF.",
-      "Graduating this July with her master's in Entrepreneurship, Josie brings the same quiet consistency to FORGED behind the scenes — jumping in wherever needed, no spotlight required. Originally from Mississauga, Ontario, she's proof that the athletes who come through this program become part of something bigger than a season.",
+      "Graduating this July with her master's in Entrepreneurship, Josie donates her time to FORGED — jumping in wherever needed, no spotlight required. Originally from Mississauga, Ontario, she's proof that the athletes who come through this program become part of something bigger than a season.",
     ],
   },
   // Add more team members below:
