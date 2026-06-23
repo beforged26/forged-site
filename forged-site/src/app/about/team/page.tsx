@@ -14,7 +14,7 @@ const team: { name: string; role: string; bio: string[]; website?: string; photo
     role: "Founder & Director",
     bio: [
       "Former professional athlete, Division I Head Coach, USAV Club Coach of the Year, and USAV NTDP Coach. Pri built FORGED to give every athlete and coach the shortcut she never had.",
-      "Pri has also coached at the professional level, working with athletes competing on the FIVB Beach Pro Tour and USA Beach Volleyball. Among them, Kim Hildreth — a USA national representative — earned Gold at the BPT Futures Pompano Beach and reached multiple Elite 16 podiums, the highest level of international beach volleyball below the Olympics.",
+      "Her coaching work extends to the professional level. Among the athletes she has worked with, Kim Hildreth — a USA Beach Volleyball representative on the FIVB Beach Pro Tour — earned Gold at the BPT Futures Pompano Beach and reached multiple Elite 16 podiums, the highest level of international beach volleyball below the Olympics.",
     ],
     website: "https://beforged.co",
     photo: "/pri.jpg", // Place your headshot at forged-site/public/pri.jpg
