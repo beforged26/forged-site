@@ -22,7 +22,7 @@ const team: { name: string; role: string; bio: string[]; website?: string; photo
   {
     name: "Jenny McDowell",
     role: "Mentor & Strategic Advisor",
-    photo: "https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/emoryu.sidearmsports.com/images/2024/5/28/mcdowell_jenny.jpg",
+    photo: "/jenny.jpg",
     bio: [
       "With 27 years as Head Coach at Emory University, 826 career wins, two national championships, 26 consecutive NCAA Tournament appearances, and two AVCA National Coach of the Year awards (2008 and 2019), Jenny McDowell is one of the most decorated volleyball coaches in NCAA history. She is also the sole creator of the LOVB Coaches Summit — one of the most impactful coach development programs in the sport.",
       "Jenny joined FORGED as Mentor and Strategic Advisor, donating her time, her expertise, and her network to help Pri build this from the ground up. Her strategic and logistical guidance has shaped the architecture of our inaugural summit — the kind of insight that takes years to earn and saves first-time event directors from costly mistakes.",
@@ -79,7 +79,7 @@ export default function Team() {
                     width={96}
                     height={96}
                     className="w-full h-full object-cover object-top"
-                    unoptimized={member.photo.startsWith("http")}
+                    unoptimized
                   />
                 ) : (
                   <span className="font-display text-2xl text-gold/40">{member.name.charAt(0)}</span>
