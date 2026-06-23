@@ -29,6 +29,24 @@ const team: { name: string; role: string; bio: string[]; website?: string; photo
       "She is actively connecting FORGED with potential donors and sponsors through the deep relationships she built through LOVB and the Positive Coaching Alliance — with coaches, leaders, and companies who share this mission. Her belief in FORGED before we had anything to prove is the kind of backing that changes everything. We are honored to have her.",
     ],
   },
+  {
+    name: "Nicole Robison",
+    role: "Operations & Social Media",
+    photo: "https://fiusports.com/images/2026/2/17/Website_Headshot_Nicole_Robison.png",
+    bio: [
+      "Nicole is a Division I beach volleyball athlete at FIU and one of FORGED's earliest team members. She manages FORGED's social media presence, handles hotel and venue research, and keeps the behind-the-scenes operation running.",
+      "A St. Petersburg native, two-time team MVP, and All-State honoree, Nicole brings real athlete perspective to everything she does for this program. She knows what it means to compete at a high level — and she brings that same standard to building FORGED from the ground up.",
+    ],
+  },
+  {
+    name: "Josie Sek",
+    role: "Program Assistant",
+    photo: "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/usf.sidearmsports.com/images/2026/2/13/Josie_Sek.jpg",
+    bio: [
+      "Josie is a graduate student-athlete at USF competing in beach volleyball, and a quiet but steady force behind the scenes at FORGED. She's jumped in on tasks wherever needed — from research to logistics — with the reliability you'd expect from someone who's competed at TCU and USF and is finishing a master's in Entrepreneurship.",
+      "Originally from Mississauga, Ontario, Josie brings an international perspective and a get-it-done attitude. We're glad to have her.",
+    ],
+  },
   // Add more team members below:
   // {
   //   name: "Name",
