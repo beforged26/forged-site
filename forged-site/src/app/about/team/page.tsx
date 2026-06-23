@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import FadeUp from "@/components/FadeUp";
 
 export const metadata: Metadata = {
@@ -7,16 +8,21 @@ export const metadata: Metadata = {
 };
 
 // Add team members here
-const team: { name: string; role: string; bio: string[]; website?: string }[] = [
+const team: { name: string; role: string; bio: string[]; website?: string; photo?: string }[] = [
   {
     name: "Pri Piantadosi-Lima",
     role: "Founder & Director",
-    bio: ["Former professional athlete, Division I Head Coach, USAV Club Coach of the Year, and USAV NTDP Coach. Pri built FORGED to give every athlete and coach the shortcut she never had."],
+    bio: [
+      "Former professional athlete, Division I Head Coach, USAV Club Coach of the Year, and USAV NTDP Coach. Pri built FORGED to give every athlete and coach the shortcut she never had.",
+      "At the professional level, Pri has coached Kim Hildreth — a USA Beach Volleyball representative on the FIVB Beach Pro Tour — to medals including Gold at the BPT Futures Pompano Beach and multiple Elite 16 podiums, the highest level of international beach volleyball below the Olympics.",
+    ],
     website: "https://beforged.co",
+    photo: "/pri.jpg", // Place your headshot at forged-site/public/pri.jpg
   },
   {
     name: "Jenny McDowell",
     role: "Mentor & Strategic Advisor",
+    photo: "https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/emoryu.sidearmsports.com/images/2024/5/28/mcdowell_jenny.jpg",
     bio: [
       "With 27 years as Head Coach at Emory University, 826 career wins, two national championships, 26 consecutive NCAA Tournament appearances, and two AVCA National Coach of the Year awards (2008 and 2019), Jenny McDowell is one of the most decorated volleyball coaches in NCAA history. She is also the sole creator of the LOVB Coaches Summit — one of the most impactful coach development programs in the sport.",
       "Jenny joined FORGED as Mentor and Strategic Advisor, donating her time, her expertise, and her network to help Pri build this from the ground up. Her strategic and logistical guidance has shaped the architecture of our inaugural summit — the kind of insight that takes years to earn and saves first-time event directors from costly mistakes.",
@@ -64,9 +70,20 @@ export default function Team() {
         <div className="grid gap-[2px] bg-gold/[0.08] grid-cols-1 md:grid-cols-2">
           {team.map((member) => (
             <FadeUp key={member.name} className="bg-dark p-9 border-t-2 border-transparent hover:border-gold-m hover:bg-dark2 transition-colors flex flex-col gap-4">
-              {/* Headshot placeholder */}
-              <div className="w-20 h-20 rounded-full bg-gold/10 border border-gold/20 flex items-center justify-center mb-2">
-                <span className="font-display text-2xl text-gold/40">{member.name.charAt(0)}</span>
+              {/* Headshot */}
+              <div className="w-24 h-24 rounded-full overflow-hidden bg-gold/10 border border-gold/20 flex items-center justify-center mb-2 flex-shrink-0">
+                {member.photo ? (
+                  <Image
+                    src={member.photo}
+                    alt={member.name}
+                    width={96}
+                    height={96}
+                    className="w-full h-full object-cover object-top"
+                    unoptimized={member.photo.startsWith("http")}
+                  />
+                ) : (
+                  <span className="font-display text-2xl text-gold/40">{member.name.charAt(0)}</span>
+                )}
               </div>
               <div>
                 <div className="font-display text-xl tracking-[0.08em] text-cream mb-1">{member.name}</div>
