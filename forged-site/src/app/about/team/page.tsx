@@ -36,6 +36,7 @@ const team: { name: string; role: string; bio: string[]; website?: string; photo
     bio: [
       "Nicole is a Division I beach volleyball athlete at FIU and one of FORGED's earliest team members. She manages FORGED's social media presence, handles hotel and venue research, and keeps the behind-the-scenes operation running.",
       "A St. Petersburg native, two-time team MVP, and All-State honoree, Nicole brings real athlete perspective to everything she does for this program. She knows what it means to compete at a high level — and she brings that same standard to building FORGED from the ground up.",
+      "What sets Nicole apart is her passion for this sport. If it involves beach volleyball, she's in — no questions asked, no task too small. That kind of love for the game is exactly the energy FORGED is built on, and we're lucky to have it on our team.",
     ],
   },
   {
@@ -43,7 +44,7 @@ const team: { name: string; role: string; bio: string[]; website?: string; photo
     role: "Program Assistant",
     photo: "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/usf.sidearmsports.com/images/2026/2/13/Josie_Sek.jpg",
     bio: [
-      "Josie is an NCAA National Champion — she earned that title at TCU, where she became one of the most decorated beach volleyball players in the program. What makes her story personal to FORGED: Pri trained Josie at Optimum Beach during her junior year, helping prepare her for the jump to TCU. And for her final collegiate season, Josie came full circle — playing under Pri at USF.",
+      "Josie is an NCAA National Champion — she earned that title at TCU, where she became one of the most decorated beach volleyball players in the program. What makes her story personal to FORGED: Pri trained Josie at Optimum Beach during her senior year of high school, helping prepare her for the jump to college. And for her final collegiate season, Josie came full circle — playing under Pri at USF.",
       "Graduating this July with her master's in Entrepreneurship, Josie brings the same quiet consistency to FORGED behind the scenes — jumping in wherever needed, no spotlight required. Originally from Mississauga, Ontario, she's proof that the athletes who come through this program become part of something bigger than a season.",
     ],
   },
@@ -89,20 +90,22 @@ export default function Team() {
           {team.map((member) => (
             <FadeUp key={member.name} className="bg-dark p-9 border-t-2 border-transparent hover:border-gold-m hover:bg-dark2 transition-colors flex flex-col gap-4">
               {/* Headshot */}
-              <div className="w-24 h-24 rounded-full overflow-hidden bg-gold/10 border border-gold/20 flex items-center justify-center mb-2 flex-shrink-0">
-                {member.photo ? (
+              {member.photo ? (
+                <div className="w-full aspect-[3/4] overflow-hidden bg-gold/10 mb-2">
                   <Image
                     src={member.photo}
                     alt={member.name}
-                    width={96}
-                    height={96}
+                    width={400}
+                    height={533}
                     className="w-full h-full object-cover object-center"
                     unoptimized
                   />
-                ) : (
+                </div>
+              ) : (
+                <div className="w-20 h-20 rounded-full bg-gold/10 border border-gold/20 flex items-center justify-center mb-2">
                   <span className="font-display text-2xl text-gold/40">{member.name.charAt(0)}</span>
-                )}
-              </div>
+                </div>
+              )}
               <div>
                 <div className="font-display text-xl tracking-[0.08em] text-cream mb-1">{member.name}</div>
                 <div className="text-[11px] font-semibold tracking-[0.15em] uppercase text-gold-m mb-3">{member.role}</div>
