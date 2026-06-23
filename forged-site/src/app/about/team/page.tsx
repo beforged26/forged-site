@@ -7,18 +7,27 @@ export const metadata: Metadata = {
 };
 
 // Add team members here
-const team = [
+const team: { name: string; role: string; bio: string[]; website?: string }[] = [
   {
     name: "Pri Piantadosi-Lima",
     role: "Founder & Director",
-    bio: "Former professional athlete, Division I Head Coach, USAV Club Coach of the Year, and USAV NTDP Coach. Pri built FORGED to give every athlete and coach the shortcut she never had.",
+    bio: ["Former professional athlete, Division I Head Coach, USAV Club Coach of the Year, and USAV NTDP Coach. Pri built FORGED to give every athlete and coach the shortcut she never had."],
     website: "https://beforged.co",
+  },
+  {
+    name: "Jenny McDowell",
+    role: "Mentor & Strategic Advisor",
+    bio: [
+      "With 27 years as Head Coach at Emory University, 826 career wins, two national championships, 26 consecutive NCAA Tournament appearances, and two AVCA National Coach of the Year awards (2008 and 2019), Jenny McDowell is one of the most decorated volleyball coaches in NCAA history. She is also the sole creator of the LOVB Coaches Summit — one of the most impactful coach development programs in the sport.",
+      "Jenny joined FORGED as Mentor and Strategic Advisor, donating her time, her expertise, and her network to help Pri build this from the ground up. Her strategic and logistical guidance has shaped the architecture of our inaugural summit — the kind of insight that takes years to earn and saves first-time event directors from costly mistakes.",
+      "She is actively connecting FORGED with potential donors and sponsors through the deep relationships she built through LOVB and the Positive Coaching Alliance — with coaches, leaders, and companies who share this mission. Her belief in FORGED before we had anything to prove is the kind of backing that changes everything. We are honored to have her.",
+    ],
   },
   // Add more team members below:
   // {
   //   name: "Name",
   //   role: "Role",
-  //   bio: "Short bio here.",
+  //   bio: ["Short bio here."],
   //   website: "",
   // },
 ];
@@ -52,7 +61,7 @@ export default function Team() {
 
       {/* TEAM GRID */}
       <FadeUp className="max-w-[1100px] mx-auto px-6 md:px-10 py-24">
-        <div className="grid gap-[2px] bg-gold/[0.08] grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-[2px] bg-gold/[0.08] grid-cols-1 md:grid-cols-2">
           {team.map((member) => (
             <FadeUp key={member.name} className="bg-dark p-9 border-t-2 border-transparent hover:border-gold-m hover:bg-dark2 transition-colors flex flex-col gap-4">
               {/* Headshot placeholder */}
@@ -62,7 +71,11 @@ export default function Team() {
               <div>
                 <div className="font-display text-xl tracking-[0.08em] text-cream mb-1">{member.name}</div>
                 <div className="text-[11px] font-semibold tracking-[0.15em] uppercase text-gold-m mb-3">{member.role}</div>
-                <p className="text-[13px] text-light leading-[1.6]">{member.bio}</p>
+                <div className="space-y-3">
+                  {member.bio.map((para, i) => (
+                    <p key={i} className="text-[13px] text-light leading-[1.7]">{para}</p>
+                  ))}
+                </div>
               </div>
               {member.website && (
                 <a href={member.website} target="_blank" rel="noopener noreferrer" className="text-[11px] font-semibold tracking-[0.12em] uppercase text-gold hover:text-gold-m transition-colors mt-auto">
