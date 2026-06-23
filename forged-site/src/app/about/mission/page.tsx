@@ -96,7 +96,7 @@ export default function Mission() {
           <span className="gold-gradient-text">LEFT BEHIND.</span>
         </h2>
         <p className="font-serif italic text-[clamp(16px,2vw,20px)] text-light leading-[1.7] mb-8">
-          From day one, a portion of every sponsorship dollar goes directly to athlete scholarships. No athlete should be turned away from FORGED because of finances. Our founding partners make this possible — and every brand that joins FORGED becomes part of a mission that goes beyond sport.
+          From day one, a platform where sponsorship dollars go to actual scholarships. No athlete should be turned away from FORGED because of finances. Our founding partners make this possible — and every brand that joins FORGED becomes part of a mission that goes beyond sport.
         </p>
         <Link
           href="/partner"
