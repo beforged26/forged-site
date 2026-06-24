@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import FadeUp from "@/components/FadeUp";
 import Link from "next/link";
 
@@ -9,12 +10,12 @@ export const metadata: Metadata = {
 };
 
 // ── ADD COACHES HERE ──────────────────────────────────────────────────────────
-const coaches: { name: string; role: string; bio: string; website: string }[] = [
+const coaches: { name: string; role: string; bio: string; website: string; photo?: string }[] = [
   // Add coaches here when confirmed
 ];
 
 // ── ADD EXPERTS HERE ──────────────────────────────────────────────────────────
-const experts = [
+const experts: { name: string; role: string; bio: string; website: string; photo?: string }[] = [
   {
     name: "Priscilla Tallman",
     role: "Mental Performance Coach",
@@ -49,7 +50,8 @@ const experts = [
     name: "Theresa \"Tree\" Beeckman",
     role: "Culture Coach — Leadership & Team Culture",
     bio: "Theresa \"Tree\" Beeckman has spent more than three decades studying what actually builds winning cultures — not the posters on the wall, but the systems underneath them. A former collegiate coach at Delta College, Ferris State, Central Michigan, and Western Michigan Universities, Tree left the bench in 2015 to take her work national. She is the founder of Tree Roots Culture Consulting and the creator of the Tree Roots Team Culture Model™ — a nationally recognized framework for designing and sustaining high-performance cultures in athletic programs. She's also the author of Managing Your Culture, a color commentator for ESPN college volleyball, an adjunct professor at the University of Florida, and a former four-year collegiate softball athlete. At FORGED, Tree brings the culture conversation out of the motivational-poster era and into the practical — giving athletes and coaches the tools to actually build something.",
-    website: "",
+    website: "https://winningdeep.com/",
+    photo: "/Tree.jpg",
   },
   {
     name: "Benjamin",
