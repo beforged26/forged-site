@@ -5,7 +5,7 @@ import FadeUp from "@/components/FadeUp";
 export const metadata: Metadata = {
   title: "About — FORGED",
   description:
-    "FORGED is an elite athlete, coach, and expert development summit founded by Pri Piantadosi-Lima. Built different. By design.",
+    "FORGED is an athlete, coach, and expert development summit founded by Pri Piantadosi-Lima. Built different. By design.",
 };
 
 const pillars = [
@@ -48,7 +48,7 @@ const differentiators = [
   },
   {
     title: "Access Is Non-Negotiable",
-    desc: "Our founding scholarship initiative ensures financial barriers don't determine who gets access to elite development. Partners make this possible from day one.",
+    desc: "Registration is open to any committed athlete or coach — no tryout, no invite required. Scholarships are awarded on talent and character, ensuring finances are never the barrier. Partners make this possible from day one.",
   },
 ];
 
