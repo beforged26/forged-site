@@ -22,7 +22,7 @@ const pillars = [
   {
     num: "03",
     title: "Make Access Non-Negotiable",
-    body: "The best young athletes in this country don't lack talent. They lack access. Our founding Access Initiative ensures financial barriers don't determine who gets elite development. Partners make this possible from day one.",
+    body: "Registration is open to all — no tryout, no invite. Our scholarship program exists for athletes who can't cover the cost, awarded on talent and character. The best young athletes in this country don't lack talent. They lack access. Partners make this possible from day one.",
   },
   {
     num: "04",
@@ -62,7 +62,7 @@ export default function Mission() {
       <FadeUp className="max-w-[900px] mx-auto px-6 md:px-10 py-24 text-center">
         <p className="section-eyebrow center justify-center">Mission Statement</p>
         <p className="font-serif italic text-[clamp(22px,3.5vw,36px)] text-cream leading-[1.5] max-w-[780px] mx-auto">
-          FORGED exists to develop athletes, coaches, and the people behind both — through elite programming, expert mentorship, and a community built to outlast any single event. We believe access to elite development should be determined by commitment, not finances.
+          FORGED exists to develop athletes, coaches, and the people behind both — through elite programming, expert mentorship, and a community built to outlast any single event. We believe access to elite development should be open to any athlete committed enough to show up — and never blocked by finances.
         </p>
       </FadeUp>
 
