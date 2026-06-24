@@ -9,14 +9,8 @@ export const metadata: Metadata = {
 };
 
 // ── ADD COACHES HERE ──────────────────────────────────────────────────────────
-const coaches = [
-  {
-    name: "Coach Name",
-    role: "Head Coach — [School/Club]",
-    bio: "Short bio about this coach — their background, accolades, and what they bring to FORGED.",
-    website: "",
-  },
-  // Duplicate and fill in for each coach
+const coaches: { name: string; role: string; bio: string; website: string }[] = [
+  // Add coaches here when confirmed
 ];
 
 // ── ADD EXPERTS HERE ──────────────────────────────────────────────────────────
@@ -52,9 +46,9 @@ const experts = [
     website: "",
   },
   {
-    name: "Tree",
+    name: "Theresa \"Tree\" Beeckman",
     role: "Culture Coach — Leadership & Team Culture",
-    bio: "Expert in building high-performance team cultures — for athletes and coaches alike. Tree works with teams to develop the leadership, trust, and accountability that separate good programs from great ones.",
+    bio: "Theresa \"Tree\" Beeckman has spent more than three decades studying what actually builds winning cultures — not the posters on the wall, but the systems underneath them. A former collegiate coach at Delta College, Ferris State, Central Michigan, and Western Michigan Universities, Tree left the bench in 2015 to take her work national. She is the founder of Tree Roots Culture Consulting and the creator of the Tree Roots Team Culture Model™ — a nationally recognized framework for designing and sustaining high-performance cultures in athletic programs. She's also the author of Managing Your Culture, a color commentator for ESPN college volleyball, an adjunct professor at the University of Florida, and a former four-year collegiate softball athlete. At FORGED, Tree brings the culture conversation out of the motivational-poster era and into the practical — giving athletes and coaches the tools to actually build something.",
     website: "",
   },
   {
@@ -131,20 +125,23 @@ export default function Lineup() {
 
       <div className="gold-rule" />
 
-      {/* COACHES */}
-      <FadeUp className="max-w-[1100px] mx-auto px-6 md:px-10 py-24">
-        <p className="section-eyebrow">Coaches</p>
-        <h2 className="font-display text-[clamp(36px,6vw,64px)] tracking-[0.04em] leading-[0.95] text-cream mb-14">
-          WHO YOU&apos;LL
-          <br />
-          TRAIN WITH.
-        </h2>
-        <div className="grid gap-[2px] bg-gold/[0.08] grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          {coaches.map((c) => <PersonCard key={c.name} person={c} />)}
-        </div>
-      </FadeUp>
-
-      <div className="gold-rule" />
+      {/* COACHES — only renders when coaches are added */}
+      {coaches.length > 0 && (
+        <>
+          <FadeUp className="max-w-[1100px] mx-auto px-6 md:px-10 py-24">
+            <p className="section-eyebrow">Coaches</p>
+            <h2 className="font-display text-[clamp(36px,6vw,64px)] tracking-[0.04em] leading-[0.95] text-cream mb-14">
+              WHO YOU&apos;LL
+              <br />
+              TRAIN WITH.
+            </h2>
+            <div className="grid gap-[2px] bg-gold/[0.08] grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+              {coaches.map((c) => <PersonCard key={c.name} person={c} />)}
+            </div>
+          </FadeUp>
+          <div className="gold-rule" />
+        </>
+      )}
 
       {/* EXPERTS */}
       <FadeUp className="max-w-[1100px] mx-auto px-6 md:px-10 py-24">
