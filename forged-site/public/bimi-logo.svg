@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG Tiny PS//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-tiny-ps.dtd">
+<svg version="1.1" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <title>FORGED</title>
+
+  <!-- Background -->
+  <rect width="500" height="500" fill="#080808"/>
+
+  <!-- F — vertical stem -->
+  <rect x="138" y="95" width="78" height="310" fill="#C9A227"/>
+
+  <!-- F — top horizontal bar -->
+  <rect x="216" y="95" width="168" height="72" fill="#C9A227"/>
+
+  <!-- F — middle horizontal bar -->
+  <rect x="216" y="218" width="128" height="64" fill="#C9A227"/>
+
+  <!-- Gold underline accent -->
+  <rect x="138" y="430" width="224" height="8" fill="#C9A227" opacity="0.5"/>
+
+</svg>
