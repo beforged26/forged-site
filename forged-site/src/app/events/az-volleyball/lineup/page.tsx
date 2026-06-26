@@ -60,10 +60,11 @@ const experts: { name: string; role: string; bio: string; website: string; photo
     website: "",
   },
   {
-    name: "Mike",
-    role: "Ver — AI Eye Tracking & Performance",
-    bio: "Leveraging cutting-edge AI eye-tracking technology to personalize athletic development. Ver's system analyzes visual patterns to enhance on-court decision-making, reaction time, and performance.",
-    website: "",
+    name: "Mike Halpert",
+    role: "Ver Coaching — Vision Training & Performance",
+    bio: "Mike Halpert is the founder of Ver Coaching, a sports technology company based in Durham, NC, built on one idea: athletes need to train how they see, not just how they move. Using clinically validated vision science delivered through virtual reality, the Ver Vision Trainer develops the visual system behind reaction time, depth perception, peripheral awareness, and decision-making under pressure — in short, game-ready sessions that fit into any existing practice routine. Mike has spent the past year working alongside volleyball programs from club to NCAA level, and after presenting at the 2025 AVCA Convention, he was invited back for 2026. At FORGED, he's bringing coaches and athletes a practical, evidence-based approach to one of the most undertrained systems in sport.",
+    website: "https://www.ver.coach",
+    photo: "/Mike.VER.jpeg",
   },
   {
     name: "Agility Coach",
@@ -79,13 +80,26 @@ const experts: { name: string; role: string; bio: string; website: string; photo
   },
 ];
 
-function PersonCard({ person }: { person: typeof coaches[0] }) {
+function PersonCard({ person }: { person: { name: string; role: string; bio: string; website: string; photo?: string } }) {
   return (
     <FadeUp className="bg-dark p-8 border-t-2 border-transparent hover:border-gold-m hover:bg-dark2 transition-colors flex flex-col gap-5">
       {/* Headshot */}
-      <div className="w-20 h-20 rounded-full bg-gold/10 border border-gold/20 flex items-center justify-center flex-shrink-0">
-        <span className="font-display text-2xl text-gold/40">{person.name.charAt(0)}</span>
-      </div>
+      {person.photo ? (
+        <div className="w-full aspect-[3/4] overflow-hidden bg-gold/10">
+          <Image
+            src={person.photo}
+            alt={person.name}
+            width={400}
+            height={533}
+            className="w-full h-full object-cover object-top"
+            unoptimized
+          />
+        </div>
+      ) : (
+        <div className="w-20 h-20 rounded-full bg-gold/10 border border-gold/20 flex items-center justify-center flex-shrink-0">
+          <span className="font-display text-2xl text-gold/40">{person.name.charAt(0)}</span>
+        </div>
+      )}
       <div className="flex-1">
         <div className="font-display text-xl tracking-[0.08em] text-cream mb-1">{person.name}</div>
         <div className="text-[11px] font-semibold tracking-[0.15em] uppercase text-gold-m mb-3">{person.role}</div>
