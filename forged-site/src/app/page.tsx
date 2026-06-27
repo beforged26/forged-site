@@ -7,7 +7,7 @@ const pillars = [
   {
     num: "01",
     title: "Elite Performance",
-    desc: "Sport-specific training led by expert coaches. Every rep is intentional. Every session builds toward your ceiling.",
+    desc: "Sport-specific training led by expert coaches — built to challenge athletes at every level. Every rep is intentional. Every session is designed to push you past your current ceiling.",
   },
   {
     num: "02",
@@ -27,7 +27,7 @@ const pillars = [
   {
     num: "05",
     title: "Opportunity & Access",
-    desc: "Excellence determines access — not finances. Scholarship program available. Any sport. Any background.",
+    desc: "Registration is open to all. Scholarships are awarded on talent and character — because finances should never be the barrier to growth. Any sport. Any background.",
   },
 ];
 
@@ -67,7 +67,7 @@ export default function Home() {
         </p>
 
         <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-gold-m mb-5 relative z-[1]">
-          Elite Athlete &amp; Coach Development Summit
+          Athlete &amp; Coach Development Summit
         </p>
 
         <h1 className="font-display text-[clamp(72px,14vw,160px)] leading-[0.9] tracking-[0.04em] text-cream mb-6 relative z-[1]">
@@ -79,8 +79,8 @@ export default function Home() {
         </h1>
 
         <p className="font-serif italic text-[clamp(18px,3vw,26px)] text-light max-w-[560px] mx-auto mb-10 leading-[1.5] relative z-[1]">
-          Four days. Elite coaches. Expert sessions. A room where the standard
-          is elite — and the athletes who earned their spot.
+          Four days. Elite coaches. Expert sessions. The standard in this room
+          is elite — and the door is open to every athlete committed enough to meet it.
         </p>
 
         <div className="mb-14 relative z-[1]">
@@ -173,11 +173,10 @@ export default function Home() {
         <h2 className="font-display text-[clamp(42px,7vw,80px)] tracking-[0.04em] leading-[0.95] text-cream mb-5">
           FOR THE ONES
           <br />
-          WHO EARN IT.
+          WHO SHOW UP.
         </h2>
         <p className="font-serif italic text-[clamp(18px,2.5vw,22px)] text-light max-w-[640px] leading-[1.6] mb-14">
-          FORGED is for the athlete who trains when no one is watching. The
-          coach who gives everything and deserves development in return.
+          FORGED is for the athlete who shows up ready to work — whatever level you&rsquo;re at right now. Registration is open to all. Scholarships exist for those who need financial support, awarded on talent and character. The coach who gives everything deserves development in return too.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[2px] bg-gold/[0.08]">
