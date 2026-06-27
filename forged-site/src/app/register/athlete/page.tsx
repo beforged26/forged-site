@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import FadeUp from "@/components/FadeUp";
+import AthleteInterestForm from "@/components/AthleteInterestForm";
 
 export const metadata: Metadata = {
   title: "Athlete Registration — FORGED",
@@ -42,6 +43,24 @@ const included = [
   },
 ];
 
+const PAYMENT_OPTIONS = [
+  {
+    label: "Early Bird — $757",
+    url: "https://buy.stripe.com/5kQ5kD5xq8KBdqi2Uz3AY00",
+    featured: true,
+  },
+  {
+    label: "Full Price — $957",
+    url: "https://buy.stripe.com/fZu3cv0d6e4V85Y0Mr3AY01",
+    featured: false,
+  },
+  {
+    label: "Deposit — $350",
+    url: "https://buy.stripe.com/3cIcN51ha0e54TM7aP3AY02",
+    featured: false,
+  },
+];
+
 export default function AthleteRegister() {
   return (
     <>
@@ -73,7 +92,7 @@ export default function AthleteRegister() {
 
       <div className="gold-rule" />
 
-      {/* PRICING */}
+      {/* PRICING (reference) */}
       <FadeUp className="max-w-[1100px] mx-auto px-6 md:px-10 py-24">
         <p className="section-eyebrow">Pricing</p>
         <h2 className="font-display text-[clamp(36px,6vw,64px)] tracking-[0.04em] leading-[0.95] text-cream mb-14">
@@ -92,17 +111,9 @@ export default function AthleteRegister() {
             <div className="font-display text-[clamp(48px,6vw,72px)] tracking-[0.02em] text-cream leading-none mb-3">
               $757
             </div>
-            <p className="text-[13px] text-light leading-[1.6] mb-8">
+            <p className="text-[13px] text-light leading-[1.6]">
               Save $200 — first 50 spots only. The lowest rate FORGED will ever offer. Lock it in now.
             </p>
-            <a
-              href="https://buy.stripe.com/5kQ5kD5xq8KBdqi2Uz3AY00"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-7 py-3.5 hover:bg-gold-m transition-colors"
-            >
-              Register — Early Bird
-            </a>
           </FadeUp>
 
           {/* Full Registration */}
@@ -111,44 +122,42 @@ export default function AthleteRegister() {
             <div className="font-display text-[clamp(48px,6vw,72px)] tracking-[0.02em] text-cream leading-none mb-3">
               $957
             </div>
-            <p className="text-[13px] text-light leading-[1.6] mb-8">
+            <p className="text-[13px] text-light leading-[1.6]">
               Standard rate after early bird closes. Full access to everything FORGED has to offer.
             </p>
-            <a
-              href="https://buy.stripe.com/fZu3cv0d6e4V85Y0Mr3AY01"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-gold border border-gold/40 px-7 py-3.5 hover:border-gold hover:text-[#F7EE78] transition-colors"
-            >
-              Register — Full Price
-            </a>
           </FadeUp>
         </div>
 
         {/* Deposit */}
-        <FadeUp className="bg-dark border border-gold/10 p-9 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+        <FadeUp className="bg-dark border border-gold/10 p-9 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div>
             <div className="font-display text-xl tracking-[0.1em] text-gold mb-1">Hold Your Spot — Deposit</div>
             <p className="text-[13px] text-light leading-[1.6] max-w-[560px]">
               Not ready to pay in full? Put down $350 now to secure your spot. Applied to your balance at checkout.
             </p>
           </div>
-          <div className="flex-shrink-0">
-            <div className="font-display text-[clamp(32px,4vw,48px)] tracking-[0.02em] text-cream leading-none mb-3">$350</div>
-            <a
-              href="https://buy.stripe.com/3cIcN51ha0e54TM7aP3AY02"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-gold border border-gold/40 px-7 py-3.5 hover:border-gold hover:text-[#F7EE78] transition-colors"
-            >
-              Pay Deposit
-            </a>
-          </div>
+          <div className="font-display text-[clamp(32px,4vw,48px)] tracking-[0.02em] text-cream leading-none flex-shrink-0">$350</div>
         </FadeUp>
       </FadeUp>
 
+      {/* REGISTRATION FORM */}
+      <div className="bg-dark border-y border-gold/10 py-24 px-6 md:px-10">
+        <FadeUp className="max-w-[900px] mx-auto">
+          <p className="section-eyebrow">Register</p>
+          <h2 className="font-display text-[clamp(36px,6vw,64px)] tracking-[0.04em] leading-[0.95] text-cream mb-4">
+            TELL US
+            <br />
+            <span className="gold-gradient-text">ABOUT YOU.</span>
+          </h2>
+          <p className="font-serif italic text-[clamp(15px,2vw,19px)] text-light max-w-[580px] leading-[1.6] mb-12">
+            Fill out your info below — we&apos;ll be in touch directly. After submitting, you&apos;ll choose your payment option to hold your spot.
+          </p>
+          <AthleteInterestForm paymentOptions={PAYMENT_OPTIONS} />
+        </FadeUp>
+      </div>
+
       {/* CLUB DEAL */}
-      <FadeUp className="max-w-[1100px] mx-auto px-6 md:px-10 pb-4">
+      <FadeUp className="max-w-[1100px] mx-auto px-6 md:px-10 py-16">
         <div className="border border-gold/40 bg-dark p-8 md:p-10 flex flex-col md:flex-row md:items-center gap-6">
           <div className="flex-shrink-0 font-display text-[clamp(36px,5vw,56px)] gold-gradient-text leading-none">4+1</div>
           <div>
@@ -183,43 +192,6 @@ export default function AthleteRegister() {
               </FadeUp>
             ))}
           </div>
-        </FadeUp>
-      </div>
-
-      {/* BOTTOM CTA */}
-      <div className="px-6 md:px-10 py-24 text-center">
-        <FadeUp>
-          <h2 className="font-display text-[clamp(42px,7vw,90px)] tracking-[0.04em] leading-[0.95] text-cream mb-5">
-            READY TO BE
-            <br />
-            <span className="gold-gradient-text">FORGED?</span>
-          </h2>
-        </FadeUp>
-        <FadeUp>
-          <p className="text-sm text-muted tracking-[0.04em] mb-10">
-            Questions? Email{" "}
-            <a href="mailto:pri@beforged.co" className="text-gold-m no-underline hover:underline">
-              pri@beforged.co
-            </a>
-          </p>
-        </FadeUp>
-        <FadeUp className="flex items-center justify-center gap-4 flex-wrap">
-          <a
-            href="https://buy.stripe.com/5kQ5kD5xq8KBdqi2Uz3AY00"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-7 py-3.5 hover:bg-gold-m transition-colors"
-          >
-            Register — Early Bird $757
-          </a>
-          <a
-            href="https://buy.stripe.com/3cIcN51ha0e54TM7aP3AY02"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-gold border border-gold/40 px-7 py-3.5 hover:border-gold transition-colors"
-          >
-            Pay Deposit — $350
-          </a>
         </FadeUp>
       </div>
     </>

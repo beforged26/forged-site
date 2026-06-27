@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import FadeUp from "@/components/FadeUp";
+import CoachInterestForm from "@/components/CoachInterestForm";
 
 export const metadata: Metadata = {
   title: "Coach Registration — FORGED",
@@ -46,6 +47,8 @@ const included = [
   },
 ];
 
+const STRIPE_URL = "https://buy.stripe.com/fZu7sL9NGe4V85Y7aP3AY0e";
+
 export default function CoachRegister() {
   return (
     <>
@@ -77,7 +80,7 @@ export default function CoachRegister() {
 
       <div className="gold-rule" />
 
-      {/* PRICING */}
+      {/* PRICING (reference) */}
       <FadeUp className="max-w-[900px] mx-auto px-6 md:px-10 py-24">
         <p className="section-eyebrow">Pricing</p>
         <h2 className="font-display text-[clamp(36px,6vw,64px)] tracking-[0.04em] leading-[0.95] text-cream mb-14">
@@ -94,28 +97,36 @@ export default function CoachRegister() {
           <div className="font-display text-[clamp(48px,6vw,80px)] tracking-[0.02em] text-cream leading-none mb-3">
             $250
           </div>
-          <p className="text-[13px] text-light leading-[1.6] mb-8 max-w-[560px]">
+          <p className="text-[13px] text-light leading-[1.6] max-w-[560px]">
             Full weekend access — all athlete sessions, coaches-only huddles, classroom programming, meals, and gear. Everything included. Because the people who develop athletes deserve development too.
           </p>
-          <a
-            href="https://buy.stripe.com/fZu7sL9NGe4V85Y7aP3AY0e"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-7 py-3.5 hover:bg-gold-m transition-colors"
-          >
-            Register as a Coach — $250
-          </a>
         </FadeUp>
       </FadeUp>
 
+      {/* REGISTRATION FORM */}
+      <div className="bg-dark border-y border-gold/10 py-24 px-6 md:px-10">
+        <FadeUp className="max-w-[900px] mx-auto">
+          <p className="section-eyebrow">Register</p>
+          <h2 className="font-display text-[clamp(36px,6vw,64px)] tracking-[0.04em] leading-[0.95] text-cream mb-4">
+            TELL US
+            <br />
+            <span className="gold-gradient-text">ABOUT YOU.</span>
+          </h2>
+          <p className="font-serif italic text-[clamp(15px,2vw,19px)] text-light max-w-[580px] leading-[1.6] mb-12">
+            Fill out your info below — we&apos;ll be in touch directly. After submitting, you&apos;ll complete payment to hold your spot.
+          </p>
+          <CoachInterestForm stripeUrl={STRIPE_URL} />
+        </FadeUp>
+      </div>
+
       {/* CLUB DEAL */}
-      <FadeUp className="max-w-[900px] mx-auto px-6 md:px-10 pb-4">
+      <FadeUp className="max-w-[900px] mx-auto px-6 md:px-10 py-16">
         <div className="border border-gold/40 bg-dark p-8 md:p-10 flex flex-col md:flex-row md:items-center gap-6">
           <div className="flex-shrink-0 font-display text-[clamp(36px,5vw,56px)] gold-gradient-text leading-none">4+1</div>
           <div>
             <div className="font-display text-xl tracking-[0.1em] text-gold mb-2">Bring Your Club — Get In Free</div>
             <p className="text-[13px] text-light leading-[1.6]">
-              Get 4 athletes registered for FORGED — whether from your club or your own roster — and earn one complimentary entry to the full summit weekend. It's our way of investing in the people who invest in athletes. To claim it, email{" "}
+              Get 4 athletes registered for FORGED — whether from your club or your own roster — and earn one complimentary entry to the full summit weekend. To claim it, email{" "}
               <a href="mailto:pri@beforged.co" className="text-gold-m hover:underline">pri@beforged.co</a>{" "}
               with your name and the 4 athlete registrations. We'll confirm your free entry within 48 hours.
             </p>
@@ -162,22 +173,12 @@ export default function CoachRegister() {
           </p>
         </FadeUp>
         <FadeUp>
-          <p className="text-sm text-muted tracking-[0.04em] mb-10">
+          <p className="text-sm text-muted tracking-[0.04em]">
             Questions? Email{" "}
             <a href="mailto:pri@beforged.co" className="text-gold-m no-underline hover:underline">
               pri@beforged.co
             </a>
           </p>
-        </FadeUp>
-        <FadeUp>
-          <a
-            href="https://buy.stripe.com/fZu7sL9NGe4V85Y7aP3AY0e"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-7 py-3.5 hover:bg-gold-m transition-colors"
-          >
-            Register as a Coach — $250
-          </a>
         </FadeUp>
       </div>
     </>

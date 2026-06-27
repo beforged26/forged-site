@@ -2,6 +2,17 @@
 
 import { useState } from "react";
 
+const HOW_OPTIONS = [
+  "Instagram",
+  "TikTok",
+  "Google / Search",
+  "A friend or teammate",
+  "My coach",
+  "Club director",
+  "Email",
+  "Other",
+];
+
 export default function WaitlistForm({
   id,
   label,
@@ -11,7 +22,9 @@ export default function WaitlistForm({
   label: string;
   privacyNote?: React.ReactNode;
 }) {
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [how, setHow] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "done" | "error">("idle");
 
   async function handleSubmit(e: React.FormEvent) {
@@ -21,7 +34,7 @@ export default function WaitlistForm({
       const res = await fetch("/api/waitlist", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email, name, howDidYouHear: how }),
       });
       if (!res.ok) throw new Error("failed");
       setStatus("done");
@@ -32,7 +45,7 @@ export default function WaitlistForm({
 
   if (status === "done") {
     return (
-      <div className="text-center px-5 py-5 border border-gold/30 bg-gold/5 max-w-[480px] mx-auto">
+      <div className="text-center px-5 py-5 border border-gold/30 bg-gold/5 max-w-[520px] mx-auto">
         <p className="font-display text-[22px] tracking-[0.1em] text-gold mb-1.5">
           You&rsquo;re on the list. 🔱
         </p>
@@ -44,11 +57,17 @@ export default function WaitlistForm({
   }
 
   return (
-    <div className="w-full max-w-[480px] mx-auto">
-      <label htmlFor={id} className="text-[11px] tracking-[0.2em] uppercase text-gold-m block mb-3">
-        {label}
-      </label>
-      <form onSubmit={handleSubmit} className="form-row flex-col sm:flex-row">
+    <div className="w-full max-w-[520px] mx-auto">
+      <p className="text-[11px] tracking-[0.2em] uppercase text-gold-m block mb-3">{label}</p>
+      <form onSubmit={handleSubmit} className="flex flex-col gap-3">
+        <input
+          className="form-input"
+          type="text"
+          placeholder="Your name"
+          required
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
         <input
           id={id}
           className="form-input"
@@ -60,6 +79,16 @@ export default function WaitlistForm({
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
+        <select
+          className="form-input bg-transparent text-light"
+          value={how}
+          onChange={(e) => setHow(e.target.value)}
+        >
+          <option value="" disabled>How did you hear about FORGED?</option>
+          {HOW_OPTIONS.map((opt) => (
+            <option key={opt} value={opt}>{opt}</option>
+          ))}
+        </select>
         <button
           type="submit"
           disabled={status === "loading"}
