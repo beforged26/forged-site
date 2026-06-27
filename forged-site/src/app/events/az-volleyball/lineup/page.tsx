@@ -47,7 +47,7 @@ const experts: { name: string; role: string; bio: string; website: string; photo
     website: "",
   },
   {
-    name: "Tree",
+    name: "Tree Beeckman",
     role: "Culture Coach — Leadership & Team Culture",
     bio: "Tree Beeckman has spent more than three decades studying what actually builds winning cultures — not the posters on the wall, but the systems underneath them. A former collegiate coach at Delta College, Ferris State, Central Michigan, and Western Michigan Universities, Tree left the bench in 2015 to take her work national. She is the founder of Tree Roots Culture Consulting and the creator of the Tree Roots Team Culture Model™ — a nationally recognized framework for designing and sustaining high-performance cultures in athletic programs. She's also the author of Managing Your Culture, a color commentator for ESPN college volleyball, an adjunct professor at the University of Florida, and a former four-year collegiate softball athlete. At FORGED, Tree brings the culture conversation out of the motivational-poster era and into the practical — giving athletes and coaches the tools to actually build something.",
     website: "https://winningdeep.com/",
@@ -65,18 +65,6 @@ const experts: { name: string; role: string; bio: string; website: string; photo
     bio: "Mike Halpert is the founder of Ver Coaching, a sports technology company based in Durham, NC, built on one idea: athletes need to train how they see, not just how they move. Using clinically validated vision science delivered through virtual reality, the Ver Vision Trainer develops the visual system behind reaction time, depth perception, peripheral awareness, and decision-making under pressure — in short, game-ready sessions that fit into any existing practice routine. Mike has spent the past year working alongside volleyball programs from club to NCAA level, and after presenting at the 2025 AVCA Convention, he was invited back for 2026. At FORGED, he's bringing coaches and athletes a practical, evidence-based approach to one of the most undertrained systems in sport.",
     website: "https://www.ver.coach",
     photo: "/Mike.VER.jpeg",
-  },
-  {
-    name: "Agility Coach",
-    role: "Speed & Footwork — Coming Soon",
-    bio: "Elite-level speed and agility training with a focus on volleyball-specific movement patterns. Confirmation coming soon.",
-    website: "",
-  },
-  {
-    name: "Olympic Performance Coach",
-    role: "Olympic-Level Performance — Coming Soon",
-    bio: "An Olympic-level coach bringing elite performance frameworks to FORGED athletes. Confirmation coming soon.",
-    website: "",
   },
 ];
 

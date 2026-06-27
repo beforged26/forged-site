@@ -101,6 +101,21 @@ export default function CoachRegister() {
             Full weekend access — all athlete sessions, coaches-only huddles, classroom programming, meals, and gear. Everything included. Because the people who develop athletes deserve development too.
           </p>
         </FadeUp>
+
+        {/* CLUB DEAL */}
+        <FadeUp className="mt-[2px]">
+          <div className="border border-gold/40 bg-dark p-8 md:p-10 flex flex-col md:flex-row md:items-center gap-6">
+            <div className="flex-shrink-0 font-display text-[clamp(36px,5vw,56px)] gold-gradient-text leading-none">4+1</div>
+            <div>
+              <div className="font-display text-xl tracking-[0.1em] text-gold mb-2">Bring Your Club — Get In Free</div>
+              <p className="text-[13px] text-light leading-[1.6]">
+                Get 4 athletes registered for FORGED — whether from your club or your own roster — and earn one complimentary entry to the full summit weekend. To claim it, email{" "}
+                <a href="mailto:pri@beforged.co" className="text-gold-m hover:underline">pri@beforged.co</a>{" "}
+                with your name and the 4 athlete registrations. We'll confirm your free entry within 48 hours.
+              </p>
+            </div>
+          </div>
+        </FadeUp>
       </FadeUp>
 
       {/* REGISTRATION FORM */}
@@ -118,21 +133,6 @@ export default function CoachRegister() {
           <CoachInterestForm stripeUrl={STRIPE_URL} />
         </FadeUp>
       </div>
-
-      {/* CLUB DEAL */}
-      <FadeUp className="max-w-[900px] mx-auto px-6 md:px-10 py-16">
-        <div className="border border-gold/40 bg-dark p-8 md:p-10 flex flex-col md:flex-row md:items-center gap-6">
-          <div className="flex-shrink-0 font-display text-[clamp(36px,5vw,56px)] gold-gradient-text leading-none">4+1</div>
-          <div>
-            <div className="font-display text-xl tracking-[0.1em] text-gold mb-2">Bring Your Club — Get In Free</div>
-            <p className="text-[13px] text-light leading-[1.6]">
-              Get 4 athletes registered for FORGED — whether from your club or your own roster — and earn one complimentary entry to the full summit weekend. To claim it, email{" "}
-              <a href="mailto:pri@beforged.co" className="text-gold-m hover:underline">pri@beforged.co</a>{" "}
-              with your name and the 4 athlete registrations. We'll confirm your free entry within 48 hours.
-            </p>
-          </div>
-        </div>
-      </FadeUp>
 
       {/* WHAT'S INCLUDED */}
       <div className="bg-dark border-y border-gold/10 py-24 px-6 md:px-10">
