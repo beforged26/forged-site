@@ -54,10 +54,11 @@ const experts: { name: string; role: string; bio: string; website: string; photo
     photo: "/Tree.jpg",
   },
   {
-    name: "Benjamin",
-    role: "FirstBeat — Heart Rate & Performance Monitoring",
-    bio: "Using FirstBeat technology to give athletes real-time insight into their physiological performance, recovery, and readiness. Data-driven development that shows you exactly where you are and how to get better.",
+    name: "Benjamin Jensen, M.S.",
+    role: "FirstBeat — Heart Rate, HRV & Performance Monitoring",
+    bio: "Ben Jensen brings a lifetime of athletic experience and coaching expertise to every program he works with. A three-sport letterwinner in high school, Ben played soccer at Dixie Junior College (now Utah Tech) and Utah State University, where he earned his bachelor's degree in Exercise Science. After college, he relocated to Finland to play five seasons of professional American football with the Jyväskylä Jaguaarit — where he holds the league record for the longest punt (73 yards). His passion for the game evolved into coaching: Ben served as Head Coach of the Finnish Junior National Team, assistant coach for the Finnish Men's National Team, and led the Jaguaarit Junior Program and professional team. His junior teams competed in six national championships, claiming titles in 2007 and 2009. Ben holds a master's degree in Sport Coaching and Fitness Testing from the University of Jyväskylä, combining hands-on experience with evidence-based approaches to training, performance, and athlete development. At FORGED, Ben brings FirstBeat technology into the training environment — giving athletes and coaches real-time physiological data on readiness, stress, and recovery to make every session count.",
     website: "",
+    photo: "/Ben_FirstBeat.jpg",
   },
   {
     name: "Mike Halpert",
