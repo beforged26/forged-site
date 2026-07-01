@@ -36,15 +36,15 @@ const faqs: { category: string; items: { q: string; a: string }[] }[] = [
     items: [
       {
         q: "What skill level is this for?",
-        a: "FORGED is designed for intermediate to advanced players competing at the high school or club level. This is a development experience — athletes should come ready to train, learn, and be challenged.",
+        a: "FORGED is designed for intermediate to advanced high school and club players. This is a development experience — athletes should come ready to train, learn, and be challenged.",
       },
       {
         q: "What age groups and grad years can attend?",
-        a: "We welcome 8th graders through high school seniors — graduating classes 2026 through 2030 and beyond. If you're not sure whether your grad year qualifies, email us at director@optimumbeach.us.",
+        a: "We welcome 8th graders through high school seniors — graduating classes 2026 through 2030 and beyond. If you're not sure whether your grad year qualifies, email us at pri@beforged.co.",
       },
       {
         q: "Can a coach bring their whole team?",
-        a: "Yes — full teams are welcome. Email us at director@optimumbeach.us to coordinate group registration and make sure everyone is placed correctly.",
+        a: "Yes — full teams are welcome. Email us at pri@beforged.co to coordinate group registration and make sure everyone is placed correctly.",
       },
     ],
   },
@@ -61,7 +61,7 @@ const faqs: { category: string; items: { q: string; a: string }[] }[] = [
       },
       {
         q: "Is there supervision for underage athletes attending without a parent?",
-        a: "More info coming soon. If you have a specific situation, email us at director@optimumbeach.us and we'll work with you.",
+        a: "More info coming soon. If you have a specific situation, email us at pri@beforged.co and we'll work with you.",
       },
     ],
   },
@@ -74,11 +74,11 @@ const faqs: { category: string; items: { q: string; a: string }[] }[] = [
       },
       {
         q: "What is the cancellation and refund policy?",
-        a: "If you cancel 2 or more months before the event, a $75 processing fee applies and the remainder is refunded. If you cancel within 1 month of the event, only a partial refund is available. Full refund terms will be confirmed upon registration — email director@optimumbeach.us with any questions.",
+        a: "Your deposit is non-refundable at any time. If you cancel 2 or more months before the event, the remaining balance (minus a $75 processing fee) will be refunded. If you cancel within 1 month of the event, only a partial refund of the remaining balance is available. Email pri@beforged.co with any questions.",
       },
       {
         q: "Do you offer a sibling discount?",
-        a: "Yes — siblings receive 15% off when registering together. Email us at director@optimumbeach.us and we'll send you a special registration link to purchase both spots.",
+        a: "Yes — siblings receive 15% off when registering together. Email us at pri@beforged.co and we'll send you a special registration link to purchase both spots.",
       },
       {
         q: "Do you offer a military discount?",
@@ -86,7 +86,7 @@ const faqs: { category: string; items: { q: string; a: string }[] }[] = [
       },
       {
         q: "Is there a team rate for multiple athletes from the same club?",
-        a: "Yes, team rates are available. Details coming soon — email director@optimumbeach.us to get on the list and we'll reach out when group pricing is finalized.",
+        a: "Yes, team rates are available. Details coming soon — email pri@beforged.co to get on the list and we'll reach out when group pricing is finalized.",
       },
     ],
   },
@@ -107,7 +107,7 @@ const faqs: { category: string; items: { q: string; a: string }[] }[] = [
       },
       {
         q: "Can I video record my sessions?",
-        a: "Expert conference sessions are not for personal recording — FORGED will capture all of them and make the recordings available in our online community so you can revisit everything you learned. The final day (Sunday) is our Queen/King of the Beach tournament — you're welcome to record highlights from competition for your personal use and social media.",
+        a: "Expert conference sessions are not for personal recording — FORGED will capture all of them and make the recordings available in our online community so you can revisit everything you learned. The final day (Sunday) is competition day — you're welcome to record highlights for your personal use and social media.",
       },
       {
         q: "Will there be athletic trainers on site?",
@@ -196,7 +196,7 @@ export default function FAQ() {
             We're happy to help. Reach out directly and we'll get back to you.
           </p>
           <a
-            href="mailto:director@optimumbeach.us"
+            href="mailto:pri@beforged.co"
             className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-8 py-3.5 hover:bg-gold-m transition-colors"
           >
             Email Us
