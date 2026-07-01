@@ -45,7 +45,7 @@ const experts: { name: string; role: string; bio: string; website: string; photo
   {
     name: "Sara Putt",
     role: "Sport Nutritionist — Fueling for Performance",
-    bio: "Expert in athlete nutrition, fueling strategies, recovery, and long-term performance. Sara helps athletes understand how to fuel their bodies to perform at their highest level — and sustain it. Sara and FORGED Founder Pri Piantadosi-Lima go way back — Pri coached Sara in high school as she prepared for college, reconnected with her during summers at FSU, and has continued working with her as Sara pursues the professional level. At FORGED, Sara brings that same real-world, athlete-first approach to nutrition: what actually works when you're competing, training, and trying to build a career in this sport.",
+    bio: "Expert in athlete nutrition, fueling strategies, recovery, and long-term performance. Sara helps athletes understand how to fuel their bodies to perform at their highest level — and sustain it. Sara and FORGED Founder Pri Piantadosi-Lima go way back — Pri coached Sara in high school as she prepared for college, reconnected with her during summers at FSU, and worked with her when she first started pursuing the professional level. At FORGED, Sara brings a real-world, athlete-first approach to nutrition: what actually works when you're competing, training, and trying to build a career in this sport.",
     website: "",
   },
   {
