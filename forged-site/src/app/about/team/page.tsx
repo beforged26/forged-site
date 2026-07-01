@@ -8,10 +8,11 @@ export const metadata: Metadata = {
 };
 
 // Add team members here
-const team: { name: string; role: string; bio: string[]; website?: string; photo?: string }[] = [
+const team: { name: string; role: string; bio: string[]; website?: string; photo?: string; photoPosition?: string }[] = [
   {
     name: "Pri Piantadosi-Lima",
     role: "Founder & Director",
+    photoPosition: "70% top",
     bio: [
       "Former professional athlete, Division I Head Coach, USAV Club Coach of the Year, and USAV NTDP Coach. Pri built FORGED to give every athlete and coach the shortcut she never had.",
       "Her coaching work extends to the professional level. Among the athletes she has worked with, Kim Hildreth — a USA Beach Volleyball representative on the FIVB Beach Pro Tour — earned Gold at the BPT Futures Pompano Beach and reached multiple Elite 16 podiums, the highest level of international beach volleyball below the Olympics.",
@@ -97,7 +98,8 @@ export default function Team() {
                     alt={member.name}
                     width={400}
                     height={533}
-                    className="w-full h-full object-cover object-top"
+                    className="w-full h-full object-cover"
+                    style={{ objectPosition: member.photoPosition ?? "center top" }}
                     unoptimized
                   />
                 </div>
