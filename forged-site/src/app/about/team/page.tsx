@@ -97,7 +97,7 @@ export default function Team() {
                     alt={member.name}
                     width={400}
                     height={533}
-                    className="w-full h-full object-cover object-center"
+                    className="w-full h-full object-cover object-top"
                     unoptimized
                   />
                 </div>
