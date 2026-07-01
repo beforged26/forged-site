@@ -17,6 +17,7 @@ const eventsDropdown = [
     children: [
       { href: "/events/az-volleyball", label: "Overview" },
       { href: "/events/az-volleyball/lineup", label: "Lineup" },
+      { href: "/events/az-volleyball/faq", label: "FAQ" },
     ],
   },
 ];
