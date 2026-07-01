@@ -45,7 +45,7 @@ const experts: { name: string; role: string; bio: string; website: string; photo
     role: "Personal Brand & Recruiting — Founder, MANA Management",
     bio: "Falyn Fonoimoana is the Founder & CEO of MANA Management, a talent and brand management agency dedicated to helping athletes, creators, and entrepreneurs build authentic, impactful brands. With years of experience growing her own social media presence and personal brand, Falyn understands what it takes to create meaningful influence — both online and off. She is passionate about mentoring creators, developing strategic partnerships, and helping individuals unlock their full potential while building businesses that align with their purpose. In addition to MANA Management, Falyn is the Founder of MANA Wellness, a performance and longevity company focused on optimizing health through innovative wellness solutions. Beyond entrepreneurship, she continues to compete professionally in beach volleyball — bringing the same discipline, resilience, and high-performance mindset from the court into every venture she leads. At FORGED, Falyn brings the real playbook: how to show up online, build your recruiting profile, and own your narrative as an athlete.",
     website: "",
-    photo: "/Falyn.jpg",
+    photo: "/Falyn.JPG",
   },
   {
     name: "Tree Beeckman",
