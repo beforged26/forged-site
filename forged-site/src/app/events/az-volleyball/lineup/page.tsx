@@ -11,7 +11,20 @@ export const metadata: Metadata = {
 
 // ── ADD COACHES HERE ──────────────────────────────────────────────────────────
 const coaches: { name: string; role: string; bio: string; website: string; photo?: string }[] = [
-  // Add coaches here when confirmed
+  {
+    name: "Logan Tom",
+    role: "Olympic Outside Hitter — International Volleyball Hall of Fame",
+    bio: "One of the most decorated players in U.S. volleyball history. Logan Tom became the youngest woman ever named to a U.S. Olympic Team at age 19 — and went on to compete in four consecutive Olympics (2000–2012), earning two Silver Medals along the way. At Stanford, she was a four-time All-American and two-time National Player of the Year, and helped the Cardinal win the 2001 NCAA title. Her professional career spanned 12 countries and 8 championships. She was inducted into the International Volleyball Hall of Fame in 2021. At FORGED, Logan brings the perspective of someone who has competed and won at every level — giving athletes a rare look at what elite actually looks like from the inside.",
+    website: "",
+    photo: "https://www.volleyhall.org/uploads/3/9/6/0/39609237/logan-tom-usa-2021_orig.jpg",
+  },
+  {
+    name: "Deitre Collins-Parker",
+    role: "Collegiate Coach & AVCA Hall of Famer",
+    bio: "Deitre Collins-Parker is one of the most accomplished figures in the history of American volleyball — as both a player and a coach. She led the University of Hawai'i to back-to-back National Championships and was the first volleyball player ever to win the Honda Broderick Cup, given to the nation's top female collegiate athlete, earning it twice (1983 and 1984). She competed in the 1988 Olympics and won the French League Championship and the European Cup of Champions as a professional. As a coach, she built a 20+ year collegiate career with over 330 wins at UNLV, Cornell, San Diego State, Coastal Carolina, and Arizona — and served as head coach of the U.S. Junior National Team three times. She was inducted into the AVCA Hall of Fame in 2008. At FORGED, Deitre brings the kind of depth that only comes from having done it all.",
+    website: "",
+    photo: "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/arizona.sidearmsports.com/images/2023/8/29/Dietre_Collins-Parker__volleyball_assistant_coach_230822_ICA_Headshots_Mike_Christy_3.JPG",
+  },
 ];
 
 // ── ADD EXPERTS HERE ──────────────────────────────────────────────────────────
