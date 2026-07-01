@@ -23,24 +23,6 @@ const experts: { name: string; role: string; bio: string; website: string; photo
     website: "",
   },
   {
-    name: "Sara Putt",
-    role: "Sport Nutritionist — Fueling for Performance",
-    bio: "Expert in athlete nutrition, fueling strategies, recovery, and long-term performance. Sara helps athletes understand how to fuel their bodies to perform at their highest level — and sustain it.",
-    website: "",
-  },
-  {
-    name: "Kamila Tan",
-    role: "Body Image Mentor — Athlete Identity",
-    bio: "Specialist in athlete identity, body image, and the mental side of physical performance. Kamila guides athletes through the often unspoken challenges of how they see and relate to their own bodies.",
-    website: "",
-  },
-  {
-    name: "Karlee Owens",
-    role: "Primal Movement Coach — Body Assessment",
-    bio: "Movement specialist focused on assessing and optimizing how athletes move — reducing injury risk and unlocking performance potential from the ground up.",
-    website: "",
-  },
-  {
     name: "Falyn Fonoimoana",
     role: "Personal Brand & Recruiting — Founder, MANA Management",
     bio: "Falyn Fonoimoana is the Founder & CEO of MANA Management, a talent and brand management agency dedicated to helping athletes, creators, and entrepreneurs build authentic, impactful brands. With years of experience growing her own social media presence and personal brand, Falyn understands what it takes to create meaningful influence — both online and off. She is passionate about mentoring creators, developing strategic partnerships, and helping individuals unlock their full potential while building businesses that align with their purpose. In addition to MANA Management, Falyn is the Founder of MANA Wellness, a performance and longevity company focused on optimizing health through innovative wellness solutions. Beyond entrepreneurship, she continues to compete professionally in beach volleyball — bringing the same discipline, resilience, and high-performance mindset from the court into every venture she leads. Falyn and FORGED Founder Pri Piantadosi-Lima have competed together on the AVP, and Pri has been coaching Falyn on and off for over 8 years. That relationship is exactly what FORGED is built on — the best coaches and athletes in this sport, in the same room, sharing what actually works. At FORGED, Falyn brings the real playbook: how to show up online, build your recruiting profile, and own your narrative as an athlete.",
@@ -53,6 +35,24 @@ const experts: { name: string; role: string; bio: string; website: string; photo
     bio: "Tree Beeckman has spent more than three decades studying what actually builds winning cultures — not the posters on the wall, but the systems underneath them. A former collegiate coach at Delta College, Ferris State, Central Michigan, and Western Michigan Universities, Tree left the bench in 2015 to take her work national. She is the founder of Tree Roots Culture Consulting and the creator of the Tree Roots Team Culture Model™ — a nationally recognized framework for designing and sustaining high-performance cultures in athletic programs. She's also the author of Managing Your Culture, a color commentator for ESPN college volleyball, an adjunct professor at the University of Florida, and a former four-year collegiate softball athlete. At FORGED, Tree brings the culture conversation out of the motivational-poster era and into the practical — giving athletes and coaches the tools to actually build something.",
     website: "https://winningdeep.com/",
     photo: "/Tree.jpg",
+  },
+  {
+    name: "Kamila Tan",
+    role: "Body Image Mentor — Athlete Identity",
+    bio: "Specialist in athlete identity, body image, and the mental side of physical performance. Kamila guides athletes through the often unspoken challenges of how they see and relate to their own bodies.",
+    website: "",
+  },
+  {
+    name: "Sara Putt",
+    role: "Sport Nutritionist — Fueling for Performance",
+    bio: "Expert in athlete nutrition, fueling strategies, recovery, and long-term performance. Sara helps athletes understand how to fuel their bodies to perform at their highest level — and sustain it.",
+    website: "",
+  },
+  {
+    name: "Karlee Owens",
+    role: "Primal Movement Coach — Body Assessment",
+    bio: "Movement specialist focused on assessing and optimizing how athletes move — reducing injury risk and unlocking performance potential from the ground up.",
+    website: "",
   },
   {
     name: "Benjamin Jensen, M.S.",
