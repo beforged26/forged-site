@@ -38,9 +38,10 @@ const coaches: { name: string; role: string; bio: string; website: string; photo
 const experts: { name: string; role: string; bio: string; website: string; photo?: string }[] = [
   {
     name: "Priscilla Tallman",
-    role: "Mental Performance Coach",
-    bio: "Specialist in mental performance, pressure management, and building the mindset that separates good from elite. Priscilla works with athletes to develop the mental tools that drive sustainable high performance.",
-    website: "",
+    role: "Mental Performance Consultant",
+    bio: "Priscilla Tallman is a Mental Performance Consultant with a rare combination of elite playing experience, clinical psychology training, and over 500 athletes coached. As a player at the University of Georgia, she was a two-time First Team All-American (1993 & 1994), SEC Freshman of the Year, SEC Player of the Year, and was later inducted into Georgia's Circle of Honor in 2006. She went on to play professionally in Geneva, Switzerland, and represented the USA National Team in 1994 and the World University Games Team in 1995. After her playing career, she earned a Master's Degree in Clinical Psychology from Vanguard University and brought that training back into sport — coaching at the high school, club, and collegiate levels before stepping away in 2023 to focus exclusively on mental performance. She is the author of two nationally published performance journals, the 30 Day Champions Journal and the 30 Day Return to Play Journal, with over 1,500 copies in use across teams and sports. At FORGED, Priscilla works with athletes on the mental skills that separate good from elite — pressure management, identity, focus, and the mindset required to perform when it matters most.",
+    website: "https://www.priscillatallman.com",
+    photo: "https://images.squarespace-cdn.com/content/v1/660ef37aa5436226bc7c0d99/8dfa577e-3b7b-489f-ba35-0e29c245ebcc/priscilla-tallman-sports-performance-coach-arizona.JPG",
   },
   {
     name: "Falyn Fonoimoana",
@@ -58,9 +59,10 @@ const experts: { name: string; role: string; bio: string; website: string; photo
   },
   {
     name: "Kamila Tan",
-    role: "Body Image Mentor — Athlete Identity",
-    bio: "Specialist in athlete identity, body image, and the mental side of physical performance. Kamila guides athletes through the often unspoken challenges of how they see and relate to their own bodies.",
-    website: "",
+    role: "Body Image Mentor — Founder, Embracing Strength",
+    bio: "Kamila Tan is a body image mentor and health coach who works with athletes on one of the most undertreated parts of sport: how they see and relate to their own bodies. A former NCAA Division I beach volleyball player at UCLA, Kamila experienced firsthand the pressure athletes face around body image and performance — and built her life's work around helping others navigate it. She holds a Master of Public Health from UCLA, where she wrote her master's consulting report on body image challenges in athletic communities. She is currently pursuing a Master of Social Work at USC to become a licensed clinician. She is the founder of Embracing Strength, offering 1:1 mentorship for current and former athletes, consulting for athletic teams and departments, and support sessions for families. At FORGED, Kamila opens the conversation that most programs never have — helping athletes develop a healthier relationship with their bodies so they can perform, compete, and live with confidence.",
+    website: "https://www.kamilatan.com",
+    photo: "https://static.wixstatic.com/media/833656_a1a0bc52fad846fe82c957c348a63ad7~mv2.jpg",
   },
   {
     name: "Sara Putt",
