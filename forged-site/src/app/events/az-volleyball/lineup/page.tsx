@@ -16,7 +16,7 @@ const coaches: { name: string; role: string; bio: string; website: string; photo
     role: "4x Olympian Outside Hitter — International Volleyball Hall of Fame — MLV Director of International Development",
     bio: "One of the most decorated players in U.S. volleyball history. Logan Tom became the youngest woman ever named to a U.S. Olympic Team at age 19 — and went on to compete in four consecutive Olympics (2000–2012), earning two Silver Medals along the way. At Stanford, she was a four-time All-American and two-time National Player of the Year, and helped the Cardinal win the 2001 NCAA title. Her professional career spanned 12 countries and 8 championships. She was inducted into the International Volleyball Hall of Fame in 2021. She currently serves as Director of International Development & Player Strategy for Major League Volleyball (MLV), where she cultivates relationships with volleyball agencies and federations worldwide with a focus on player safety and wellness. At FORGED, Logan brings the perspective of someone who has competed and won at every level — giving athletes a rare look at what elite actually looks like from the inside.",
     website: "",
-    photo: "https://www.volleyhall.org/uploads/3/9/6/0/39609237/logan-tom-usa-2021_orig.jpg",
+    photo: "https://storage.googleapis.com/provolleyball-prod/upload/2025/08/05/f28dbc96-a5f5-456e-9ce8-a52d5bd74d34.jpg",
   },
   {
     name: "Tama Miyashiro",
