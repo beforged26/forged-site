@@ -66,9 +66,10 @@ const experts: { name: string; role: string; bio: string; website: string; photo
   },
   {
     name: "Sara Putt",
-    role: "Sport Nutritionist — Fueling for Performance",
-    bio: "Expert in athlete nutrition, fueling strategies, recovery, and long-term performance. Sara helps athletes understand how to fuel their bodies to perform at their highest level — and sustain it. Sara and FORGED Founder Pri Piantadosi-Lima go way back — Pri coached Sara in high school as she prepared for college, reconnected with her during summers at FSU, and worked with her when she first started pursuing the professional level. At FORGED, Sara brings a real-world, athlete-first approach to nutrition: what actually works when you're competing, training, and trying to build a career in this sport.",
-    website: "",
+    role: "Registered Dietitian & Sports Nutritionist — Founder, Good Fuel Co",
+    bio: "Sara Putt is a Registered Dietitian, sports nutritionist, and former All-American Division I beach volleyball player at Florida State University. Born and raised in South Florida, Sara saw firsthand the impact of nutrition on athletic performance during her own playing career — and turned that experience into a profession. She earned both her undergraduate and master's degrees in dietetics and clinical nutrition at FSU while competing for the beach volleyball team, then spent three years in the clinical setting sharpening her skills before returning to her true passion: working with athletes. Since then, she has worked with over 250 athletes 1:1 in her private practice, served as a performance dietitian at boarding schools for elite high school athletes, and taught sports nutrition to clubs, camps, and teams across multiple sports. She is the founder of Good Fuel Co, her platform for athlete nutrition education and coaching. Sara and FORGED Founder Pri Piantadosi-Lima go way back — Pri coached Sara in high school as she prepared for college, reconnected with her during her summers at FSU, and worked with her when she first started pursuing the professional level. At FORGED, Sara brings the real athlete perspective to nutrition: not just the science, but what actually works when you're competing, training, and trying to build a career in this sport.",
+    website: "https://www.instagram.com/goodfuelco_/",
+    photo: "https://cdn.prod.website-files.com/60e33881a9643382c407b823/6a1860d496f6a4175e0779f1_Sara-Putt-Nutritionist-Dietitian-Fay.webp",
   },
   {
     name: "Karlee Owens",
