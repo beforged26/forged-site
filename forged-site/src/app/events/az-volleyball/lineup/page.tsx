@@ -19,6 +19,13 @@ const coaches: { name: string; role: string; bio: string; website: string; photo
     photo: "https://www.volleyhall.org/uploads/3/9/6/0/39609237/logan-tom-usa-2021_orig.jpg",
   },
   {
+    name: "Tama Miyashiro",
+    role: "2012 Olympic Silver Medalist — 2020 Olympic Gold Coach — LOVB Salt Lake City Head Coach",
+    bio: "Tama Miyashiro is one of the most accomplished liberos in U.S. volleyball history — and one of the rare few who has stood on the Olympic podium as both a player and a coach. As a libero at the University of Washington, she set school records for career digs (2,382) and digs per set (5.36), and was named National Defensive Player of the Year twice. She joined the U.S. Women's National Team in 2010 and won a Silver Medal at the 2012 London Olympics. After transitioning to coaching, she became an assistant coach for the U.S. Women's National Team and helped lead them to Gold at the 2020 Tokyo Olympics. She also guided Allianz Stuttgart to their first-ever German Bundesliga title. She is currently the Head Coach of LOVB Salt Lake City. At FORGED, Tama brings elite-level defensive mastery and the kind of perspective that only comes from winning at the highest level — on both sides of the clipboard.",
+    website: "",
+    photo: "https://usavolleyball.org/wp-content/uploads/2020/12/Tama-Miyashiro-2022.jpg",
+  },
+  {
     name: "Deitre Collins-Parker",
     role: "1988 Olympian — MLV Pro League Assistant Coach & AVCA Hall of Famer",
     bio: "Deitre Collins-Parker is one of the most accomplished figures in the history of American volleyball — as both a player and a coach. She led the University of Hawai'i to back-to-back National Championships and was the first volleyball player ever to win the Honda Broderick Cup, given to the nation's top female collegiate athlete, earning it twice (1983 and 1984). She competed in the 1988 Olympics and won the French League Championship and the European Cup of Champions as a professional. As a coach, she built a 20+ year collegiate career with over 330 wins at UNLV, Cornell, San Diego State, Coastal Carolina, and Arizona — and served as head coach of the U.S. Junior National Team three times. She was inducted into the AVCA Hall of Fame in 2008. At FORGED, Deitre brings the kind of depth that only comes from having done it all.",
