@@ -73,9 +73,10 @@ const experts: { name: string; role: string; bio: string; website: string; photo
   },
   {
     name: "Karlee Owens",
-    role: "Primal Movement Coach — Body Assessment",
-    bio: "Movement specialist focused on assessing and optimizing how athletes move — reducing injury risk and unlocking performance potential from the ground up.",
-    website: "",
+    role: "Primal Movement Coach — Founder, Inner Athlete Fitness",
+    bio: "Karlee Owens has been immersed in the world of movement since childhood — playing, competing, and exploring across multiple sports. Based in Melbourne, Florida, she brings a background spanning soccer, endurance running, sprinting, strength and conditioning, and now Jiu Jitsu into a coaching style built on one core idea: the body moves best when it moves the way it was designed to. Using slow-motion video assessment, Karlee identifies and corrects movement pattern errors that are causing pain or holding performance back — building athletes who are durable, body-aware, and capable of moving pain-free in sport and in life. Her approach bridges performance and longevity, helping athletes of every level reconnect to their body's natural intelligence. She is the founder of Inner Athlete Fitness. At FORGED, Karlee gives athletes something most programs skip entirely: a real look at how they move, and the tools to move better.",
+    website: "https://www.instagram.com/coach.karlee/",
+    photo: "http://static1.squarespace.com/static/63459b2a8e384976f33d44c4/6345a57102b5750f47610dda/667b0391e99c0839b232f8e1/1719377442616/KO+Thumb+SQR.jpg?format=1500w",
   },
   {
     name: "Benjamin Jensen, M.S.",
