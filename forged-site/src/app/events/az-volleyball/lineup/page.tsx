@@ -167,6 +167,16 @@ export default function Lineup() {
             </h2>
             <div className="grid gap-[2px] bg-gold/[0.08] grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               {coaches.map((c) => <PersonCard key={c.name} person={c} />)}
+              {/* MORE COACHES COMING SOON */}
+              {[1, 2].map((i) => (
+                <FadeUp key={`soon-${i}`} className="bg-dark p-8 border-t-2 border-gold/20 flex flex-col items-center justify-center text-center gap-3 min-h-[260px]">
+                  <div className="w-16 h-16 rounded-full border border-gold/20 flex items-center justify-center mb-2">
+                    <span className="font-display text-2xl text-gold/30">?</span>
+                  </div>
+                  <div className="font-display text-lg tracking-[0.1em] text-gold/40">Coming Soon</div>
+                  <p className="text-[12px] text-muted leading-[1.6] max-w-[220px]">More coaches being confirmed. Check back soon.</p>
+                </FadeUp>
+              ))}
             </div>
           </FadeUp>
           <div className="gold-rule" />
