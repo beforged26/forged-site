@@ -74,19 +74,15 @@ const faqs: { category: string; items: { q: string; a: string }[] }[] = [
       },
       {
         q: "What is the cancellation and refund policy?",
-        a: "Your deposit is non-refundable at any time. If you cancel 2 or more months before the event, the remaining balance (minus a $75 processing fee) will be refunded. If you cancel within 1 month of the event, only a partial refund of the remaining balance is available. Email pri@beforged.co with any questions.",
+        a: "Deposits are non-refundable, except in cases of extenuating circumstances reviewed on a case-by-case basis. For full registration: if you cancel by October 1, 2026, you will receive a 50% refund of your total registration. If you cancel by November 1, 2026, you will receive a 25% refund. No refunds are issued after November 1. Email pri@beforged.co with any questions.",
       },
       {
         q: "Do you offer a sibling discount?",
         a: "Yes — siblings receive 15% off when registering together. Email us at pri@beforged.co and we'll send you a special registration link to purchase both spots.",
       },
       {
-        q: "Do you offer a military discount?",
-        a: "We don't currently offer a military discount, but we appreciate your service and hope to be able to in the future.",
-      },
-      {
-        q: "Is there a team rate for multiple athletes from the same club?",
-        a: "Yes, team rates are available. Details coming soon — email pri@beforged.co to get on the list and we'll reach out when group pricing is finalized.",
+        q: "Can a coach get a discount for bringing a full team?",
+        a: "Yes. If a coach brings 8 or more players, each player will receive $100 off their registration. Email us at pri@beforged.co to get this set up before registering.",
       },
     ],
   },
