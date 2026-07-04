@@ -134,6 +134,40 @@ export default function CoachRegister() {
         </FadeUp>
       </div>
 
+      {/* WAIVER */}
+      <div className="max-w-[900px] mx-auto px-6 md:px-10 py-16">
+        <FadeUp>
+          <p className="section-eyebrow mb-6">Assumption of Risk & Release of Liability</p>
+          <div className="border border-gold/15 bg-dark p-8 md:p-10 space-y-5">
+            <p className="text-[13px] text-light leading-[1.8]">
+              I understand that participation in sport and athletic coaching activities requires a personal acceptance of the risk of injury. I acknowledge that those responsible for the conduct of the FORGED Summit take reasonable precautions to minimize such risk, but that some risk cannot be eliminated.
+            </p>
+            <p className="text-[13px] text-light leading-[1.8]">
+              I understand that participation in the FORGED Summit (November 26–29, 2026, Phoenix, AZ) as a coach or staff member may result in injury or illness, physical or mental impairments, or even death. I understand that FORGED cannot be held responsible for any injuries or conditions caused by the actions of athletes, other coaches, or participants. I also understand that injuries may result from my own failure to follow safety procedures or techniques made known by the FORGED staff and/or otherwise known to me from any other source.
+            </p>
+            <p className="text-[13px] text-light leading-[1.8]">
+              I voluntarily assume all risks associated with participation and release FORGED, its founders, staff, coaches, experts, and venue partners from any and all liability arising from participation in this event.
+            </p>
+            <div className="border-t border-gold/10 pt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+              {[
+                "Coach / Participant Name",
+                "Signature",
+                "Date",
+              ].map((label) => (
+                <div key={label} className={label === "Date" ? "md:col-span-2" : ""}>
+                  <p className="text-[11px] font-semibold tracking-[0.15em] uppercase text-gold-m mb-2">{label}</p>
+                  <div className="border-b border-gold/20 h-8" />
+                </div>
+              ))}
+            </div>
+            <p className="text-[11px] text-muted leading-[1.6] pt-2">
+              A signed copy of this waiver will be required at check-in. You may also email a signed copy in advance to{" "}
+              <a href="mailto:pri@beforged.co" className="text-gold-m hover:underline">pri@beforged.co</a>.
+            </p>
+          </div>
+        </FadeUp>
+      </div>
+
       {/* WHAT'S INCLUDED */}
       <div className="bg-dark border-y border-gold/10 py-24 px-6 md:px-10">
         <FadeUp className="max-w-[1100px] mx-auto">
