@@ -226,6 +226,71 @@ export default function AthleteRegister() {
           </div>
         </FadeUp>
       </div>
+
+      {/* SAMPLE SCHEDULE */}
+      <div className="max-w-[1100px] mx-auto px-6 md:px-10 py-24">
+        <FadeUp>
+          <p className="section-eyebrow">Sample Schedule</p>
+          <h2 className="font-display text-[clamp(36px,6vw,64px)] tracking-[0.04em] leading-[0.95] text-cream mb-5">
+            YOUR 4
+            <br />
+            <span className="gold-gradient-text">DAYS.</span>
+          </h2>
+          <p className="font-serif italic text-[clamp(15px,2vw,19px)] text-light max-w-[600px] leading-[1.6] mb-14">
+            Here&apos;s what the weekend looks like. Times are approximate — final schedule sent before the event.
+          </p>
+
+          {/* 4-Day Overview */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[2px] bg-gold/[0.08] mb-16">
+            {[
+              { day: "Day 1", date: "Thursday · Nov 26", label: "Arrival Day", desc: "Check in, pick up your swag bag, meet your cohort. Light intro session in the evening to get you locked in before Day 2." },
+              { day: "Day 2", date: "Friday · Nov 27", label: "Training Day 1", desc: "First full day on the court. Morning and afternoon training blocks plus your first round of expert sessions." },
+              { day: "Day 3", date: "Saturday · Nov 28", label: "Training Day 2", desc: "Back on the court. Second round of training blocks and the remaining expert sessions. Full day of work." },
+              { day: "Day 4", date: "Sunday · Nov 29", label: "Competition Day", desc: "Queen & King of the Beach tournament. You compete. 1:1 assessments available with FirstBeat and Ver during matches." },
+            ].map((d) => (
+              <FadeUp key={d.day} className="bg-dark p-7 flex flex-col gap-3">
+                <div className="text-[10px] font-semibold tracking-[0.25em] uppercase text-gold-m">{d.day}</div>
+                <div className="text-[11px] tracking-[0.12em] uppercase text-muted">{d.date}</div>
+                <div className="font-display text-xl tracking-[0.06em] text-cream border-b border-gold/15 pb-3">{d.label}</div>
+                <p className="text-[12px] text-light leading-[1.65]">{d.desc}</p>
+              </FadeUp>
+            ))}
+          </div>
+
+          {/* Sample Training Day */}
+          <div className="mb-4">
+            <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-gold-m mb-6">Sample Training Day — Friday or Saturday</p>
+          </div>
+          <div className="border-l-2 border-gold/20 ml-3 flex flex-col gap-0">
+            {[
+              { time: "7:30 AM", title: "Doors Open", desc: "Get there early. Grab your spot, warm up on your own." },
+              { time: "8:00 AM", title: "Morning Movement & Activation", desc: "Guided warm-up and primal movement prep with Karlee Owens." },
+              { time: "8:30 AM", title: "Court Training Block 1", desc: "First full training block with elite coaching staff. Technical, tactical, and competitive reps." },
+              { time: "10:30 AM", title: "Expert Session", desc: "Mental performance, nutrition, or recruiting — rotating by group across the expert lineup." },
+              { time: "11:30 AM", title: "Expert Session", desc: "Second session of the morning block." },
+              { time: "12:30 PM", title: "Lunch Break", desc: "Break to eat and reset. Food options available on-site and nearby." },
+              { time: "1:30 PM", title: "Court Training Block 2", desc: "Afternoon training block. Competitive formats, small-group work, and coach feedback." },
+              { time: "3:30 PM", title: "Expert Session", desc: "Body image, leadership and culture, or vision training — rotating by group." },
+              { time: "4:30 PM", title: "Expert Session", desc: "Fourth session of the day." },
+              { time: "5:30 PM", title: "Expert Session", desc: "Final session of the day. Full debrief and journaling time." },
+              { time: "6:30 PM", title: "Day Wrap", desc: "Close out the day. Coaches and experts available for informal conversation." },
+            ].map((item, i) => (
+              <div key={i} className="relative pl-8 pb-7">
+                <div className="absolute -left-[5px] top-[6px] w-[8px] h-[8px] rounded-full bg-gold/50" />
+                <div className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4 mb-1">
+                  <span className="text-[11px] font-semibold tracking-[0.15em] uppercase text-gold-m w-20 flex-shrink-0">{item.time}</span>
+                  <span className="font-display text-[15px] tracking-[0.05em] text-cream">{item.title}</span>
+                </div>
+                <p className="text-[12px] text-light leading-[1.6] sm:ml-24">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-[11px] text-muted italic mt-4 leading-[1.7]">
+            * Schedule subject to change. Expert session assignments are rotated so every athlete attends every session across the weekend.
+          </p>
+        </FadeUp>
+      </div>
     </>
   );
 }
