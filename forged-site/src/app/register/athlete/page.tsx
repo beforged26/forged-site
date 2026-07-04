@@ -149,6 +149,23 @@ export default function AthleteRegister() {
             </div>
           </div>
         </FadeUp>
+
+          {/* 4-Day Overview */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[2px] bg-gold/[0.08] mt-8">
+            {[
+              { day: "Day 1", date: "Thursday · Nov 26", label: "Arrival Day", desc: "Check in, pick up your swag bag, meet your cohort. Light intro session in the evening to get you locked in before Day 2." },
+              { day: "Day 2", date: "Friday · Nov 27", label: "Training Day 1", desc: "First full day on the court. Morning and afternoon training blocks plus your first round of expert sessions." },
+              { day: "Day 3", date: "Saturday · Nov 28", label: "Training Day 2", desc: "Back on the court. Second round of training blocks and the remaining expert sessions. Full day of work." },
+              { day: "Day 4", date: "Sunday · Nov 29", label: "Competition Day", desc: "Queen & King of the Beach tournament. You compete. 1:1 assessments available with FirstBeat and Ver during matches." },
+            ].map((d) => (
+              <FadeUp key={d.day} className="bg-dark p-7 flex flex-col gap-3">
+                <div className="text-[10px] font-semibold tracking-[0.25em] uppercase text-gold-m">{d.day}</div>
+                <div className="text-[11px] tracking-[0.12em] uppercase text-muted">{d.date}</div>
+                <div className="font-display text-xl tracking-[0.06em] text-cream border-b border-gold/15 pb-3">{d.label}</div>
+                <p className="text-[12px] text-light leading-[1.65]">{d.desc}</p>
+              </FadeUp>
+            ))}
+          </div>
       </FadeUp>
 
       {/* REGISTRATION FORM */}
@@ -237,25 +254,8 @@ export default function AthleteRegister() {
             <span className="gold-gradient-text">DAYS.</span>
           </h2>
           <p className="font-serif italic text-[clamp(15px,2vw,19px)] text-light max-w-[600px] leading-[1.6] mb-14">
-            Here&apos;s what the weekend looks like. Times are approximate — final schedule sent before the event.
+            Here&apos;s what a training day looks like. Times are approximate — final schedule sent before the event.
           </p>
-
-          {/* 4-Day Overview */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[2px] bg-gold/[0.08] mb-16">
-            {[
-              { day: "Day 1", date: "Thursday · Nov 26", label: "Arrival Day", desc: "Check in, pick up your swag bag, meet your cohort. Light intro session in the evening to get you locked in before Day 2." },
-              { day: "Day 2", date: "Friday · Nov 27", label: "Training Day 1", desc: "First full day on the court. Morning and afternoon training blocks plus your first round of expert sessions." },
-              { day: "Day 3", date: "Saturday · Nov 28", label: "Training Day 2", desc: "Back on the court. Second round of training blocks and the remaining expert sessions. Full day of work." },
-              { day: "Day 4", date: "Sunday · Nov 29", label: "Competition Day", desc: "Queen & King of the Beach tournament. You compete. 1:1 assessments available with FirstBeat and Ver during matches." },
-            ].map((d) => (
-              <FadeUp key={d.day} className="bg-dark p-7 flex flex-col gap-3">
-                <div className="text-[10px] font-semibold tracking-[0.25em] uppercase text-gold-m">{d.day}</div>
-                <div className="text-[11px] tracking-[0.12em] uppercase text-muted">{d.date}</div>
-                <div className="font-display text-xl tracking-[0.06em] text-cream border-b border-gold/15 pb-3">{d.label}</div>
-                <p className="text-[12px] text-light leading-[1.65]">{d.desc}</p>
-              </FadeUp>
-            ))}
-          </div>
 
           {/* Sample Training Day */}
           <div className="mb-4">
@@ -264,7 +264,7 @@ export default function AthleteRegister() {
           <div className="border-l-2 border-gold/20 ml-3 flex flex-col gap-0">
             {[
               { time: "7:30 AM", title: "Doors Open", desc: "Get there early. Grab your spot, warm up on your own." },
-              { time: "8:00 AM", title: "Morning Movement & Activation", desc: "Guided warm-up and primal movement prep with Karlee Owens." },
+              { time: "8:00 AM", title: "Morning Movement & Activation", desc: "Guided warm-up and primal movement prep." },
               { time: "8:30 AM", title: "Court Training Block 1", desc: "First full training block with elite coaching staff. Technical, tactical, and competitive reps." },
               { time: "10:30 AM", title: "Expert Session", desc: "Mental performance, nutrition, or recruiting — rotating by group across the expert lineup." },
               { time: "11:30 AM", title: "Expert Session", desc: "Second session of the morning block." },
