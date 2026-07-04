@@ -34,10 +34,6 @@ const included = [
     desc: "Gear built for athletes who take it seriously. You'll wear it because you earned it.",
   },
   {
-    title: "All Meals Included",
-    desc: "From arrival to departure — breakfast, lunch, dinner, and everything in between. No extra costs, no logistics. Just show up ready to work.",
-  },
-  {
     title: "Lifetime Community Access",
     desc: "The relationships you build at FORGED don't end on Day 4. You're joining a network of athletes, coaches, and experts that compounds in value every year. This is the beginning of something bigger.",
   },
