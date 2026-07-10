@@ -199,6 +199,39 @@ export default function Home() {
         </div>
       </FadeUp>
 
+      <div className="gold-rule" />
+
+      {/* COMING SOON — BEACH */}
+      <div className="bg-dark border-y border-gold/10 px-6 md:px-10 py-20">
+        <FadeUp className="max-w-[1000px] mx-auto flex flex-col md:flex-row md:items-center gap-10 md:gap-16">
+          <div className="shrink-0">
+            <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-gold-m mb-3">Coming Soon</p>
+            <h2 className="font-display text-[clamp(38px,6vw,72px)] tracking-[0.04em] leading-[0.95] text-cream">
+              FORGED
+              <br />
+              BEACH.
+            </h2>
+          </div>
+          <div className="flex-1 border-l border-gold/20 pl-10">
+            <p className="font-display text-xl tracking-[0.08em] text-gold mb-3">
+              Beach Volleyball &nbsp;·&nbsp; Feb 12–15, 2027 &nbsp;·&nbsp; Fort Lauderdale, FL
+            </p>
+            <p className="text-[14px] text-light leading-[1.8] mb-6">
+              FORGED is coming to the sand. The same elite development model — expert coaches,
+              mental performance, community — built for beach volleyball. Registrations opening soon.
+            </p>
+            <a
+              href="#email-input"
+              className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-7 py-3.5 hover:bg-gold-m transition-colors"
+            >
+              Sign Up for Updates
+            </a>
+          </div>
+        </FadeUp>
+      </div>
+
+      <div className="gold-rule" />
+
       {/* BOTTOM CTA */}
       <div className="px-6 md:px-10 py-28 text-center bg-black">
         <div className="mb-10">
