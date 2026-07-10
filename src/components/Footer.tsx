@@ -32,7 +32,9 @@ export default function Footer() {
         <Link href="/about" className="text-[11px] tracking-[0.15em] uppercase text-muted hover:text-gold transition-colors">About</Link>
         <Link href="/events" className="text-[11px] tracking-[0.15em] uppercase text-muted hover:text-gold transition-colors">Events</Link>
         <Link href="/register" className="text-[11px] tracking-[0.15em] uppercase text-muted hover:text-gold transition-colors">Register</Link>
+        <Link href="/community" className="text-[11px] tracking-[0.15em] uppercase text-muted hover:text-gold transition-colors">Community</Link>
         <Link href="/partner" className="text-[11px] tracking-[0.15em] uppercase text-muted hover:text-gold transition-colors">Partner</Link>
+        <Link href="/founding-family" className="text-[11px] tracking-[0.15em] uppercase text-muted hover:text-gold transition-colors">Founding Family</Link>
         <Link href="/contact" className="text-[11px] tracking-[0.15em] uppercase text-muted hover:text-gold transition-colors">Contact</Link>
         <a href="https://instagram.com/beforgedco" target="_blank" rel="noreferrer" className="text-[11px] tracking-[0.15em] uppercase text-muted hover:text-gold transition-colors">Instagram</a>
         <a href="https://tiktok.com/@beforged.co" target="_blank" rel="noreferrer" className="text-[11px] tracking-[0.15em] uppercase text-muted hover:text-gold transition-colors">TikTok</a>
