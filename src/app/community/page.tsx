@@ -222,7 +222,7 @@ export default function Community() {
         <CommunityEmailForm />
 
         <p className="text-[11px] text-muted mt-5 tracking-[0.05em]">
-          Summit alumni get free access for the first year. No spam.
+          Summit alumni get free access for the first year — sign up above to claim it. No spam.
         </p>
       </FadeUp>
 
