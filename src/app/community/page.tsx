@@ -9,26 +9,62 @@ export const metadata: Metadata = {
     "The FORGED Community is where the work continues after the summit ends. Athletes, coaches, and experts — connected year-round.",
 };
 
-const pillars = [
+const athletePillars = [
   {
     num: "01",
     title: "Year-Round Development",
-    desc: "The summit is 4 days. The community is the other 361. Access to training resources, expert content, and accountability structures that keep you growing between events.",
+    desc: "The summit is 4 days. The community is the other 361. Training resources, expert content, and accountability structures that keep you growing between events.",
   },
   {
     num: "02",
-    title: "Athlete & Coach Network",
-    desc: "A private space built for people who take this seriously. Connect with athletes across sports, find training partners, share film, and build relationships that last beyond a weekend.",
+    title: "Athlete Network",
+    desc: "A private space built for athletes who take this seriously. Connect across sports, find training partners, share film, and build relationships that last beyond a weekend.",
   },
   {
     num: "03",
-    title: "Expert Access",
-    desc: "FORGED coaches and experts stay connected to the community through exclusive content drops, Zoom sessions, and group calls — sharing what they know with athletes and coaches who are serious about growing.",
+    title: "Expert Content Drops",
+    desc: "FORGED coaches and experts share exclusive content, resources, and insights inside the community — material you won't find anywhere else.",
   },
   {
     num: "04",
-    title: "Early Access & Discounts",
-    desc: "Summit alumni and community members get first access to new events, priority registration, and alumni pricing. You put in the work — the rewards follow.",
+    title: "Early Access & Alumni Pricing",
+    desc: "Summit alumni get first access to new events, priority registration, and alumni pricing. You put in the work — the rewards follow.",
+  },
+];
+
+const coachPillars = [
+  {
+    num: "01",
+    title: "Sport-Specific Groups",
+    desc: "Connect with coaches in your sport. Share film, talk strategy, and build the kind of peer relationships that make you better at your craft.",
+  },
+  {
+    num: "02",
+    title: "Women's Spaces",
+    desc: "Dedicated groups for women in coaching — where the conversations go deeper and the support is built around shared experience.",
+  },
+  {
+    num: "03",
+    title: "Expert Zoom Sessions",
+    desc: "Live calls and Q&As with FORGED coaches and experts. Not a lecture — a room where coaches actually talk to each other.",
+  },
+  {
+    num: "04",
+    title: "The Human Side",
+    desc: "Burnout, identity, sacrifice, purpose — the parts of coaching nobody puts in a job description. This is a community where that conversation is welcome.",
+  },
+];
+
+const podcasts = [
+  {
+    tag: "The Sessions",
+    title: "Where Coaches and Experts Talk.",
+    desc: "Each episode of The Sessions brings coaches and experts together around a specific subject — technique, mental performance, recruiting, team culture, athlete development, and more. These aren't surface-level conversations. They're the kind that happen when serious people stop performing and start actually talking. We also go inside the summit itself: success stories from FORGED alumni, breakthroughs on the court, athletes who showed up one way and left another. If you're committed to development — yours or the athletes you serve — The Sessions is the room you want to be in.",
+  },
+  {
+    tag: "Coach Unscripted",
+    title: "The Human Behind the Whistle.",
+    desc: "Coaching is more than drills, film sessions, and game plans. It's relationships that keep you up at night. It's doubting yourself in the middle of a season. It's giving everything to a group of athletes and wondering if it's enough. Nobody talks about that part — and Coach Unscripted exists because they should. Raw, honest conversations with coaches about what it actually takes, what it costs, what keeps them coming back, and who they are when the whistle isn't around their neck. Every coach carries more than their athletes know. This is where we say that out loud.",
   },
 ];
 
@@ -53,8 +89,9 @@ export default function Community() {
           <span className="gold-gradient-text">DOESN'T STOP.</span>
         </h1>
         <p className="font-serif italic text-[clamp(18px,2.8vw,24px)] text-light max-w-[640px] mx-auto relative z-[1] leading-[1.6] mb-10">
-          The FORGED Community is where summit alumni and committed athletes stay
-          connected, stay accountable, and keep growing — year-round, across all sports.
+          The FORGED Community is where athletes stay connected, stay accountable,
+          and keep growing — and where coaches finally have a space built for them.
+          Year-round. Across all sports.
         </p>
         <a
           href="#notify"
@@ -66,9 +103,9 @@ export default function Community() {
 
       <div className="gold-rule" />
 
-      {/* PILLARS */}
+      {/* ATHLETES */}
       <FadeUp className="max-w-[1000px] mx-auto px-6 md:px-10 py-24">
-        <p className="section-eyebrow">What It Is</p>
+        <p className="section-eyebrow">For Athletes</p>
         <h2 className="font-display text-[clamp(38px,6vw,72px)] tracking-[0.04em] leading-[0.95] text-cream mb-14">
           BUILT FOR
           <br />
@@ -76,7 +113,7 @@ export default function Community() {
         </h2>
 
         <div className="flex flex-col gap-0">
-          {pillars.map((p) => (
+          {athletePillars.map((p) => (
             <FadeUp key={p.num} className="flex gap-8 py-7 border-b border-gold/10 last:border-b-0">
               <div className="font-display text-[clamp(28px,4vw,48px)] tracking-[0.06em] text-gold/30 leading-none shrink-0 w-14">
                 {p.num}
@@ -90,21 +127,85 @@ export default function Community() {
         </div>
       </FadeUp>
 
-      {/* WHO IT'S FOR */}
-      <div className="bg-dark border-y border-gold/10 py-20 px-6 md:px-10">
-        <div className="max-w-[1000px] mx-auto grid md:grid-cols-3 gap-[2px] bg-gold/[0.08]">
-          {[
-            { title: "Summit Alumni", desc: "Automatically invited. The community is the next chapter of your FORGED experience." },
-            { title: "Committed Athletes", desc: "You don't have to have attended a summit yet. If you're serious about your development, there's a place for you here." },
-            { title: "Coaches", desc: "FORGED coaches are a community of their own. Peer development, shared resources, and a network that understands the work." },
-          ].map((item) => (
-            <FadeUp key={item.title} className="bg-dark p-8">
-              <p className="font-display text-lg tracking-[0.08em] text-gold mb-3">{item.title}</p>
-              <p className="text-[13px] text-light leading-[1.7]">{item.desc}</p>
+      <div className="gold-rule" />
+
+      {/* COACHES */}
+      <div className="bg-dark border-y border-gold/10 py-24 px-6 md:px-10">
+        <div className="max-w-[1000px] mx-auto">
+          <FadeUp>
+            <p className="section-eyebrow">For Coaches</p>
+            <h2 className="font-display text-[clamp(38px,6vw,72px)] tracking-[0.04em] leading-[0.95] text-cream mb-6">
+              YOUR OWN
+              <br />
+              COMMUNITY.
+            </h2>
+            <p className="font-serif italic text-[clamp(16px,2vw,20px)] text-light max-w-[640px] leading-[1.6] mb-14">
+              Coaches pour everything into their athletes. The FORGED Coaches Community
+              is where someone pours into them. Sport-specific groups, women's spaces,
+              live expert calls, and honest conversations about what coaching actually
+              costs — and what makes it worth it.
+            </p>
+          </FadeUp>
+
+          <div className="flex flex-col gap-0 mb-16">
+            {coachPillars.map((p) => (
+              <FadeUp key={p.num} className="flex gap-8 py-7 border-b border-gold/10 last:border-b-0">
+                <div className="font-display text-[clamp(28px,4vw,48px)] tracking-[0.06em] text-gold/30 leading-none shrink-0 w-14">
+                  {p.num}
+                </div>
+                <div>
+                  <p className="font-display text-xl tracking-[0.08em] text-gold mb-2">{p.title}</p>
+                  <p className="text-[14px] text-light leading-[1.7]">{p.desc}</p>
+                </div>
+              </FadeUp>
+            ))}
+          </div>
+
+          {/* COACH.beforged.co teaser */}
+          <FadeUp className="border border-gold/30 bg-[#0D0D0D] p-8 md:p-12">
+            <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-gold-m mb-4">
+              Coming Soon
+            </p>
+            <p className="font-display text-[clamp(28px,4vw,52px)] tracking-[0.04em] leading-[0.95] text-cream mb-4">
+              COACH.BEFORGED.CO
+            </p>
+            <p className="font-serif italic text-[clamp(15px,2vw,19px)] text-light max-w-[560px] leading-[1.6] mb-0">
+              A dedicated home for the coaching community. Groups for every sport,
+              women-only spaces, expert access, and a place where coaches can be
+              coaches — not just the person in charge. Built specifically for the people
+              who build athletes.
+            </p>
+          </FadeUp>
+        </div>
+      </div>
+
+      {/* PODCASTS */}
+      <FadeUp className="max-w-[1000px] mx-auto px-6 md:px-10 py-24">
+        <p className="section-eyebrow">FORGED Podcasts</p>
+        <h2 className="font-display text-[clamp(38px,6vw,72px)] tracking-[0.04em] leading-[0.95] text-cream mb-14">
+          THE
+          <br />
+          CONVERSATION.
+        </h2>
+
+        <div className="flex flex-col gap-[2px] bg-gold/[0.06]">
+          {podcasts.map((pod) => (
+            <FadeUp key={pod.tag} className="bg-[#0a0a0a] p-8 md:p-12">
+              <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-gold-m mb-3">
+                {pod.tag}
+              </p>
+              <p className="font-display text-[clamp(22px,3vw,36px)] tracking-[0.04em] leading-[1] text-cream mb-5">
+                {pod.title}
+              </p>
+              <p className="text-[14px] text-light leading-[1.8] max-w-[680px]">
+                {pod.desc}
+              </p>
             </FadeUp>
           ))}
         </div>
-      </div>
+      </FadeUp>
+
+      <div className="gold-rule" />
 
       {/* NOTIFY FORM */}
       <FadeUp className="max-w-[640px] mx-auto px-6 md:px-10 py-24 text-center">
@@ -121,7 +222,7 @@ export default function Community() {
         <CommunityEmailForm />
 
         <p className="text-[11px] text-muted mt-5 tracking-[0.05em]">
-          Summit alumni get priority access. No spam.
+          Summit alumni get free access for the first year. No spam.
         </p>
       </FadeUp>
 
