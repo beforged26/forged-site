@@ -23,7 +23,7 @@ const pillars = [
   {
     num: "03",
     title: "Expert Access",
-    desc: "FORGED coaches and experts don't disappear after Day 4. Community members get continued access — Q&As, drop-ins, and content released exclusively inside.",
+    desc: "FORGED coaches and experts stay connected to the community through exclusive content drops, Zoom sessions, and group calls — sharing what they know with athletes and coaches who are serious about growing.",
   },
   {
     num: "04",
