@@ -41,6 +41,9 @@ type Fields = {
   referFriend: boolean;
   friendName: string;
   friendEmail: string;
+  suggestCoach: boolean;
+  suggestCoachName: string;
+  suggestCoachContact: string;
   guardianName: string;
   guardianPhone: string;
   guardianEmail: string;
@@ -54,6 +57,7 @@ const BLANK: Fields = {
   highSchool: "", highSchoolCoach: "",
   position: "", gradYear: "", shirtSize: "", instagram: "",
   referFriend: false, friendName: "", friendEmail: "",
+  suggestCoach: false, suggestCoachName: "", suggestCoachContact: "",
   guardianName: "", guardianPhone: "", guardianEmail: "",
   goal: "",
 };
@@ -153,7 +157,7 @@ export default function AthleteInterestForm({ paymentOptions }: { paymentOptions
           ))}
         </div>
         <p className="text-[12px] text-muted mt-6">
-          Questions? <a href="mailto:pri@beforged.co" className="text-gold-m hover:underline">pri@beforged.co</a>
+          Questions? <a href="mailto:info@beforged.co" className="text-gold-m hover:underline">info@beforged.co</a>
         </p>
       </div>
     );
@@ -235,6 +239,27 @@ export default function AthleteInterestForm({ paymentOptions }: { paymentOptions
           </>
         )}
 
+        {/* Coach Nomination */}
+        <SectionLabel>Know a Coach Who Should Be Here? (Optional)</SectionLabel>
+        <div className="col-span-full flex items-start gap-3">
+          <input
+            id="suggestCoach"
+            type="checkbox"
+            className="mt-1 accent-[#C9A84C] w-4 h-4 flex-shrink-0"
+            checked={fields.suggestCoach}
+            onChange={(e) => set("suggestCoach", e.target.checked)}
+          />
+          <label htmlFor="suggestCoach" className="text-[13px] text-light leading-[1.5] cursor-pointer">
+            I know a coach who works as hard as I do and deserves to grow — I want FORGED to reach out to them
+          </label>
+        </div>
+        {fields.suggestCoach && (
+          <>
+            <Input label="Coach's Name" placeholder="Full name" value={fields.suggestCoachName} onChange={(e) => set("suggestCoachName", e.target.value)} />
+            <Input label="Coach's Email or Phone" placeholder="How to reach them" value={fields.suggestCoachContact} onChange={(e) => set("suggestCoachContact", e.target.value)} />
+          </>
+        )}
+
         {/* Emergency Contact */}
         <SectionLabel>Parent / Guardian — Emergency Contact</SectionLabel>
         <Input label="Guardian Name" required placeholder="Full name" value={fields.guardianName} onChange={(e) => set("guardianName", e.target.value)} />
@@ -264,7 +289,7 @@ export default function AthleteInterestForm({ paymentOptions }: { paymentOptions
       {status === "error" && (
         <p className="text-[12px] text-gold-m text-center">
           Something went wrong. Email us directly at{" "}
-          <a href="mailto:pri@beforged.co" className="underline">pri@beforged.co</a>.
+          <a href="mailto:info@beforged.co" className="underline">info@beforged.co</a>.
         </p>
       )}
 

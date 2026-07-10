@@ -16,7 +16,7 @@ export async function POST(req: Request) {
 <body style="font-family: Georgia, serif; max-width: 680px; margin: 0 auto; padding: 24px; color: #111;">
   <div style="border-top: 3px solid #C9A84C; padding-top: 20px; margin-bottom: 28px;">
     <p style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: #C9A84C; margin: 0 0 8px;">FORGED Summit — Indoor Volleyball 2026</p>
-    <h1 style="font-size: 28px; margin: 0; color: #111;">New Waitlist Signup</h1>
+    <h1 style="font-size: 28px; margin: 0; color: #111;">New Newsletter Signup</h1>
   </div>
   <table style="width: 100%; border-collapse: collapse; font-size: 14px; line-height: 1.7;">
     <tr><td style="padding: 8px 12px; border-bottom: 1px solid #eee; width: 38%; color: #555;">Name</td><td style="padding: 8px 12px; border-bottom: 1px solid #eee;">${name || "—"}</td></tr>
@@ -24,7 +24,7 @@ export async function POST(req: Request) {
     <tr><td style="padding: 8px 12px; border-bottom: 1px solid #eee; color: #555;">How did they hear about us?</td><td style="padding: 8px 12px; border-bottom: 1px solid #eee;">${howDidYouHear || "—"}</td></tr>
   </table>
   <div style="margin-top: 32px; padding-top: 16px; border-top: 1px solid #eee; font-size: 12px; color: #888;">
-    Submitted via beforged.co · ${new Date().toLocaleString("en-US", { timeZone: "America/Phoenix" })} AZ time
+    Submitted via beforged.co · ${new Date().toLocaleString("en-US", { timeZone: "America/New_York" })} AZ time
   </div>
 </body>
 </html>
@@ -41,9 +41,9 @@ export async function POST(req: Request) {
         },
         body: JSON.stringify({
           from: "FORGED Summit <noreply@beforged.co>",
-          to: ["pri@beforged.co"],
+          to: ["info@beforged.co"],
           reply_to: email,
-          subject: `🔱 Waitlist — ${name || email}`,
+          subject: `🔱 Newsletter — ${name || email}`,
           html,
         }),
       });
@@ -54,6 +54,24 @@ export async function POST(req: Request) {
       }
     } else {
       console.log("WAITLIST SIGNUP (no RESEND_API_KEY set):", { email, name, howDidYouHear });
+    }
+
+    // ── Google Sheet backup ───────────────────────────────────────────────────
+    const sheetUrl = process.env.GOOGLE_SHEET_URL;
+    console.log("SHEET URL present:", !!sheetUrl);
+    if (sheetUrl) {
+      try {
+        const sheetRes = await fetch(sheetUrl, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ type: "waitlist", email, name, howDidYouHear }),
+          redirect: "follow",
+        });
+        const sheetText = await sheetRes.text();
+        console.log("Sheet response:", sheetRes.status, sheetText);
+      } catch (err) {
+        console.error("Sheet log error:", err);
+      }
     }
 
     return NextResponse.json({ ok: true });

@@ -5,7 +5,7 @@ import AthleteInterestForm from "@/components/AthleteInterestForm";
 export const metadata: Metadata = {
   title: "Athlete Registration — FORGED",
   description:
-    "Register as an athlete for FORGED 2026. Phoenix, AZ — November 26–29, 2026. Elite training, expert sessions, and a community built to last.",
+    "Register as an athlete for FORGED 2026. Mesa, AZ — November 26–29, 2026. Elite training, expert sessions, and a community built to last.",
 };
 
 const included = [
@@ -36,6 +36,10 @@ const included = [
   {
     title: "Lifetime Community Access",
     desc: "The relationships you build at FORGED don't end on Day 4. You're joining a network of athletes, coaches, and experts that compounds in value every year. This is the beginning of something bigger.",
+  },
+  {
+    title: "FirstBeat & Ver Assessments",
+    desc: "Real-time physiological data and vision testing built into competition day. Know your readiness. Train your vision. Two of the most advanced performance tools in sport — available to every FORGED athlete.",
   },
 ];
 
@@ -82,7 +86,7 @@ export default function AthleteRegister() {
           are committed to what's next come to find out what they're made of.
         </p>
         <p className="text-[11px] tracking-[0.2em] uppercase text-muted mt-6 relative z-[1]">
-          Phoenix, AZ &nbsp;·&nbsp; Nov 26–29, 2026 &nbsp;·&nbsp; Indoor Volleyball
+          Mesa, AZ &nbsp;·&nbsp; Nov 26–29, 2026 &nbsp;·&nbsp; Indoor Volleyball
         </p>
       </section>
 
@@ -143,7 +147,7 @@ export default function AthleteRegister() {
               <div className="font-display text-xl tracking-[0.1em] text-gold mb-2">Club Deal — Bring Your Team</div>
               <p className="text-[13px] text-light leading-[1.6]">
                 Register 4 athletes from the same club or coach and your coach or club director gets one complimentary entry to the full summit weekend. To claim it, email{" "}
-                <a href="mailto:pri@beforged.co" className="text-gold-m hover:underline">pri@beforged.co</a>{" "}
+                <a href="mailto:info@beforged.co" className="text-gold-m hover:underline">info@beforged.co</a>{" "}
                 with your group's name and the 4 athlete registrations. We'll confirm your free entry within 48 hours.
               </p>
             </div>
@@ -193,7 +197,7 @@ export default function AthleteRegister() {
               I understand that participation in sport requires a personal acceptance of the risk of injury. I acknowledge that those responsible for the conduct of the FORGED Summit take reasonable precautions to minimize such risk, but that some risk cannot be eliminated.
             </p>
             <p className="text-[13px] text-light leading-[1.8]">
-              I understand that participation in the FORGED Summit (November 26–29, 2026, Phoenix, AZ) may result in injury or illness, physical or mental impairments, or even death. I understand that FORGED cannot be held responsible for any injuries or conditions caused by the actions of other athletes or participants. I also understand that injuries may result from my own failure to follow safety procedures or techniques made known to me by the coaching staff, athletic training staff, and/or otherwise known to me from any other source, including but not limited to medical personnel.
+              I understand that participation in the FORGED Summit (November 26–29, 2026, Mesa, AZ) may result in injury or illness, physical or mental impairments, or even death. I understand that FORGED cannot be held responsible for any injuries or conditions caused by the actions of other athletes or participants. I also understand that injuries may result from my own failure to follow safety procedures or techniques made known to me by the coaching staff, athletic training staff, and/or otherwise known to me from any other source, including but not limited to medical personnel.
             </p>
             <p className="text-[13px] text-light leading-[1.8]">
               I voluntarily assume all risks associated with participation and release FORGED, its founders, staff, coaches, experts, and venue partners from any and all liability arising from participation in this event.
@@ -214,7 +218,7 @@ export default function AthleteRegister() {
             </div>
             <p className="text-[11px] text-muted leading-[1.6] pt-2">
               A signed copy of this waiver will be required at check-in. You may also email a signed copy in advance to{" "}
-              <a href="mailto:pri@beforged.co" className="text-gold-m hover:underline">pri@beforged.co</a>.
+              <a href="mailto:info@beforged.co" className="text-gold-m hover:underline">info@beforged.co</a>.
             </p>
           </div>
         </FadeUp>
@@ -254,8 +258,25 @@ export default function AthleteRegister() {
             <span className="gold-gradient-text">DAYS.</span>
           </h2>
           <p className="font-serif italic text-[clamp(15px,2vw,19px)] text-light max-w-[600px] leading-[1.6] mb-14">
-            Here&apos;s what a training day looks like. Times are approximate — final schedule sent before the event.
+            Here&apos;s what the weekend looks like. Times are approximate — final schedule sent before the event.
           </p>
+
+          {/* 4-Day Overview */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[2px] bg-gold/[0.08] mb-16">
+            {[
+              { day: "Day 1", date: "Thursday · Nov 26", label: "Arrival Day", desc: "Check in, pick up your swag bag, meet your cohort. Light intro session in the evening to get you locked in before Day 2." },
+              { day: "Day 2", date: "Friday · Nov 27", label: "Training Day 1", desc: "First full day on the court. Morning and afternoon training blocks plus your first round of expert sessions." },
+              { day: "Day 3", date: "Saturday · Nov 28", label: "Training Day 2", desc: "Back on the court. Second round of training blocks and the remaining expert sessions. Full day of work." },
+              { day: "Day 4", date: "Sunday · Nov 29", label: "Competition Day", desc: "Queen & King of the Beach tournament. You compete. 1:1 assessments available with FirstBeat and Ver during matches." },
+            ].map((d) => (
+              <FadeUp key={d.day} className="bg-dark p-7 flex flex-col gap-3">
+                <div className="text-[10px] font-semibold tracking-[0.25em] uppercase text-gold-m">{d.day}</div>
+                <div className="text-[11px] tracking-[0.12em] uppercase text-muted">{d.date}</div>
+                <div className="font-display text-xl tracking-[0.06em] text-cream border-b border-gold/15 pb-3">{d.label}</div>
+                <p className="text-[12px] text-light leading-[1.65]">{d.desc}</p>
+              </FadeUp>
+            ))}
+          </div>
 
           {/* Sample Training Day */}
           <div className="mb-4">

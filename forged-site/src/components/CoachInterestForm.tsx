@@ -26,6 +26,9 @@ type Fields = {
   collegeDivision: string;
   programName: string;
   shirtSize: string;
+  referCoach: boolean;
+  referCoachName: string;
+  referCoachContact: string;
   goal: string;
 };
 
@@ -33,7 +36,9 @@ const BLANK: Fields = {
   firstName: "", lastName: "", email: "", phone: "",
   city: "", state: "",
   levels: [], collegeDivision: "", programName: "",
-  shirtSize: "", goal: "",
+  shirtSize: "",
+  referCoach: false, referCoachName: "", referCoachContact: "",
+  goal: "",
 };
 
 function Input({ label, required, ...props }: InputHTMLAttributes<HTMLInputElement> & { label: string; required?: boolean }) {
@@ -129,7 +134,7 @@ export default function CoachInterestForm({ stripeUrl }: { stripeUrl: string }) 
           Complete Payment — $250 →
         </a>
         <p className="text-[12px] text-muted mt-6">
-          Questions? <a href="mailto:pri@beforged.co" className="text-gold-m hover:underline">pri@beforged.co</a>
+          Questions? <a href="mailto:info@beforged.co" className="text-gold-m hover:underline">info@beforged.co</a>
         </p>
       </div>
     );
@@ -191,6 +196,27 @@ export default function CoachInterestForm({ stripeUrl }: { stripeUrl: string }) 
           {SHIRT_SIZES.map((s) => <option key={s} value={s}>{s}</option>)}
         </Select>
 
+        {/* Refer a Coach */}
+        <SectionLabel>Know a Coach Who Should Be Here? (Optional)</SectionLabel>
+        <div className="col-span-full flex items-start gap-3">
+          <input
+            id="referCoach"
+            type="checkbox"
+            className="mt-1 accent-[#C9A84C] w-4 h-4 flex-shrink-0"
+            checked={fields.referCoach}
+            onChange={(e) => set("referCoach", e.target.checked)}
+          />
+          <label htmlFor="referCoach" className="text-[13px] text-light leading-[1.5] cursor-pointer">
+            I know a coach who would love FORGED — I want them to know about it
+          </label>
+        </div>
+        {fields.referCoach && (
+          <>
+            <Input label="Coach's Name" placeholder="Full name" value={fields.referCoachName} onChange={(e) => set("referCoachName", e.target.value)} />
+            <Input label="Coach's Email or Phone" placeholder="How to reach them" value={fields.referCoachContact} onChange={(e) => set("referCoachContact", e.target.value)} />
+          </>
+        )}
+
         {/* Goal */}
         <SectionLabel>Your Goal</SectionLabel>
         <div className="col-span-full flex flex-col gap-1">
@@ -210,7 +236,7 @@ export default function CoachInterestForm({ stripeUrl }: { stripeUrl: string }) 
       {status === "error" && (
         <p className="text-[12px] text-gold-m text-center">
           Something went wrong. Email us directly at{" "}
-          <a href="mailto:pri@beforged.co" className="underline">pri@beforged.co</a>.
+          <a href="mailto:info@beforged.co" className="underline">info@beforged.co</a>.
         </p>
       )}
 

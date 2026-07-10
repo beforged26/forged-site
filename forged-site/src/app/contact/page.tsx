@@ -5,14 +5,14 @@ import ContactForm from "@/components/ContactForm";
 export const metadata: Metadata = {
   title: "Contact — FORGED",
   description:
-    "Get in touch with FORGED — questions about the 2026 summit, registration, or partnership opportunities. Email pri@beforged.co or call 516.405.5549.",
+    "Get in touch with FORGED — questions about the 2026 summit, registration, or partnership opportunities. Email info@beforged.co or call 516.405.5549.",
 };
 
 const channels = [
   {
     title: "Email",
-    value: "pri@beforged.co",
-    href: "mailto:pri@beforged.co",
+    value: "info@beforged.co",
+    href: "mailto:info@beforged.co",
     desc: "For general questions, registration, and partnership inquiries.",
   },
   {
@@ -29,8 +29,8 @@ const channels = [
   },
   {
     title: "TikTok",
-    value: "@beforgedco",
-    href: "https://tiktok.com/@beforgedco",
+    value: "@beforged.co",
+    href: "https://tiktok.com/@beforged.co",
     desc: "Short-form content from the FORGED community and founder.",
   },
 ];

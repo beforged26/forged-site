@@ -25,6 +25,7 @@ const eventsDropdown = [
 const registerDropdown = [
   { href: "/register/athlete", label: "Athletes" },
   { href: "/register/coach", label: "Coaches" },
+  { href: "/access", label: "Access Scholarship" },
 ];
 
 const ChevronIcon = ({ open }: { open: boolean }) => (

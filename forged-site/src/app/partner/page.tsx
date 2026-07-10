@@ -6,7 +6,7 @@ import PartnerForm from "@/components/PartnerForm";
 export const metadata: Metadata = {
   title: "Partner With Us — FORGED",
   description:
-    "Partner with FORGED — an elite athlete, coach, and expert development summit. First event: Phoenix, AZ, November 26–29, 2026. Founding partner sponsorship tiers from $2,500 to $250,000+.",
+    "Partner with FORGED — an elite athlete, coach, and expert development summit. First event: Mesa, AZ, November 26–29, 2026. Founding partner sponsorship tiers from $2,500 to $250,000+.",
 };
 
 const audiences = [
@@ -72,7 +72,7 @@ const tiers = [
     amount: "$25,000",
     everything: "Everything in Silver, plus:",
     items: [
-      "Brand moment / speaking opportunity",
+      "Scheduled brand activation slot",
       "Co-branded content series",
       "Multiple scholarship naming rights",
       "Exclusive product category",
@@ -86,7 +86,7 @@ const tiers = [
     items: [
       "Premier naming rights — summit session/stage",
       "Full on-site brand takeover opportunity",
-      "Exclusive athlete activation access",
+      "Scheduled brand activation slot — priority placement",
       "Multi-year commitment option",
       "First right of refusal — future summits",
     ],
@@ -98,11 +98,12 @@ const tiers = [
     amount: "$100,000",
     everything: "Everything in Presenting, plus:",
     items: [
-      "Co-presenting summit title rights",
-      "Named in founding story — permanently",
+      "Co-presenting summit title rights — across all years",
+      "Named permanently in the FORGED founding story",
       "Full scholarship program naming rights",
-      "Custom long-term partnership structure",
-      "Annual strategic review with founder",
+      "Guaranteed brand activation slot at every future FORGED summit — placement confirmed before general scheduling opens",
+      "Annual founder session with Pri — strategy, goals, alignment",
+      "Locked founding partner pricing — your rate never increases",
     ],
   },
   {
@@ -111,11 +112,13 @@ const tiers = [
     amountSuffix: "+",
     everything: "Everything in Legacy, plus:",
     items: [
-      "Co-founder brand positioning",
-      "National expansion partnership rights",
-      "Equity-level relationship with FORGED",
-      "Board advisory access",
-      "Fully custom partnership — built around you",
+      "Title rights across all future FORGED markets — every sport, every city",
+      "A named program track built around your brand — a recurring summit session in your name",
+      "A dedicated [Brand] Day at FORGED — full summit day activation built around your team",
+      "Year-round co-branded content series woven into all FORGED media and platforms",
+      "Athlete ambassador program in your brand’s name",
+      "Annual VIP summit experience for your leadership team — reserved access, dedicated FORGED host, curated introductions to athletes, coaches, and experts, and your brand represented from the first session to the last. You show up. We handle everything.",
+      "Custom post-event impact report — your brand’s story, outcomes, and reach, documented every year",
     ],
     badge: "By Invitation",
   },
@@ -210,7 +213,7 @@ export default function Partner() {
         <div className="mb-10 relative z-[1]">
           <div className="flex items-center justify-center gap-6 flex-wrap mb-3.5">
             <span className="text-[11px] tracking-[0.22em] uppercase text-muted">
-              First Event — Phoenix, AZ
+              First Event — Mesa, AZ
             </span>
             <span className="w-[3px] h-[3px] bg-gold-d rounded-full" />
             <span className="text-[11px] tracking-[0.22em] uppercase text-muted">
@@ -298,14 +301,17 @@ export default function Partner() {
                 {t.amount}
                 {t.amountSuffix && <span className="font-body text-[13px] text-muted font-normal tracking-normal">{t.amountSuffix}</span>}
               </div>
-              <p className="text-xs text-light leading-[1.8] flex-1">
-                {t.everything && <span className="text-gold-m italic block mb-1.5">{t.everything}</span>}
-                {t.items.map((item, idx) => (
-                  <span key={idx} className="block">
-                    {item}
-                  </span>
-                ))}
-              </p>
+              <div className="flex-1 mt-1">
+                {t.everything && <p className="text-xs text-gold-m italic mb-2">{t.everything}</p>}
+                <ul className="space-y-1.5">
+                  {t.items.map((item, idx) => (
+                    <li key={idx} className="flex gap-2 text-xs text-light leading-[1.5]">
+                      <span className="text-gold-m mt-[2px] shrink-0">·</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </FadeUp>
           ))}
         </div>

@@ -4,7 +4,7 @@ import FadeUp from "@/components/FadeUp";
 export const metadata: Metadata = {
   title: "Register — FORGED",
   description:
-    "Secure your spot at the FORGED Summit. Early bird pricing available. Phoenix, AZ — November 26–29, 2026.",
+    "Secure your spot at the FORGED Summit. Early bird pricing available. Mesa, AZ — November 26–29, 2026.",
 };
 
 const included = [
@@ -49,11 +49,21 @@ export default function Register() {
           <span className="gold-gradient-text">SPOT.</span>
         </h1>
         <p className="font-serif italic text-[clamp(18px,3vw,26px)] text-light max-w-[620px] mx-auto relative z-[1] leading-[1.5]">
-          Phoenix, AZ &middot; Nov 26&ndash;29, 2026 &middot; Indoor Volleyball
+          Mesa, AZ &middot; Nov 26&ndash;29, 2026 &middot; Indoor Volleyball
         </p>
       </section>
 
       <div className="gold-rule" />
+
+      {/* ACCESS SCHOLARSHIP BANNER */}
+      <div className="bg-[#0D0D0D] border-b border-gold/10 py-5 px-6 text-center">
+        <p className="text-[13px] text-light">
+          Cost shouldn&rsquo;t stop a great athlete.{" "}
+          <a href="/access" className="text-gold underline underline-offset-4 hover:text-gold-m transition-colors font-semibold">
+            Apply for a FORGED Access Scholarship →
+          </a>
+        </p>
+      </div>
 
       {/* REGISTRATION PRICING */}
       <FadeUp className="max-w-[1100px] mx-auto px-6 md:px-10 py-24">
@@ -77,14 +87,24 @@ export default function Register() {
             <p className="text-[13px] text-light leading-[1.6] mb-8">
               Save $200 — first 50 spots only. Lock in the lowest rate FORGED will ever offer.
             </p>
-            <a
-              href="https://buy.stripe.com/5kQ5kD5xq8KBdqi2Uz3AY00"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-7 py-3.5 hover:bg-gold-m transition-colors"
-            >
-              Register — Early Bird
-            </a>
+            <div className="flex flex-col gap-3">
+              <a
+                href="https://buy.stripe.com/5kQ5kD5xq8KBdqi2Uz3AY00"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-7 py-3.5 hover:bg-gold-m transition-colors text-center"
+              >
+                Register — Early Bird
+              </a>
+              <a
+                href="https://buy.stripe.com/3cIcN51ha0e54TM7aP3AY02"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[11px] text-muted hover:text-gold-m transition-colors tracking-[0.05em] text-center"
+              >
+                Not ready to pay in full? Reserve with $350 deposit →
+              </a>
+            </div>
           </FadeUp>
 
           {/* Full Registration */}
@@ -96,14 +116,24 @@ export default function Register() {
             <p className="text-[13px] text-light leading-[1.6] mb-8">
               Standard rate after early bird closes. Full access to all summit programming.
             </p>
-            <a
-              href="https://buy.stripe.com/fZu3cv0d6e4V85Y0Mr3AY01"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-gold border border-gold/40 px-7 py-3.5 hover:border-gold hover:text-[#F7EE78] transition-colors"
-            >
-              Register — Full Price
-            </a>
+            <div className="flex flex-col gap-3">
+              <a
+                href="https://buy.stripe.com/fZu3cv0d6e4V85Y0Mr3AY01"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-gold border border-gold/40 px-7 py-3.5 hover:border-gold hover:text-[#F7EE78] transition-colors text-center"
+              >
+                Register — Full Price
+              </a>
+              <a
+                href="https://buy.stripe.com/3cIcN51ha0e54TM7aP3AY02"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[11px] text-muted hover:text-gold-m transition-colors tracking-[0.05em] text-center"
+              >
+                Not ready to pay in full? Reserve with $350 deposit →
+              </a>
+            </div>
           </FadeUp>
         </div>
 

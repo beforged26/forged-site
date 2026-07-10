@@ -5,7 +5,7 @@ import CoachInterestForm from "@/components/CoachInterestForm";
 export const metadata: Metadata = {
   title: "Coach Registration — FORGED",
   description:
-    "Register as a coach for FORGED 2026. Phoenix, AZ — November 26–29, 2026. Coaches-only sessions, peer development, and a community built for the people who develop athletes.",
+    "Register as a coach for FORGED 2026. Mesa, AZ — November 26–29, 2026. Coaches-only sessions, peer development, and a community built for the people who develop athletes.",
 };
 
 const included = [
@@ -39,11 +39,15 @@ const included = [
   },
   {
     title: "All Meals Included",
-    desc: "From arrival to departure — every meal covered. No extra costs, no logistics. Just focus on why you came.",
+    desc: "Lunch and dinner included for coaches every day. No extra costs, no logistics. Just focus on why you came.",
   },
   {
     title: "Founding Coach Community",
     desc: "The coaches who join FORGED Year 1 will shape what this community becomes. This isn't just a weekend — it's the beginning of a supportive network that grows alongside you, every year.",
+  },
+  {
+    title: "Session Recordings & Resources",
+    desc: "Every expert session recorded and added to the FORGED online community. The frameworks, the conversations, the tools — all yours to revisit and bring back to your program.",
   },
 ];
 
@@ -74,7 +78,7 @@ export default function CoachRegister() {
           where someone finally invests in developing you.
         </p>
         <p className="text-[11px] tracking-[0.2em] uppercase text-muted mt-6 relative z-[1]">
-          Phoenix, AZ &nbsp;·&nbsp; Nov 26–29, 2026 &nbsp;·&nbsp; Indoor Volleyball
+          Mesa, AZ &nbsp;·&nbsp; Nov 26–29, 2026 &nbsp;·&nbsp; Indoor Volleyball
         </p>
       </section>
 
@@ -110,7 +114,7 @@ export default function CoachRegister() {
               <div className="font-display text-xl tracking-[0.1em] text-gold mb-2">Bring Your Club — Get In Free</div>
               <p className="text-[13px] text-light leading-[1.6]">
                 Get 4 athletes registered for FORGED — whether from your club or your own roster — and earn one complimentary entry to the full summit weekend. To claim it, email{" "}
-                <a href="mailto:pri@beforged.co" className="text-gold-m hover:underline">pri@beforged.co</a>{" "}
+                <a href="mailto:info@beforged.co" className="text-gold-m hover:underline">info@beforged.co</a>{" "}
                 with your name and the 4 athlete registrations. We'll confirm your free entry within 48 hours.
               </p>
             </div>
@@ -160,7 +164,7 @@ export default function CoachRegister() {
               I understand that participation in sport and athletic coaching activities requires a personal acceptance of the risk of injury. I acknowledge that those responsible for the conduct of the FORGED Summit take reasonable precautions to minimize such risk, but that some risk cannot be eliminated.
             </p>
             <p className="text-[13px] text-light leading-[1.8]">
-              I understand that participation in the FORGED Summit (November 26–29, 2026, Phoenix, AZ) as a coach or staff member may result in injury or illness, physical or mental impairments, or even death. I understand that FORGED cannot be held responsible for any injuries or conditions caused by the actions of athletes, other coaches, or participants. I also understand that injuries may result from my own failure to follow safety procedures or techniques made known by the FORGED staff and/or otherwise known to me from any other source.
+              I understand that participation in the FORGED Summit (November 26–29, 2026, Mesa, AZ) as a coach or staff member may result in injury or illness, physical or mental impairments, or even death. I understand that FORGED cannot be held responsible for any injuries or conditions caused by the actions of athletes, other coaches, or participants. I also understand that injuries may result from my own failure to follow safety procedures or techniques made known by the FORGED staff and/or otherwise known to me from any other source.
             </p>
             <p className="text-[13px] text-light leading-[1.8]">
               I voluntarily assume all risks associated with participation and release FORGED, its founders, staff, coaches, experts, and venue partners from any and all liability arising from participation in this event.
@@ -179,7 +183,7 @@ export default function CoachRegister() {
             </div>
             <p className="text-[11px] text-muted leading-[1.6] pt-2">
               A signed copy of this waiver will be required at check-in. You may also email a signed copy in advance to{" "}
-              <a href="mailto:pri@beforged.co" className="text-gold-m hover:underline">pri@beforged.co</a>.
+              <a href="mailto:info@beforged.co" className="text-gold-m hover:underline">info@beforged.co</a>.
             </p>
           </div>
         </FadeUp>
@@ -219,8 +223,25 @@ export default function CoachRegister() {
             <span className="gold-gradient-text">DAYS.</span>
           </h2>
           <p className="font-serif italic text-[clamp(15px,2vw,19px)] text-light max-w-[600px] leading-[1.6] mb-14">
-            Here&apos;s what a training day looks like for coaches. Times are approximate — final schedule sent before the event.
+            Here&apos;s what the weekend looks like for coaches. Times are approximate — final schedule sent before the event.
           </p>
+
+          {/* 4-Day Overview */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[2px] bg-gold/[0.08] mb-16">
+            {[
+              { day: "Day 1", date: "Thursday · Nov 26", label: "Arrival Day", desc: "Check in, meet the staff and other coaches. Evening intro session — informal, unscheduled, and exactly the kind of conversation you've been wanting to have." },
+              { day: "Day 2", date: "Friday · Nov 27", label: "Training Day 1", desc: "Morning coaches huddle, then into court sessions and expert programming alongside the athletes. Coaches-only classroom session in the evening." },
+              { day: "Day 3", date: "Saturday · Nov 28", label: "Training Day 2", desc: "Second full training day. More court time, more expert sessions, another evening coaches-only classroom deep dive. Dinner provided." },
+              { day: "Day 4", date: "Sunday · Nov 29", label: "Competition Day", desc: "Athletes compete in Queen & King of the Beach. Coaches observe, give feedback, and connect before the weekend closes out." },
+            ].map((d) => (
+              <FadeUp key={d.day} className="bg-dark p-7 flex flex-col gap-3">
+                <div className="text-[10px] font-semibold tracking-[0.25em] uppercase text-gold-m">{d.day}</div>
+                <div className="text-[11px] tracking-[0.12em] uppercase text-muted">{d.date}</div>
+                <div className="font-display text-xl tracking-[0.06em] text-cream border-b border-gold/15 pb-3">{d.label}</div>
+                <p className="text-[12px] text-light leading-[1.65]">{d.desc}</p>
+              </FadeUp>
+            ))}
+          </div>
 
           {/* Sample Training Day */}
           <div className="mb-4">
@@ -229,16 +250,16 @@ export default function CoachRegister() {
           <div className="border-l-2 border-gold/20 ml-3 flex flex-col gap-0">
             {[
               { time: "7:00 AM", title: "Coaches Early Access", desc: "Doors open early for coaches. Get on the court, walk the space, talk to staff before the day begins.", tag: "" },
-              { time: "7:30 AM", title: "Coaches Breakfast", desc: "Breakfast provided for coaches, experts, and staff.", tag: "Coaches" },
+              { time: "7:30 AM", title: "Coaches Breakfast", desc: "Breakfast provided for coaches, experts, and staff.", tag: "FORGED Coaching Staff Only" },
               { time: "8:00 AM", title: "Morning Coaches Huddle", desc: "Intimate Q&A and discussion with the elite coaching staff. The real conversations — the ones you don't get at clinics.", tag: "Coaches Only" },
               { time: "8:30 AM", title: "Court Training Block 1", desc: "Observe and engage alongside athletes. Watch elite coaches work, take notes, ask questions between reps.", tag: "" },
               { time: "10:30 AM", title: "Expert Session", desc: "Mental performance, nutrition, or recruiting — attend all sessions with the athletes.", tag: "" },
               { time: "11:30 AM", title: "Expert Session", desc: "Second session of the morning block.", tag: "" },
-              { time: "12:30 PM", title: "Lunch", desc: "Lunch provided for coaches. Time to connect with other coaches and staff.", tag: "Coaches" },
+              { time: "12:30 PM", title: "Lunch", desc: "Lunch provided for coaches. Time to connect with other coaches and staff.", tag: "All Coaches" },
               { time: "1:30 PM", title: "Court Training Block 2", desc: "Afternoon training block. Coaches are welcome to interact with athletes and coaching staff.", tag: "" },
               { time: "3:30 PM", title: "Expert Sessions", desc: "Attend all remaining expert sessions alongside athletes.", tag: "" },
               { time: "5:30 PM", title: "Coaches-Only Classroom Session", desc: "Purpose-built session just for coaches — culture building, athlete development frameworks, high-performance environment design.", tag: "Coaches Only" },
-              { time: "6:45 PM", title: "Coaches Dinner", desc: "Dinner provided. Informal. The best part of the day.", tag: "Coaches" },
+              { time: "6:45 PM", title: "Coaches Dinner", desc: "Dinner provided. Informal. The best part of the day.", tag: "Coaches Only" },
             ].map((item, i) => (
               <div key={i} className="relative pl-8 pb-7">
                 <div className="absolute -left-[5px] top-[6px] w-[8px] h-[8px] rounded-full bg-gold/50" />
@@ -277,8 +298,8 @@ export default function CoachRegister() {
         <FadeUp>
           <p className="text-sm text-muted tracking-[0.04em]">
             Questions? Email{" "}
-            <a href="mailto:pri@beforged.co" className="text-gold-m no-underline hover:underline">
-              pri@beforged.co
+            <a href="mailto:info@beforged.co" className="text-gold-m no-underline hover:underline">
+              info@beforged.co
             </a>
           </p>
         </FadeUp>

@@ -29,7 +29,7 @@ const pillars = [
 const stats = [
   { number: "120", label: "Athletes Expected" },
   { number: "4", label: "Day Immersive Summit" },
-  { number: "2026", label: "Inaugural Year — Phoenix, AZ" },
+  { number: "2026", label: "Inaugural Year — Mesa, AZ" },
   { number: "ALL", label: "Sports — Long-Term Vision" },
 ];
 
@@ -118,7 +118,7 @@ export default function About() {
           </h2>
           <p className="font-serif italic text-[clamp(18px,2.5vw,22px)] text-light max-w-[760px] mx-auto text-center leading-[1.6] mb-14">
             FORGED launches its inaugural summit Thanksgiving weekend 2026 in
-            Phoenix, Arizona — a 4-day immersive development experience for
+            Mesa, Arizona — a 4-day immersive development experience for
             athletes, coaches, and performance professionals. This is year one
             of a long-term national ecosystem. Brands and families that join
             now become part of the founding story.
@@ -177,7 +177,7 @@ export default function About() {
         </p>
         <p className="text-[11px] tracking-[0.15em] uppercase text-gold-m max-w-[700px] mx-auto leading-[1.9]">
           Founded by Pri Piantadosi-Lima &nbsp;·&nbsp; Former Professional
-          Athlete &nbsp;·&nbsp; Former Division I Head Coach &nbsp;·&nbsp; USAV
+          Athlete &nbsp;·&nbsp; AVP &amp; FIVB Pro Beach Tour Coach &nbsp;·&nbsp; Former Division I Head Coach &nbsp;·&nbsp; USAV
           Club Coach of the Year &nbsp;·&nbsp; USAV NTDP Coach
         </p>
       </FadeUp>

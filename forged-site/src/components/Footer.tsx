@@ -35,10 +35,10 @@ export default function Footer() {
         <Link href="/partner" className="text-[11px] tracking-[0.15em] uppercase text-muted hover:text-gold transition-colors">Partner</Link>
         <Link href="/contact" className="text-[11px] tracking-[0.15em] uppercase text-muted hover:text-gold transition-colors">Contact</Link>
         <a href="https://instagram.com/beforgedco" target="_blank" rel="noreferrer" className="text-[11px] tracking-[0.15em] uppercase text-muted hover:text-gold transition-colors">Instagram</a>
-        <a href="https://tiktok.com/@beforgedco" target="_blank" rel="noreferrer" className="text-[11px] tracking-[0.15em] uppercase text-muted hover:text-gold transition-colors">TikTok</a>
+        <a href="https://tiktok.com/@beforged.co" target="_blank" rel="noreferrer" className="text-[11px] tracking-[0.15em] uppercase text-muted hover:text-gold transition-colors">TikTok</a>
       </div>
       <p className="text-[11px] text-muted/50 tracking-[0.08em]">
-        © 2026 FORGED. All rights reserved. &nbsp;·&nbsp; Thanksgiving Weekend 2026 &nbsp;·&nbsp; Phoenix, Arizona &nbsp;·&nbsp; beforged.co
+        © 2026 FORGED. All rights reserved. &nbsp;·&nbsp; Thanksgiving Weekend 2026 &nbsp;·&nbsp; Mesa, Arizona &nbsp;·&nbsp; beforged.co
       </p>
     </footer>
     </>

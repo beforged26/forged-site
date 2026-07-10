@@ -100,8 +100,8 @@ export default function WaitlistForm({
       {status === "error" && (
         <p className="text-[11px] text-gold-m mt-3 text-center">
           Something went wrong — email us directly at{" "}
-          <a href="mailto:pri@beforged.co" className="underline">
-            pri@beforged.co
+          <a href="mailto:info@beforged.co" className="underline">
+            info@beforged.co
           </a>
           .
         </p>

@@ -54,7 +54,7 @@ export default function RegisterForm() {
         <p className="text-sm text-light">
           Thanks, {form.name.split(" ")[0] || "athlete"} — we&rsquo;ve received your
           application. We&rsquo;ll be in touch with next steps as registration
-          opens for the Phoenix, AZ summit (Nov 26–29, 2026).
+          opens for the Mesa, AZ summit (Nov 26–29, 2026).
         </p>
       </div>
     );

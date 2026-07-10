@@ -5,7 +5,7 @@ import FadeUp from "@/components/FadeUp";
 export const metadata: Metadata = {
   title: "Events — FORGED",
   description:
-    "FORGED 2026 — the inaugural elite athlete and coach development summit. Phoenix, AZ, November 26–29, 2026. Indoor Volleyball, expanding to all sports.",
+    "FORGED 2026 — the inaugural elite athlete and coach development summit. Mesa, AZ, November 26–29, 2026. Indoor Volleyball, expanding to all sports.",
 };
 
 const schedule = [
@@ -40,7 +40,7 @@ const expansion = [
 const sports = [
   {
     title: "Indoor Volleyball",
-    desc: "The sport focus for the inaugural 2026 summit in Phoenix, AZ. Ages 13–23.",
+    desc: "The sport focus for the inaugural 2026 summit in Mesa, AZ. Ages 13–23.",
     tag: "2026 — Year One",
   },
   {

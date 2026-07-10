@@ -40,11 +40,11 @@ const faqs: { category: string; items: { q: string; a: string }[] }[] = [
       },
       {
         q: "What age groups and grad years can attend?",
-        a: "We welcome 8th graders through high school seniors — graduating classes 2026 through 2030 and beyond. If you're not sure whether your grad year qualifies, email us at pri@beforged.co.",
+        a: "We welcome 8th graders through high school seniors — graduating classes 2026 through 2030 and beyond. If you're not sure whether your grad year qualifies, email us at info@beforged.co.",
       },
       {
         q: "Can a coach bring their whole team?",
-        a: "Yes — full teams are welcome. Email us at pri@beforged.co to coordinate group registration and make sure everyone is placed correctly.",
+        a: "Yes — full teams are welcome. Email us at info@beforged.co to coordinate group registration and make sure everyone is placed correctly.",
       },
     ],
   },
@@ -61,7 +61,7 @@ const faqs: { category: string; items: { q: string; a: string }[] }[] = [
       },
       {
         q: "Is there supervision for underage athletes attending without a parent?",
-        a: "More info coming soon. If you have a specific situation, email us at pri@beforged.co and we'll work with you.",
+        a: "More info coming soon. If you have a specific situation, email us at info@beforged.co and we'll work with you.",
       },
     ],
   },
@@ -74,15 +74,15 @@ const faqs: { category: string; items: { q: string; a: string }[] }[] = [
       },
       {
         q: "What is the cancellation and refund policy?",
-        a: "Deposits are non-refundable, except in cases of extenuating circumstances reviewed on a case-by-case basis. For full registration: if you cancel by October 1, 2026, you will receive a 50% refund of your total registration. If you cancel by November 1, 2026, you will receive a 25% refund. No refunds are issued after November 1. Email pri@beforged.co with any questions.",
+        a: "Deposits are non-refundable, except in cases of extenuating circumstances reviewed on a case-by-case basis. For full registration: if you cancel by October 1, 2026, you will receive a 50% refund of your total registration. If you cancel by November 1, 2026, you will receive a 25% refund. No refunds are issued after November 1. Email info@beforged.co with any questions.",
       },
       {
         q: "Do you offer a sibling discount?",
-        a: "Yes — siblings receive 15% off when registering together. Email us at pri@beforged.co and we'll send you a special registration link to purchase both spots.",
+        a: "Yes — siblings receive 15% off when registering together. Email us at info@beforged.co and we'll send you a special registration link to purchase both spots.",
       },
       {
         q: "Can a coach get a discount for bringing a full team?",
-        a: "Yes. If a coach brings 8 or more players, each player will receive $100 off their registration. Email us at pri@beforged.co to get this set up before registering.",
+        a: "Yes. If a coach brings 8 or more players, each player will receive $100 off their registration. Email us at info@beforged.co to get this set up before registering.",
       },
     ],
   },
@@ -156,7 +156,7 @@ export default function FAQ() {
           }}
         />
         <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-gold-m mb-5 relative z-[1]">
-          AZ — Volleyball &nbsp;·&nbsp; Phoenix, Nov 26–29, 2026
+          AZ — Volleyball &nbsp;·&nbsp; Mesa, Nov 26–29, 2026
         </p>
         <h1 className="font-display text-[clamp(52px,10vw,110px)] leading-[0.95] tracking-[0.04em] text-cream mb-6 relative z-[1]">
           FREQUENTLY
@@ -192,7 +192,7 @@ export default function FAQ() {
             We're happy to help. Reach out directly and we'll get back to you.
           </p>
           <a
-            href="mailto:pri@beforged.co"
+            href="mailto:info@beforged.co"
             className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-8 py-3.5 hover:bg-gold-m transition-colors"
           >
             Email Us

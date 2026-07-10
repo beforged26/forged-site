@@ -54,7 +54,7 @@ export default function Founder() {
             Eventually, she got there. And when she did, she looked back at how long it took — and how much harder it was than it had to be — and she knew exactly what she wanted to build next.
           </p>
           <p>
-            As a former professional athlete, Division I Head Coach, USAV Club Coach of the Year, and USAV National Team Development Program Coach, Pri has seen elite sport from every angle. She knows what it takes. She also knows exactly what&rsquo;s missing for most athletes and coaches trying to get there — because she lived it.
+            As a former professional athlete, AVP &amp; FIVB Pro Beach Tour Coach, Division I Head Coach, USAV Club Coach of the Year, and USAV National Team Development Program Coach, Pri has seen elite sport from every angle. She knows what it takes. She also knows exactly what&rsquo;s missing for most athletes and coaches trying to get there — because she lived it.
           </p>
           <p>
             Her coaching work extends to the professional level. Among the athletes she has worked with, Kim Hildreth — a USA Beach Volleyball representative on the FIVB Beach Pro Tour — earned Gold at the BPT Futures Pompano Beach and reached multiple Elite 16 podiums, the highest level of international beach volleyball below the Olympics.
@@ -80,7 +80,8 @@ export default function Founder() {
               { label: "Recognition", value: "USAV Club Coach of the Year" },
               { label: "National Program", value: "USAV NTDP Coach" },
               { label: "Inaugural Sport", value: "Indoor Volleyball — expanding across all sports" },
-              { label: "Founded", value: "FORGED — inaugural summit, Phoenix AZ, Nov 2026" },
+              { label: "Founded", value: "FORGED — inaugural summit, Mesa AZ, Nov 2026" },
+              { label: "Beach Pro", value: "AVP & FIVB Pro Beach Tour Coach" },
             ].map((item) => (
               <div key={item.label} className="bg-dark p-7 hover:bg-dark2 transition-colors">
                 <div className="text-[10px] font-semibold tracking-[0.2em] uppercase text-gold-m mb-1">{item.label}</div>

@@ -86,7 +86,7 @@ export default function Home() {
         <div className="mb-14 relative z-[1]">
           <div className="flex items-center justify-center gap-6 flex-wrap mb-3.5">
             <span className="text-[11px] tracking-[0.22em] uppercase text-muted">
-              First Event — Phoenix, AZ
+              First Event — Mesa, AZ
             </span>
             <span className="w-[3px] h-[3px] bg-gold-d rounded-full" />
             <span className="text-[11px] tracking-[0.22em] uppercase text-muted">
@@ -103,7 +103,7 @@ export default function Home() {
         </div>
 
         <div className="relative z-[1] w-full">
-          <WaitlistForm id="email-input" label="Get early access — join the list" />
+          <WaitlistForm id="email-input" label="Join our newsletter" />
         </div>
 
         <div className="absolute bottom-9 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 relative z-[1]">
@@ -220,7 +220,7 @@ export default function Home() {
         </FadeUp>
         <FadeUp>
           <p className="text-sm text-muted tracking-[0.08em] mb-12">
-            First event: Phoenix, AZ · Nov 26–29, 2026 · Indoor Volleyball —
+            First event: Mesa, AZ · Nov 26–29, 2026 · Indoor Volleyball —
             all sports coming soon.
           </p>
         </FadeUp>
@@ -228,12 +228,12 @@ export default function Home() {
         <FadeUp>
           <WaitlistForm
             id="email-input-2"
-            label="Get on the list before registration opens"
+            label="Join our newsletter"
             privacyNote={
               <>
                 No spam. DM us anytime:{" "}
-                <a href="mailto:pri@beforged.co" className="text-gold-m no-underline">
-                  pri@beforged.co
+                <a href="mailto:info@beforged.co" className="text-gold-m no-underline">
+                  info@beforged.co
                 </a>
               </>
             }

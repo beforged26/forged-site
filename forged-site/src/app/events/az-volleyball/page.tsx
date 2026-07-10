@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "AZ — Volleyball | FORGED",
   description:
-    "FORGED inaugural summit — Phoenix, Arizona. November 26–29, 2026. Indoor Volleyball. 4 days of elite athlete and coach development.",
+    "FORGED inaugural summit — Mesa, Arizona. November 26–29, 2026. Indoor Volleyball. 4 days of elite athlete and coach development.",
 };
 
 const schedule = [
@@ -36,7 +36,7 @@ export default function AZVolleyball() {
           <span className="gold-gradient-text">VOLLEYBALL.</span>
         </h1>
         <p className="text-[11px] tracking-[0.25em] uppercase text-muted mb-8 relative z-[1]">
-          Phoenix, AZ &nbsp;·&nbsp; Nov 26–29, 2026 &nbsp;·&nbsp; Indoor Volleyball
+          Mesa, AZ &nbsp;·&nbsp; Nov 26–29, 2026 &nbsp;·&nbsp; Indoor Volleyball
         </p>
         <p className="font-serif italic text-[clamp(16px,2.5vw,22px)] text-light max-w-[580px] mx-auto relative z-[1] leading-[1.6] mb-10">
           4 days. Elite coaches. World-class experts. The inaugural FORGED summit — and the beginning of something that expands across all sports.
@@ -47,6 +47,9 @@ export default function AZVolleyball() {
           </Link>
           <Link href="/register/coach" className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-gold border border-gold/40 px-7 py-3.5 hover:border-gold transition-colors">
             Register as Coach
+          </Link>
+          <Link href="/access" className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-muted border border-gold/20 px-7 py-3.5 hover:border-gold/50 hover:text-light transition-colors">
+            Apply for Scholarship
           </Link>
         </div>
       </section>

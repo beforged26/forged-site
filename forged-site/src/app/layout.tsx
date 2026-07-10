@@ -30,13 +30,20 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://beforged.co"),
   title: "FORGED — Built Different. By Design.",
   description:
-    "FORGED is an elite athlete, coach, and expert development summit. First event: Phoenix, AZ, November 26–29, 2026 — Indoor Volleyball. Expanding across all sports.",
+    "FORGED is an elite athlete, coach, and expert development summit. First event: Mesa, AZ, November 26–29, 2026 — Indoor Volleyball. Expanding across all sports.",
   openGraph: {
     title: "FORGED — Built Different. By Design.",
     description:
-      "FORGED is an elite athlete, coach, and expert development summit. First event: Phoenix, AZ, Nov 26–29, 2026 — Indoor Volleyball. Expanding across all sports.",
+      "FORGED is an elite athlete, coach, and expert development summit. First event: Mesa, AZ, Nov 26–29, 2026 — Indoor Volleyball. Expanding across all sports.",
     type: "website",
-    images: ["/forged-logo.png"],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "FORGED — Built Different. By Design." }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "FORGED — Built Different. By Design.",
+    description:
+      "FORGED is an elite athlete, coach, and expert development summit. First event: Mesa, AZ, Nov 26–29, 2026 — Indoor Volleyball. Expanding across all sports.",
+    images: ["/og-image.png"],
   },
 };
 

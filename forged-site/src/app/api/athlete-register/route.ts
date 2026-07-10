@@ -11,6 +11,7 @@ export async function POST(req: Request) {
       highSchool, highSchoolCoach,
       position, gradYear, shirtSize, instagram,
       referFriend, friendName, friendEmail,
+      suggestCoach, suggestCoachName, suggestCoachContact,
       guardianName, guardianPhone, guardianEmail,
       goal,
     } = data;
@@ -58,6 +59,13 @@ export async function POST(req: Request) {
     <tr><td style="padding: 8px 12px; border-bottom: 1px solid #eee; color: #555;">Friend Email</td><td style="padding: 8px 12px; border-bottom: 1px solid #eee;"><a href="mailto:${friendEmail}" style="color: #C9A84C;">${friendEmail || "—"}</a></td></tr>
     ` : ""}
 
+    <tr><td colspan="2" style="background: #f5f0e8; padding: 8px 12px; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; font-weight: bold; color: #C9A84C;">Coach Nomination</td></tr>
+    <tr><td style="padding: 8px 12px; border-bottom: 1px solid #eee; color: #555;">Nominated a coach?</td><td style="padding: 8px 12px; border-bottom: 1px solid #eee;">${suggestCoach ? "Yes" : "No"}</td></tr>
+    ${suggestCoach ? `
+    <tr><td style="padding: 8px 12px; border-bottom: 1px solid #eee; color: #555;">Coach Name</td><td style="padding: 8px 12px; border-bottom: 1px solid #eee;">${suggestCoachName || "—"}</td></tr>
+    <tr><td style="padding: 8px 12px; border-bottom: 1px solid #eee; color: #555;">Coach Contact</td><td style="padding: 8px 12px; border-bottom: 1px solid #eee;">${suggestCoachContact || "—"}</td></tr>
+    ` : ""}
+
     <tr><td colspan="2" style="background: #f5f0e8; padding: 8px 12px; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; font-weight: bold; color: #C9A84C;">Emergency Contact</td></tr>
     <tr><td style="padding: 8px 12px; border-bottom: 1px solid #eee; color: #555;">Guardian Name</td><td style="padding: 8px 12px; border-bottom: 1px solid #eee;">${guardianName || "—"}</td></tr>
     <tr><td style="padding: 8px 12px; border-bottom: 1px solid #eee; color: #555;">Guardian Phone</td><td style="padding: 8px 12px; border-bottom: 1px solid #eee;">${guardianPhone || "—"}</td></tr>
@@ -68,7 +76,7 @@ export async function POST(req: Request) {
   </table>
 
   <div style="margin-top: 32px; padding-top: 16px; border-top: 1px solid #eee; font-size: 12px; color: #888;">
-    Submitted via beforged.co · ${new Date().toLocaleString("en-US", { timeZone: "America/Phoenix" })} AZ time
+    Submitted via beforged.co · ${new Date().toLocaleString("en-US", { timeZone: "America/New_York" })} ET
   </div>
 </body>
 </html>
@@ -85,7 +93,7 @@ export async function POST(req: Request) {
         },
         body: JSON.stringify({
           from: "FORGED Summit <noreply@beforged.co>",
-          to: ["pri@beforged.co"],
+          to: ["info@beforged.co"],
           reply_to: email,
           subject: `🔱 Athlete Registration — ${firstName} ${lastName}`,
           html,
@@ -99,6 +107,20 @@ export async function POST(req: Request) {
       }
     } else {
       console.log("ATHLETE REGISTRATION (no RESEND_API_KEY set):", JSON.stringify(data, null, 2));
+    }
+
+    // ── Google Sheet backup ───────────────────────────────────────────────────
+    const sheetUrl = process.env.GOOGLE_SHEET_URL;
+    if (sheetUrl) {
+      try {
+        await fetch(sheetUrl, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ type: "athlete", ...data }),
+        });
+      } catch (err) {
+        console.error("Sheet log error:", err);
+      }
     }
 
     return NextResponse.json({ ok: true });
