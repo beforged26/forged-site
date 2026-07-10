@@ -177,8 +177,8 @@ export default function Access() {
       <div className="gold-rule" />
 
       {/* APPLICATION FORM */}
-      <FadeUp className="max-w-[760px] mx-auto px-6 md:px-10 py-24" id="apply">
-        <div style={{ scrollMarginTop: "100px" }} id="apply-anchor" />
+      <FadeUp className="max-w-[760px] mx-auto px-6 md:px-10 py-24">
+        <div style={{ scrollMarginTop: "100px" }} id="apply" />
         <p className="section-eyebrow">Apply</p>
         <h2 className="font-display text-[clamp(38px,6vw,72px)] tracking-[0.04em] leading-[0.95] text-cream mb-4">
           YOUR STORY
