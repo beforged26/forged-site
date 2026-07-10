@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import FadeUp from "@/components/FadeUp";
 import Link from "next/link";
+import CommunityEmailForm from "@/components/CommunityEmailForm";
 
 export const metadata: Metadata = {
   title: "FORGED Community",
@@ -117,23 +118,7 @@ export default function Community() {
           the first to know — and the first through the door.
         </p>
 
-        <form
-          onSubmit={(e) => e.preventDefault()}
-          className="flex flex-col sm:flex-row gap-3 max-w-[480px] mx-auto"
-        >
-          <input
-            type="email"
-            required
-            placeholder="your@email.com"
-            className="flex-1 bg-[#111] border border-gold/20 text-cream text-[13px] px-4 py-3.5 focus:outline-none focus:border-gold/60 placeholder:text-muted transition-colors"
-          />
-          <button
-            type="submit"
-            className="text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-7 py-3.5 hover:bg-gold-m transition-colors whitespace-nowrap"
-          >
-            Notify Me
-          </button>
-        </form>
+        <CommunityEmailForm />
 
         <p className="text-[11px] text-muted mt-5 tracking-[0.05em]">
           Summit alumni get priority access. No spam.
