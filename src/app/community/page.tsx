@@ -103,9 +103,17 @@ export default function Community() {
 
       <div className="gold-rule" />
 
+      {/* ATHLETES BANNER */}
+      <div className="border-b border-gold/20 px-6 md:px-10 py-10 flex items-center gap-6">
+        <div className="w-1.5 h-16 bg-gold shrink-0" />
+        <div>
+          <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-gold-m mb-1">Section 01</p>
+          <p className="font-display text-[clamp(32px,6vw,72px)] tracking-[0.06em] leading-none text-cream">FOR ATHLETES</p>
+        </div>
+      </div>
+
       {/* ATHLETES */}
       <FadeUp className="max-w-[1000px] mx-auto px-6 md:px-10 py-24">
-        <p className="section-eyebrow">For Athletes</p>
         <h2 className="font-display text-[clamp(38px,6vw,72px)] tracking-[0.04em] leading-[0.95] text-cream mb-14">
           BUILT FOR
           <br />
@@ -127,10 +135,17 @@ export default function Community() {
         </div>
       </FadeUp>
 
-      <div className="gold-rule" />
+      {/* COACHES BANNER */}
+      <div className="bg-dark border-y border-gold/20 px-6 md:px-10 py-10 flex items-center gap-6">
+        <div className="w-1.5 h-16 bg-gold shrink-0" />
+        <div>
+          <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-gold-m mb-1">Section 02</p>
+          <p className="font-display text-[clamp(32px,6vw,72px)] tracking-[0.06em] leading-none text-cream">FOR COACHES</p>
+        </div>
+      </div>
 
       {/* COACHES */}
-      <div className="bg-dark border-y border-gold/10 py-24 px-6 md:px-10">
+      <div className="bg-dark border-b border-gold/10 py-24 px-6 md:px-10">
         <div className="max-w-[1000px] mx-auto">
           <FadeUp>
             <p className="section-eyebrow">For Coaches</p>
