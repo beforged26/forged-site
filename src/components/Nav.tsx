@@ -9,6 +9,7 @@ const aboutDropdown = [
   { href: "/about/founder", label: "Founder Bio" },
   { href: "/about/mission", label: "Our Mission" },
   { href: "/about/team", label: "Our Team" },
+  { href: "/founding-family", label: "Founding Family" },
 ];
 
 const eventsDropdown = [

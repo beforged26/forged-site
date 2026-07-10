@@ -106,8 +106,8 @@ export default function Community() {
       </div>
 
       {/* NOTIFY FORM */}
-      <FadeUp className="max-w-[640px] mx-auto px-6 md:px-10 py-24 text-center" id="notify">
-        <div style={{ scrollMarginTop: "100px" }} id="notify-anchor" />
+      <FadeUp className="max-w-[640px] mx-auto px-6 md:px-10 py-24 text-center">
+        <div style={{ scrollMarginTop: "100px" }} id="notify" />
         <p className="section-eyebrow center justify-center">Early Access</p>
         <h2 className="font-display text-[clamp(38px,6vw,72px)] tracking-[0.04em] leading-[0.95] text-cream mb-4">
           BE FIRST IN.
