@@ -21,6 +21,12 @@ const eventsDropdown = [
       { href: "/events/az-volleyball/faq", label: "FAQ" },
     ],
   },
+  {
+    label: "FL — Beach",
+    children: [
+      { href: "/events/fl-beach-volleyball", label: "Overview" },
+    ],
+  },
 ];
 
 const registerDropdown = [
