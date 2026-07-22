@@ -25,6 +25,13 @@ const coaches: { name: string; role: string; bio: string; website: string; photo
     website: "",
     photo: "/Deitre.jpeg",
   },
+  {
+    name: "Sanja Tomašević",
+    role: "Head Coach, LOVB Houston — Former Arizona State University Head Coach — Former Serbian National Team",
+    bio: "Sanja Tomašević brings a rare combination of elite playing pedigree and world-class coaching experience to FORGED. As a player, she competed professionally from 2006 to 2012, winning three league titles — one in Switzerland and two in Greece — while representing Serbia in Olympic qualifying and at the junior international level. She played college volleyball at the University of Washington, where she helped the Huskies win the 2005 NCAA Division I National Championship. Her coaching career spans the collegiate and professional levels at the highest stages. She served as head coach at Arizona State University from 2016 to 2022, building the program and developing players who went on to compete professionally. From there, she joined VakıfBank in Türkiye as assistant coach — one of the premier clubs in European volleyball — where she helped the team win the Sultanlar Ligi championship and advance to the Champions League semifinals. She was named Head Coach of LOVB Houston in June 2025, joining one of the most ambitious professional volleyball leagues ever launched in the United States. At FORGED, Sanja brings the perspective of someone who has competed and coached at every level — from college programs to Champions League stages — and brings that knowledge directly to the athletes in the room.",
+    website: "",
+    photo: "/250617_sanja_hired_hero-2.webp",
+  },
 ];
 
 // ── ADD EXPERTS HERE ──────────────────────────────────────────────────────────
