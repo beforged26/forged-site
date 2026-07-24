@@ -43,6 +43,7 @@ const registerDropdown = [
     children: [
       { href: "/register/beach-athlete", label: "Athletes" },
       { href: "/register/beach-coach", label: "Coaches" },
+      { href: "/access", label: "Access Scholarship" },
     ],
   },
 ];
