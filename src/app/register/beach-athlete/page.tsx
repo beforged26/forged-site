@@ -110,7 +110,7 @@ export default function BeachAthleteRegister() {
             </div>
             <div className="font-display text-xl tracking-[0.1em] text-gold mb-1">Early Bird</div>
             <div className="font-display text-[clamp(48px,6vw,72px)] tracking-[0.02em] text-cream leading-none mb-3">
-              Early Bird
+              $757
             </div>
             <p className="text-[13px] text-light leading-[1.6]">
               Save $200 — first spots only. The lowest rate FORGED will ever offer. Lock it in now before it closes.
@@ -121,7 +121,7 @@ export default function BeachAthleteRegister() {
           <FadeUp className="bg-dark p-9 border-t-2 border-transparent">
             <div className="font-display text-xl tracking-[0.1em] text-gold mb-1">Full Registration</div>
             <div className="font-display text-[clamp(48px,6vw,72px)] tracking-[0.02em] text-cream leading-none mb-3">
-              Full Price
+              $957
             </div>
             <p className="text-[13px] text-light leading-[1.6]">
               Standard rate. Full access to everything FORGED has to offer — training, expert sessions, swag, and community.
@@ -138,7 +138,7 @@ export default function BeachAthleteRegister() {
             </p>
           </div>
           <div className="font-display text-[clamp(32px,4vw,48px)] tracking-[0.02em] text-cream leading-none flex-shrink-0">
-            Deposit
+            $350
           </div>
         </FadeUp>
 
