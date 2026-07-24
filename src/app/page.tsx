@@ -214,7 +214,7 @@ export default function Home() {
           </div>
           <div className="flex-1 border-l border-gold/20 pl-10">
             <p className="font-display text-xl tracking-[0.08em] text-gold mb-3">
-              Beach Volleyball &nbsp;·&nbsp; Feb 12–15, 2027 &nbsp;·&nbsp; Fort Lauderdale, FL
+              Beach Volleyball &nbsp;·&nbsp; Feb 12–15, 2027 &nbsp;·&nbsp; Dania Beach, FL
             </p>
             <p className="text-[14px] text-light leading-[1.8] mb-6">
               FORGED is coming to the sand. The same elite development model — expert coaches,

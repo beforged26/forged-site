@@ -6,7 +6,7 @@ import WaitlistForm from "@/components/WaitlistForm";
 export const metadata: Metadata = {
   title: "FL — Beach Volleyball | FORGED",
   description:
-    "FORGED Beach Volleyball — Fort Lauderdale, Florida. February 12–15, 2027. The same elite development model, built for the sand. Registrations opening soon.",
+    "FORGED Beach Volleyball — Dania Beach, Florida. February 12–15, 2027. The same elite development model, built for the sand. Registrations opening soon.",
 };
 
 export default function FLBeachVolleyball() {
@@ -30,7 +30,7 @@ export default function FLBeachVolleyball() {
           <span className="gold-gradient-text">BEACH.</span>
         </h1>
         <p className="text-[11px] tracking-[0.25em] uppercase text-muted mb-8 relative z-[1]">
-          Fort Lauderdale, FL &nbsp;·&nbsp; Feb 12–15, 2027 &nbsp;·&nbsp; Beach Volleyball
+          Dania Beach, FL &nbsp;·&nbsp; Feb 12–15, 2027 &nbsp;·&nbsp; Beach Volleyball
         </p>
         <p className="font-serif italic text-[clamp(16px,2.5vw,22px)] text-light max-w-[580px] mx-auto relative z-[1] leading-[1.6] mb-10">
           FORGED is coming to the sand. The same elite development model — expert coaches,
@@ -59,7 +59,7 @@ export default function FLBeachVolleyball() {
         <div className="max-w-[900px] mx-auto grid gap-10 text-center" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))" }}>
           {[
             { num: "4", label: "Days of Development" },
-            { num: "FLL", label: "Fort Lauderdale, FL" },
+            { num: "FLL", label: "Dania Beach, FL" },
             { num: "FEB", label: "12–15, 2027" },
             { num: "BEACH", label: "Volleyball" },
           ].map((s) => (
