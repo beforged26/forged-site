@@ -5,7 +5,7 @@ import CoachInterestForm from "@/components/CoachInterestForm";
 export const metadata: Metadata = {
   title: "Beach Coach Registration — FORGED",
   description:
-    "Register as a coach for FORGED Beach 2026. Dania Beach, FL — February 12–15, 2026. Coaches-only sessions, peer development, and a community built for the people who develop athletes.",
+    "Register as a coach for FORGED Beach 2027. Dania Beach, FL — February 12–15, 2027. Coaches-only sessions, peer development, and a community built for the people who develop athletes.",
 };
 
 const included = [
@@ -74,7 +74,7 @@ export default function BeachCoachRegister() {
           where someone finally invests in developing you.
         </p>
         <p className="text-[11px] tracking-[0.2em] uppercase text-muted mt-6 relative z-[1]">
-          Dania Beach, FL &nbsp;·&nbsp; Feb 12–15, 2026 &nbsp;·&nbsp; Beach Volleyball
+          Dania Beach, FL &nbsp;·&nbsp; Feb 12–15, 2027 &nbsp;·&nbsp; Beach Volleyball
         </p>
       </section>
 
@@ -160,7 +160,7 @@ export default function BeachCoachRegister() {
               I understand that participation in sport and athletic coaching activities requires a personal acceptance of the risk of injury. I acknowledge that those responsible for the conduct of the FORGED Summit take reasonable precautions to minimize such risk, but that some risk cannot be eliminated.
             </p>
             <p className="text-[13px] text-light leading-[1.8]">
-              I understand that participation in the FORGED Beach Summit (February 12–15, 2026, Dania Beach, FL) as a coach or staff member may result in injury or illness, physical or mental impairments, or even death. I understand that FORGED cannot be held responsible for any injuries or conditions caused by the actions of athletes, other coaches, or participants. I also understand that injuries may result from my own failure to follow safety procedures or techniques made known by the FORGED staff and/or otherwise known to me from any other source.
+              I understand that participation in the FORGED Beach Summit (February 12–15, 2027, Dania Beach, FL) as a coach or staff member may result in injury or illness, physical or mental impairments, or even death. I understand that FORGED cannot be held responsible for any injuries or conditions caused by the actions of athletes, other coaches, or participants. I also understand that injuries may result from my own failure to follow safety procedures or techniques made known by the FORGED staff and/or otherwise known to me from any other source.
             </p>
             <p className="text-[13px] text-light leading-[1.8]">
               I voluntarily assume all risks associated with participation and release FORGED, its founders, staff, coaches, experts, and venue partners from any and all liability arising from participation in this event.

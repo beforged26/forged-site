@@ -5,7 +5,7 @@ import AthleteInterestForm from "@/components/AthleteInterestForm";
 export const metadata: Metadata = {
   title: "Beach Athlete Registration — FORGED",
   description:
-    "Register as an athlete for FORGED Beach 2026. Dania Beach, FL — February 12–15, 2026. Elite sand training, expert sessions, and a community built to last.",
+    "Register as an athlete for FORGED Beach 2027. Dania Beach, FL — February 12–15, 2027. Elite sand training, expert sessions, and a community built to last.",
 };
 
 const included = [
@@ -87,7 +87,7 @@ export default function BeachAthleteRegister() {
           changes how you see the game.
         </p>
         <p className="text-[11px] tracking-[0.2em] uppercase text-muted mt-6 relative z-[1]">
-          Dania Beach, FL &nbsp;·&nbsp; Feb 12–15, 2026 &nbsp;·&nbsp; Beach Volleyball
+          Dania Beach, FL &nbsp;·&nbsp; Feb 12–15, 2027 &nbsp;·&nbsp; Beach Volleyball
         </p>
       </section>
 
@@ -106,14 +106,14 @@ export default function BeachAthleteRegister() {
           {/* Early Bird */}
           <FadeUp className="bg-dark p-9 border-t-2 border-gold relative">
             <div className="absolute top-0 right-0 bg-gold text-black text-[10px] font-bold tracking-[0.2em] uppercase px-3 py-1">
-              Limited Spots
+              First 20 Only
             </div>
             <div className="font-display text-xl tracking-[0.1em] text-gold mb-1">Early Bird</div>
             <div className="font-display text-[clamp(48px,6vw,72px)] tracking-[0.02em] text-cream leading-none mb-3">
               $757
             </div>
             <p className="text-[13px] text-light leading-[1.6]">
-              Save $200 — first spots only. The lowest rate FORGED will ever offer. Lock it in now before it closes.
+              Save $200 — for the first 20 registrations only. The lowest rate FORGED will ever offer. Lock it in now before it closes.
             </p>
           </FadeUp>
 
@@ -200,7 +200,7 @@ export default function BeachAthleteRegister() {
               I understand that participation in sport requires a personal acceptance of the risk of injury. I acknowledge that those responsible for the conduct of the FORGED Summit take reasonable precautions to minimize such risk, but that some risk cannot be eliminated.
             </p>
             <p className="text-[13px] text-light leading-[1.8]">
-              I understand that participation in the FORGED Beach Summit (February 12–15, 2026, Dania Beach, FL) may result in injury or illness, physical or mental impairments, or even death. I understand that FORGED cannot be held responsible for any injuries or conditions caused by the actions of other athletes or participants. I also understand that injuries may result from my own failure to follow safety procedures or techniques made known to me by the coaching staff, athletic training staff, and/or otherwise known to me from any other source, including but not limited to medical personnel.
+              I understand that participation in the FORGED Beach Summit (February 12–15, 2027, Dania Beach, FL) may result in injury or illness, physical or mental impairments, or even death. I understand that FORGED cannot be held responsible for any injuries or conditions caused by the actions of other athletes or participants. I also understand that injuries may result from my own failure to follow safety procedures or techniques made known to me by the coaching staff, athletic training staff, and/or otherwise known to me from any other source, including but not limited to medical personnel.
             </p>
             <p className="text-[13px] text-light leading-[1.8]">
               I voluntarily assume all risks associated with participation and release FORGED, its founders, staff, coaches, experts, and venue partners from any and all liability arising from participation in this event.
