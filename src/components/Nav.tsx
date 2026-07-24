@@ -32,7 +32,8 @@ const eventsDropdown = [
 const registerDropdown = [
   { href: "/register/athlete", label: "Athletes — AZ Indoor" },
   { href: "/register/beach-athlete", label: "Athletes — FL Beach" },
-  { href: "/register/coach", label: "Coaches" },
+  { href: "/register/coach", label: "Coaches — AZ Indoor" },
+  { href: "/register/beach-coach", label: "Coaches — FL Beach" },
   { href: "/access", label: "Access Scholarship" },
 ];
 
