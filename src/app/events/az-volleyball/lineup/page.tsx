@@ -41,7 +41,7 @@ const experts: { name: string; role: string; bio: string; website: string; photo
     role: "Mental Performance Consultant",
     bio: "Priscilla Tallman is a Mental Performance Consultant with a rare combination of elite playing experience, clinical psychology training, and over 500 athletes coached. As a player at the University of Georgia, she was a two-time First Team All-American (1993 & 1994), SEC Freshman of the Year, SEC Player of the Year, and was later inducted into Georgia's Circle of Honor in 2006. She went on to play professionally in Geneva, Switzerland, and represented the USA National Team in 1994 and the World University Games Team in 1995. After her playing career, she earned a Master's Degree in Clinical Psychology from Vanguard University and brought that training back into sport — coaching at the high school, club, and collegiate levels before stepping away in 2023 to focus exclusively on mental performance. She is the author of two nationally published performance journals, the 30 Day Champions Journal and the 30 Day Return to Play Journal, with over 1,500 copies in use across teams and sports. Priscilla and FORGED Founder Pri Piantadosi-Lima have worked together through Optimum Beach, where Priscilla has mentored the CRTP and Pro groups — and continues to work with several of those athletes individually. At FORGED, she brings that same work to a bigger room: the mental skills that separate good from elite — pressure management, identity, focus, and the mindset required to perform when it matters most.",
     website: "https://www.priscillatallman.com",
-    photo: "/Priscilla.jpg",
+    photo: "/Priscilla2.jpeg",
   },
   {
     name: "Falyn Fonoimoana",
