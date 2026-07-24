@@ -14,7 +14,7 @@ const aboutDropdown = [
 
 const eventsDropdown = [
   {
-    label: "AZ — Volleyball",
+    label: "AZ — Indoor Volleyball",
     children: [
       { href: "/events/az-volleyball", label: "Overview" },
       { href: "/events/az-volleyball/lineup", label: "Lineup" },
