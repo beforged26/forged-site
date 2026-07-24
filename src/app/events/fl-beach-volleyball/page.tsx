@@ -22,7 +22,7 @@ export default function FLBeachVolleyball() {
           }}
         />
         <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-gold-m mb-5 relative z-[1]">
-          Coming Soon
+          Registration Open
         </p>
         <h1 className="font-display text-[clamp(52px,10vw,120px)] leading-[0.95] tracking-[0.04em] text-cream mb-4 relative z-[1]">
           FLORIDA
@@ -36,12 +36,20 @@ export default function FLBeachVolleyball() {
           FORGED is coming to the sand. The same elite development model — expert coaches,
           mental performance, community — built for beach volleyball. Registrations opening soon.
         </p>
-        <a
-          href="#notify"
-          className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-8 py-4 hover:bg-gold-m transition-colors relative z-[1]"
-        >
-          Get Notified
-        </a>
+        <div className="flex items-center gap-4 flex-wrap justify-center relative z-[1]">
+          <Link
+            href="/register/beach-athlete"
+            className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-8 py-4 hover:bg-gold-m transition-colors"
+          >
+            Register Now
+          </Link>
+          <a
+            href="#notify"
+            className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-gold border border-gold/40 px-8 py-4 hover:border-gold transition-colors"
+          >
+            Get Updates
+          </a>
+        </div>
       </section>
 
       <div className="gold-rule" />
