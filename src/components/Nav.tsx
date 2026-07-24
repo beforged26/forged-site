@@ -30,11 +30,21 @@ const eventsDropdown = [
 ];
 
 const registerDropdown = [
-  { href: "/register/athlete", label: "Athletes — AZ Indoor" },
-  { href: "/register/beach-athlete", label: "Athletes — FL Beach" },
-  { href: "/register/coach", label: "Coaches — AZ Indoor" },
-  { href: "/register/beach-coach", label: "Coaches — FL Beach" },
-  { href: "/access", label: "Access Scholarship" },
+  {
+    label: "AZ Indoor Volleyball",
+    children: [
+      { href: "/register/athlete", label: "Athletes" },
+      { href: "/register/coach", label: "Coaches" },
+      { href: "/access", label: "Access Scholarship" },
+    ],
+  },
+  {
+    label: "FL Beach Volleyball",
+    children: [
+      { href: "/register/beach-athlete", label: "Athletes" },
+      { href: "/register/beach-coach", label: "Coaches" },
+    ],
+  },
 ];
 
 const ChevronIcon = ({ open }: { open: boolean }) => (
@@ -49,6 +59,7 @@ export default function Nav() {
   const [aboutOpen, setAboutOpen] = useState(false);
   const [eventsOpen, setEventsOpen] = useState(false);
   const [eventsFlyout, setEventsFlyout] = useState<string | null>(null);
+  const [registerFlyout, setRegisterFlyout] = useState<string | null>(null);
   const [registerOpen, setRegisterOpen] = useState(false);
   const [mobileAboutOpen, setMobileAboutOpen] = useState(false);
   const [mobileEventsOpen, setMobileEventsOpen] = useState(false);
@@ -143,15 +154,37 @@ export default function Nav() {
 
         {/* Register dropdown */}
         <div ref={registerRef} className="relative">
-          <button className={dropdownBtnClass} onClick={() => setRegisterOpen((o) => !o)}>
+          <button className={dropdownBtnClass} onClick={() => { setRegisterOpen((o) => !o); setRegisterFlyout(null); }}>
             Register <ChevronIcon open={registerOpen} />
           </button>
           {registerOpen && (
             <div className={dropdownClass}>
               {registerDropdown.map((item) => (
-                <Link key={item.href} href={item.href} onClick={() => setRegisterOpen(false)} className={dropdownLinkClass}>
-                  {item.label}
-                </Link>
+                <div key={item.label} className="relative">
+                  <button
+                    className={`${dropdownLinkClass} w-full text-left flex items-center justify-between`}
+                    onClick={() => setRegisterFlyout(registerFlyout === item.label ? null : item.label)}
+                  >
+                    {item.label}
+                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none" className="ml-2 flex-shrink-0">
+                      <path d="M2 1.5L5.5 4L2 6.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </button>
+                  {registerFlyout === item.label && (
+                    <div className="absolute left-full top-0 bg-black border border-gold/20 min-w-[140px]">
+                      {item.children.map((child) => (
+                        <Link
+                          key={child.href}
+                          href={child.href}
+                          onClick={() => { setRegisterOpen(false); setRegisterFlyout(null); }}
+                          className={dropdownLinkClass}
+                        >
+                          {child.label}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
               ))}
             </div>
           )}
@@ -206,9 +239,14 @@ export default function Nav() {
             Register <ChevronIcon open={mobileRegisterOpen} />
           </button>
           {mobileRegisterOpen && registerDropdown.map((item) => (
-            <Link key={item.href} href={item.href} onClick={() => { setOpen(false); setMobileRegisterOpen(false); }} className="text-[11px] font-semibold tracking-[0.18em] uppercase text-gold transition-colors pl-10 pr-6 py-3.5 border-t border-gold/5 bg-dark">
-              {item.label}
-            </Link>
+            <div key={item.label}>
+              <div className="text-[11px] font-semibold tracking-[0.18em] uppercase text-gold/60 pl-10 pr-6 py-2.5 border-t border-gold/5 bg-dark">{item.label}</div>
+              {item.children.map((child) => (
+                <Link key={child.href} href={child.href} onClick={() => { setOpen(false); setMobileRegisterOpen(false); }} className="text-[11px] font-semibold tracking-[0.18em] uppercase text-gold transition-colors pl-14 pr-6 py-3 border-t border-gold/5 bg-dark block">
+                  {child.label}
+                </Link>
+              ))}
+            </div>
           ))}
 
           <Link href="/community" onClick={() => setOpen(false)} className="text-[11px] font-semibold tracking-[0.18em] uppercase text-light hover:text-gold transition-colors px-6 py-4 border-t border-gold/5">Community</Link>
