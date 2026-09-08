@@ -83,7 +83,7 @@ const experts: { name: string; role: string; bio: string; website: string; photo
     role: "Ver Coaching — Vision Training & Performance",
     bio: "Mike Halpert is the founder of Ver Coaching, a sports technology company based in Durham, NC, built on one idea: athletes need to train how they see, not just how they move. Using clinically validated vision science delivered through virtual reality, the Ver Vision Trainer develops the visual system behind reaction time, depth perception, peripheral awareness, and decision-making under pressure — in short, game-ready sessions that fit into any existing practice routine. Mike has spent the past year working alongside volleyball programs from club to NCAA level, and after presenting at the 2025 AVCA Convention, he was invited back for 2026. At FORGED, he's bringing coaches and athletes a practical, evidence-based approach to one of the most undertrained systems in sport.",
     website: "https://www.ver.coach",
-    photo: "/MikeVER.jpeg",
+    photo: "/mike-VER.jpeg",
   },
 ];
 
