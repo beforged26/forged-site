@@ -65,11 +65,11 @@ const experts: { name: string; role: string; bio: string; website: string; photo
     photo: "/Kamilla.jpeg",
   },
   {
-    name: "Sara Putt",
-    role: "Pro Beach Volleyball Player — Registered Dietitian & Sports Nutritionist — Founder, Good Fuel Co",
-    bio: "Sara Putt is a Registered Dietitian, sports nutritionist, and former All-American Division I beach volleyball player at Florida State University. Born and raised in South Florida, Sara saw firsthand the impact of nutrition on athletic performance during her own playing career — and turned that experience into a profession. She earned both her undergraduate and master's degrees in dietetics and clinical nutrition at FSU while competing for the beach volleyball team, then spent three years in the clinical setting sharpening her skills before returning to her true passion: working with athletes. Since then, she has worked with over 250 athletes 1:1 in her private practice, served as a performance dietitian at boarding schools for elite high school athletes, and taught sports nutrition to clubs, camps, and teams across multiple sports. She is the founder of Good Fuel Co, her platform for athlete nutrition education and coaching. Sara and FORGED Founder Pri Piantadosi-Lima go way back — Pri coached Sara in high school as she prepared for college, reconnected with her during her summers at FSU, and worked with her when she first started pursuing the professional level. At FORGED, Sara brings the real athlete perspective to nutrition: not just the science, but what actually works when you're competing, training, and trying to build a career in this sport.",
-    website: "https://www.instagram.com/goodfuelco_/",
-    photo: "/Sara_Putt.jpeg",
+    name: "Alex Cheng",
+    role: "Primal Movement Coach — Biomechanics & Athletic Development",
+    bio: "Alex Cheng was always a student of movement. From youth soccer and high school volleyball to collegiate club volleyball at Cal Poly SLO, he studied movement through frame-by-frame video analysis — obsessed with why some athletes seemed smooth, powerful, and coordinated while others did not. After studying aerospace engineering, biomedical engineering, and kinesiology at Cal Poly SLO, he left to pursue his passion more authentically. He coached at every level — from youth golf camps to elite collegiate programs — and had the opportunity to coach and study some of the most elite volleyball athletes in the country at Championship Performance Advantage in Southern California. He enrolled in a music conservatory in LA to study the movement of artists, performers, and dancers, and over the years accumulated certifications from pioneers in athletic development and movement science. Alex brings a clear perspective on what creates an elite athlete from a movement and biomechanics standpoint. There are ancient, primal, simple ways the body is designed to rest and move. When we follow the code, we gain longevity, durability, and performance for a lifetime.",
+    website: "",
+    photo: "/Alex_Cheng.jpeg",
   },
   {
     name: "Benjamin Jensen, M.S.",
@@ -83,7 +83,7 @@ const experts: { name: string; role: string; bio: string; website: string; photo
     role: "Ver Coaching — Vision Training & Performance",
     bio: "Mike Halpert is the founder of Ver Coaching, a sports technology company based in Durham, NC, built on one idea: athletes need to train how they see, not just how they move. Using clinically validated vision science delivered through virtual reality, the Ver Vision Trainer develops the visual system behind reaction time, depth perception, peripheral awareness, and decision-making under pressure — in short, game-ready sessions that fit into any existing practice routine. Mike has spent the past year working alongside volleyball programs from club to NCAA level, and after presenting at the 2025 AVCA Convention, he was invited back for 2026. At FORGED, he's bringing coaches and athletes a practical, evidence-based approach to one of the most undertrained systems in sport.",
     website: "https://www.ver.coach",
-    photo: "/Mike.VER.jpeg",
+    photo: "/MikeVER.jpeg",
   },
 ];
 
