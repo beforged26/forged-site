@@ -185,7 +185,7 @@ export default function Lineup() {
           LEARN FROM.
         </h2>
         <div className="grid gap-[2px] bg-gold/[0.08] grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          {experts.map((e) => <PersonCard key={e.role} person={e} />)}
+          {experts.map((e) => <PersonCard key={e.name} person={e} />)}
         </div>
       </FadeUp>
 
