@@ -102,14 +102,14 @@ export default function AthleteRegister() {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[2px] bg-gold/[0.08] mb-[2px]">
-          {/* Early Bird */}
+          {/* Sale Pricing */}
           <FadeUp className="bg-dark p-9 border-t-2 border-gold relative">
             <div className="absolute top-0 right-0 bg-gold text-black text-[10px] font-bold tracking-[0.2em] uppercase px-3 py-1">
               Limited Spots
             </div>
-            <div className="font-display text-xl tracking-[0.1em] text-gold mb-1">Early Bird</div>
+            <div className="font-display text-xl tracking-[0.1em] text-gold mb-1">Limited Time</div>
             <div className="font-display text-[clamp(48px,6vw,72px)] tracking-[0.02em] text-cream leading-none mb-3">
-              $757
+              $550
             </div>
             <p className="text-[13px] text-light leading-[1.6]">
               Save $200 — first 50 spots only. The lowest rate FORGED will ever offer. Lock it in now.
