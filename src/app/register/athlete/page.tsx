@@ -123,7 +123,7 @@ export default function AthleteRegister() {
               <span style={{textDecoration:"line-through",opacity:0.4}}>$957</span>
             </div>
             <p className="text-[13px] text-light leading-[1.6]">
-              Standard rate after early bird closes. Full access to everything FORGED has to offer.
+              Full access to everything FORGED has to offer.
             </p>
           </FadeUp>
         </div>
