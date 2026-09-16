@@ -50,7 +50,7 @@ const PAYMENT_OPTIONS = [
     featured: true,
   },
   {
-    label: "Full Price — $957",
+    label: "Full Price — <span style={{textDecoration:"line-through",opacity:0.4}}>$957</span>",
     url: "https://buy.stripe.com/fZu3cv0d6e4V85Y0Mr3AY01",
     featured: false,
   },
@@ -112,7 +112,7 @@ export default function AthleteRegister() {
               $550
             </div>
             <p className="text-[13px] text-light leading-[1.6]">
-              Save $200 — first 50 spots only. The lowest rate FORGED will ever offer. Lock it in now.
+              Limited time — price goes back up soon. Lock it in now.
             </p>
           </FadeUp>
 
@@ -120,7 +120,7 @@ export default function AthleteRegister() {
           <FadeUp className="bg-dark p-9 border-t-2 border-transparent">
             <div className="font-display text-xl tracking-[0.1em] text-gold mb-1">Full Registration</div>
             <div className="font-display text-[clamp(48px,6vw,72px)] tracking-[0.02em] text-cream leading-none mb-3">
-              $957
+              <span style={{textDecoration:"line-through",opacity:0.4}}>$957</span>
             </div>
             <p className="text-[13px] text-light leading-[1.6]">
               Standard rate after early bird closes. Full access to everything FORGED has to offer.
