@@ -208,7 +208,7 @@ export default function FAQ() {
           </p>
           <div className="flex items-center justify-center gap-4 flex-wrap">
             <Link href="/register/athlete" className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-7 py-3.5 hover:bg-gold-m transition-colors">
-              Athlete — Early Bird $757
+              Athlete — Register Now $550
             </Link>
             <Link href="/register/coach" className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-gold border border-gold/40 px-7 py-3.5 hover:border-gold transition-colors">
               Coach — $250

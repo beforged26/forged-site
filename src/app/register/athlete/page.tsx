@@ -45,8 +45,8 @@ const included = [
 
 const PAYMENT_OPTIONS = [
   {
-    label: "Early Bird — $757",
-    url: "https://buy.stripe.com/5kQ5kD5xq8KBdqi2Uz3AY00",
+    label: "Register Now — $550",
+    url: "https://buy.stripe.com/9B66oH6Bu3qh9a27aP3AY0k",
     featured: true,
   },
   {

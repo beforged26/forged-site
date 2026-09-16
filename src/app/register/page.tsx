@@ -75,14 +75,14 @@ export default function Register() {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[2px] bg-gold/[0.08] mb-[2px]">
-          {/* Early Bird */}
+          {/* Register Now */}
           <FadeUp className="bg-dark p-9 border-t-2 border-gold relative">
             <div className="absolute top-0 right-0 bg-gold text-black text-[10px] font-bold tracking-[0.2em] uppercase px-3 py-1">
               Limited Spots
             </div>
-            <div className="font-display text-xl tracking-[0.1em] text-gold mb-1">Early Bird</div>
+            <div className="font-display text-xl tracking-[0.1em] text-gold mb-1">Register Now</div>
             <div className="font-display text-[clamp(48px,6vw,72px)] tracking-[0.02em] text-cream leading-none mb-3">
-              $757
+              $550
             </div>
             <p className="text-[13px] text-light leading-[1.6] mb-8">
               Save $200 — first 50 spots only. Lock in the lowest rate FORGED will ever offer.
@@ -94,7 +94,7 @@ export default function Register() {
                 rel="noopener noreferrer"
                 className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-7 py-3.5 hover:bg-gold-m transition-colors text-center"
               >
-                Register — Early Bird
+                Register — Register Now
               </a>
               <a
                 href="https://buy.stripe.com/3cIcN51ha0e54TM7aP3AY02"
