@@ -50,7 +50,7 @@ const PAYMENT_OPTIONS = [
     featured: true,
   },
   {
-    label: "Full Price — <span className="line-through opacity-40">$957</span>",
+    label: "Full Price — $957",
     url: "https://buy.stripe.com/fZu3cv0d6e4V85Y0Mr3AY01",
     featured: false,
   },
