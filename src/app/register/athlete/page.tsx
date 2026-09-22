@@ -133,7 +133,7 @@ export default function AthleteRegister() {
           <div>
             <div className="font-display text-xl tracking-[0.1em] text-gold mb-1">Hold Your Spot — Deposit</div>
             <p className="text-[13px] text-light leading-[1.6] max-w-[560px]">
-              Not ready to pay in full? Put down $350 now to secure your spot. Applied to your balance at checkout.
+              Put down $350 now to secure your spot. Non-refundable, but transferable to another athlete until Nov 10. Your $200 balance is due Nov 10 and will be charged automatically. Total is still $550.
             </p>
           </div>
           <div className="font-display text-[clamp(32px,4vw,48px)] tracking-[0.02em] text-cream leading-none flex-shrink-0">$350</div>
@@ -160,7 +160,7 @@ export default function AthleteRegister() {
               { day: "Day 1", date: "Thursday · Nov 26", label: "Arrival Day", desc: "Check in, pick up your swag bag, meet your cohort. Light intro session in the evening to get you locked in before Day 2." },
               { day: "Day 2", date: "Friday · Nov 27", label: "Training Day 1", desc: "First full day on the court. Morning and afternoon training blocks plus your first round of expert sessions." },
               { day: "Day 3", date: "Saturday · Nov 28", label: "Training Day 2", desc: "Back on the court. Second round of training blocks and the remaining expert sessions. Full day of work." },
-              { day: "Day 4", date: "Sunday · Nov 29", label: "Competition Day", desc: "Queen & King of the Beach tournament. You compete. 1:1 assessments available with FirstBeat and Ver during matches." },
+              { day: "Day 4", date: "Sunday · Nov 29", label: "Competition Day", desc: "Competitive games — all groups. 1:1 assessments available with FirstBeat and Ver during matches." },
             ].map((d) => (
               <FadeUp key={d.day} className="bg-dark p-7 flex flex-col gap-3">
                 <div className="text-[10px] font-semibold tracking-[0.25em] uppercase text-gold-m">{d.day}</div>
@@ -234,7 +234,7 @@ export default function AthleteRegister() {
             <span className="gold-gradient-text">NEED TO LEVEL UP.</span>
           </h2>
           <p className="font-serif italic text-[clamp(16px,2vw,20px)] text-light max-w-[640px] leading-[1.6] mb-14">
-            Registration covers the full experience — training, sessions, meals, gear, and community. Housing is the only thing not included.
+            Registration covers the full experience — training, expert sessions, gear, and community. Housing is the only thing not included.
           </p>
 
           <div className="grid gap-[2px] bg-gold/[0.08] grid-cols-1 md:grid-cols-2">
@@ -267,7 +267,7 @@ export default function AthleteRegister() {
               { day: "Day 1", date: "Thursday · Nov 26", label: "Arrival Day", desc: "Check in, pick up your swag bag, meet your cohort. Light intro session in the evening to get you locked in before Day 2." },
               { day: "Day 2", date: "Friday · Nov 27", label: "Training Day 1", desc: "First full day on the court. Morning and afternoon training blocks plus your first round of expert sessions." },
               { day: "Day 3", date: "Saturday · Nov 28", label: "Training Day 2", desc: "Back on the court. Second round of training blocks and the remaining expert sessions. Full day of work." },
-              { day: "Day 4", date: "Sunday · Nov 29", label: "Competition Day", desc: "Queen & King of the Beach tournament. You compete. 1:1 assessments available with FirstBeat and Ver during matches." },
+              { day: "Day 4", date: "Sunday · Nov 29", label: "Competition Day", desc: "Competitive games — all groups. 1:1 assessments available with FirstBeat and Ver during matches." },
             ].map((d) => (
               <FadeUp key={d.day} className="bg-dark p-7 flex flex-col gap-3">
                 <div className="text-[10px] font-semibold tracking-[0.25em] uppercase text-gold-m">{d.day}</div>
@@ -284,9 +284,9 @@ export default function AthleteRegister() {
           </div>
           <div className="border-l-2 border-gold/20 ml-3 flex flex-col gap-0">
             {[
-              { time: "7:30 AM", title: "Doors Open", desc: "Get there early. Grab your spot, warm up on your own." },
+              { time: "7:00 AM", title: "Yoga & Movement Prep", desc: "Guided movement session open to all athletes. 35–45 minutes." },
               { time: "8:00 AM", title: "Morning Movement & Activation", desc: "Guided warm-up and primal movement prep." },
-              { time: "8:30 AM", title: "Court Training Block 1", desc: "First full training block with elite coaching staff. Technical, tactical, and competitive reps." },
+              { time: "9:00 AM", title: "Court Training Block 1", desc: "First full training block with elite coaching staff. Technical, tactical, and competitive reps." },
               { time: "10:30 AM", title: "Expert Session", desc: "Mental performance, nutrition, or recruiting — rotating by group across the expert lineup." },
               { time: "11:30 AM", title: "Expert Session", desc: "Second session of the morning block." },
               { time: "12:30 PM", title: "Lunch Break", desc: "Break to eat and reset. Food options available on-site and nearby." },
