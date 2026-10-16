@@ -4,7 +4,7 @@ import FadeUp from "@/components/FadeUp";
 export const metadata: Metadata = {
   title: "Register — FORGED",
   description:
-    "Secure your spot at the FORGED Summit. Early bird pricing available. Mesa, AZ — November 26–29, 2026.",
+    "Secure your spot at the FORGED Summit. $757 regular, $650 for clubs and high schools with 6 or more athletes. Mesa, AZ — November 26–29, 2026.",
 };
 
 const included = [
@@ -78,14 +78,14 @@ export default function Register() {
           {/* Register Now */}
           <FadeUp className="bg-dark p-9 border-t-2 border-gold relative">
             <div className="absolute top-0 right-0 bg-gold text-black text-[10px] font-bold tracking-[0.2em] uppercase px-3 py-1">
-              Limited Spots
+              120 Spots
             </div>
-            <div className="font-display text-xl tracking-[0.1em] text-gold mb-1">Register Now</div>
+            <div className="font-display text-xl tracking-[0.1em] text-gold mb-1">Athlete Registration</div>
             <div className="font-display text-[clamp(48px,6vw,72px)] tracking-[0.02em] text-cream leading-none mb-3">
-              $550
+              $757
             </div>
             <p className="text-[13px] text-light leading-[1.6] mb-8">
-              Save $200 — first 50 spots only. Lock in the lowest rate FORGED will ever offer.
+              Full access to all summit programming. Pay in full now, or hold your spot with a $350 deposit and pay the $407 balance by Nov 10.
             </p>
             <div className="flex flex-col gap-3">
               <a
@@ -94,7 +94,7 @@ export default function Register() {
                 rel="noopener noreferrer"
                 className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-7 py-3.5 hover:bg-gold-m transition-colors text-center"
               >
-                Register — Register Now
+                Register — $757
               </a>
               <a
                 href="https://buy.stripe.com/3cIcN51ha0e54TM7aP3AY02"
@@ -107,31 +107,21 @@ export default function Register() {
             </div>
           </FadeUp>
 
-          {/* Full Registration */}
+          {/* Club and school rate */}
           <FadeUp className="bg-dark p-9 border-t-2 border-transparent">
-            <div className="font-display text-xl tracking-[0.1em] text-gold mb-1">Full Registration</div>
+            <div className="font-display text-xl tracking-[0.1em] text-gold mb-1">Club &amp; High School Rate</div>
             <div className="font-display text-[clamp(48px,6vw,72px)] tracking-[0.02em] text-cream leading-none mb-3">
-              $957
+              $650
             </div>
             <p className="text-[13px] text-light leading-[1.6] mb-8">
-              Standard rate after early bird closes. Full access to all summit programming.
+              When 6 or more athletes from the same club or the same high school register, every one of them pays $650 instead of $757. The 6 can come from any teams or age groups. The club or school pays nothing.
             </p>
             <div className="flex flex-col gap-3">
               <a
-                href="https://buy.stripe.com/fZu3cv0d6e4V85Y0Mr3AY01"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/clubs"
                 className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-gold border border-gold/40 px-7 py-3.5 hover:border-gold hover:text-[#F7EE78] transition-colors text-center"
               >
-                Register — Full Price
-              </a>
-              <a
-                href="https://buy.stripe.com/3cIcN51ha0e54TM7aP3AY02"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[11px] text-muted hover:text-gold-m transition-colors tracking-[0.05em] text-center"
-              >
-                Not ready to pay in full? Reserve with $350 deposit →
+                How the Club Rate Works
               </a>
             </div>
           </FadeUp>
@@ -142,7 +132,7 @@ export default function Register() {
           <div>
             <div className="font-display text-xl tracking-[0.1em] text-gold mb-1">Hold Your Spot — Deposit</div>
             <p className="text-[13px] text-light leading-[1.6] max-w-[560px]">
-              Not ready to pay in full? Put down $350 now to secure your spot. Applied to your balance at checkout.
+              Put down $350 now to secure your spot. The deposit is non-refundable. The balance is $407 (or $300 at the club and high school rate), due Nov 10.
             </p>
           </div>
           <div className="flex-shrink-0">

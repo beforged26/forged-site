@@ -204,11 +204,11 @@ export default function FAQ() {
       <div className="bg-dark border-t border-gold/10 py-20 px-6 md:px-10 text-center">
         <FadeUp>
           <p className="font-serif italic text-[clamp(16px,2.5vw,22px)] text-light max-w-[540px] mx-auto mb-10 leading-[1.6]">
-            Ready? Secure your spot before early bird pricing closes.
+            Ready? Spots are limited to 120 athletes.
           </p>
           <div className="flex items-center justify-center gap-4 flex-wrap">
             <Link href="/register/athlete" className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-7 py-3.5 hover:bg-gold-m transition-colors">
-              Athlete — Register Now $550
+              Athlete — Register $757
             </Link>
             <Link href="/register/coach" className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-gold border border-gold/40 px-7 py-3.5 hover:border-gold transition-colors">
               Coach — $250

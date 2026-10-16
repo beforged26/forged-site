@@ -35,6 +35,7 @@ const registerDropdown = [
     children: [
       { href: "/register/athlete", label: "Athletes" },
       { href: "/register/coach", label: "Coaches" },
+      { href: "/clubs", label: "Clubs & Schools" },
       { href: "/access", label: "Access Scholarship" },
     ],
   },

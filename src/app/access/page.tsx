@@ -37,7 +37,7 @@ const steps = [
 ];
 
 const eligibility = [
-  "Ages 13–23 (indoor volleyball, 2026 summit)",
+  "High school age, plus talented 13-year-olds (indoor volleyball, 2026 summit)",
   "Demonstrated financial need — cost is a real barrier for you",
   "Committed to attending all 4 days of the summit",
   "Motivated to grow — as an athlete, a teammate, a person",

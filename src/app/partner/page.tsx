@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const audiences = [
   {
     title: "Athletes",
-    desc: "High school athletes pursuing college opportunities and pre-professional players seeking their next level. Ages 13–23 indoor, 13–28 beach. Motivated, coachable, hungry for real growth.",
+    desc: "High school athletes pursuing college opportunities and pre-professional players seeking their next level. High school ages indoor, plus talented 13-year-olds; later years add college-level players. Beach ages 13–28. Motivated, coachable, hungry for real growth.",
     tag: "Highly Engaged",
   },
   {

@@ -40,7 +40,7 @@ const expansion = [
 const sports = [
   {
     title: "Indoor Volleyball",
-    desc: "The sport focus for the inaugural 2026 summit in Mesa, AZ. Ages 13–23.",
+    desc: "The sport focus for the inaugural 2026 summit in Mesa, AZ. High school ages, plus talented 13-year-olds. College-level players come in later years.",
     tag: "2026 — Year One",
   },
   {
@@ -76,7 +76,7 @@ export default function Events() {
           The Inaugural Summit
         </p>
         <h1 className="font-display text-[clamp(56px,11vw,130px)] leading-[0.95] tracking-[0.04em] text-cream mb-6 relative z-[1]">
-          PHOENIX, AZ
+          MESA, AZ
           <br />
           <span className="gold-gradient-text">NOV 26–29, 2026.</span>
         </h1>
@@ -166,7 +166,7 @@ export default function Events() {
       <FadeUp className="max-w-[1100px] mx-auto px-6 md:px-10 py-24 text-center">
         <p className="section-eyebrow center justify-center">Location</p>
         <h2 className="font-display text-[clamp(42px,7vw,80px)] tracking-[0.04em] leading-[0.95] text-cream mb-5">
-          PHOENIX,
+          MESA,
           <br />
           ARIZONA.
         </h2>

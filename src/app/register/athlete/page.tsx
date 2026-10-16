@@ -45,14 +45,9 @@ const included = [
 
 const PAYMENT_OPTIONS = [
   {
-    label: "Register Now — $550",
-    url: "https://buy.stripe.com/9B66oH6Bu3qh9a27aP3AY0k",
+    label: "Register — $757",
+    url: "https://buy.stripe.com/5kQ5kD5xq8KBdqi2Uz3AY00",
     featured: true,
-  },
-  {
-    label: "Full Price — $957",
-    url: "https://buy.stripe.com/fZu3cv0d6e4V85Y0Mr3AY01",
-    featured: false,
   },
   {
     label: "Deposit — $350",
@@ -105,25 +100,25 @@ export default function AthleteRegister() {
           {/* Sale Pricing */}
           <FadeUp className="bg-dark p-9 border-t-2 border-gold relative">
             <div className="absolute top-0 right-0 bg-gold text-black text-[10px] font-bold tracking-[0.2em] uppercase px-3 py-1">
-              Limited Spots
+              120 Spots
             </div>
-            <div className="font-display text-xl tracking-[0.1em] text-gold mb-1">Limited Time</div>
+            <div className="font-display text-xl tracking-[0.1em] text-gold mb-1">Athlete Registration</div>
             <div className="font-display text-[clamp(48px,6vw,72px)] tracking-[0.02em] text-cream leading-none mb-3">
-              $550
+              $757
             </div>
             <p className="text-[13px] text-light leading-[1.6]">
-              Limited time — price goes back up soon. Lock it in now.
+              Full access to everything FORGED has to offer.
             </p>
           </FadeUp>
 
           {/* Full Registration */}
           <FadeUp className="bg-dark p-9 border-t-2 border-transparent">
-            <div className="font-display text-xl tracking-[0.1em] text-gold mb-1">Full Registration</div>
+            <div className="font-display text-xl tracking-[0.1em] text-gold mb-1">Club &amp; High School Rate</div>
             <div className="font-display text-[clamp(48px,6vw,72px)] tracking-[0.02em] text-cream leading-none mb-3">
-              <span className="line-through opacity-40">$957</span>
+              $650
             </div>
             <p className="text-[13px] text-light leading-[1.6]">
-              Full access to everything FORGED has to offer.
+              When 6 or more athletes from the same club or high school register, each pays $650. <a href="/clubs" className="text-gold-m hover:underline">See how it works →</a>
             </p>
           </FadeUp>
         </div>
@@ -133,7 +128,7 @@ export default function AthleteRegister() {
           <div>
             <div className="font-display text-xl tracking-[0.1em] text-gold mb-1">Hold Your Spot — Deposit</div>
             <p className="text-[13px] text-light leading-[1.6] max-w-[560px]">
-              Put down $350 now to secure your spot. Non-refundable, but transferable to another athlete until Nov 10. Your $200 balance is due Nov 10 and will be charged automatically. Total is still $550.
+              Put down $350 now to secure your spot. Non-refundable, but transferable to another athlete until Nov 10. Your balance is due Nov 10: $407 at the regular price, or $300 at the club and high school rate.
             </p>
           </div>
           <div className="font-display text-[clamp(32px,4vw,48px)] tracking-[0.02em] text-cream leading-none flex-shrink-0">$350</div>
@@ -142,13 +137,14 @@ export default function AthleteRegister() {
         {/* CLUB DEAL */}
         <FadeUp className="mt-[2px]">
           <div className="border border-gold/40 bg-dark p-8 md:p-10 flex flex-col md:flex-row md:items-center gap-6">
-            <div className="flex-shrink-0 font-display text-[clamp(36px,5vw,56px)] gold-gradient-text leading-none">4+1</div>
+            <div className="flex-shrink-0 font-display text-[clamp(36px,5vw,56px)] gold-gradient-text leading-none">6+</div>
             <div>
-              <div className="font-display text-xl tracking-[0.1em] text-gold mb-2">Club Deal — Bring Your Team</div>
+              <div className="font-display text-xl tracking-[0.1em] text-gold mb-2">Club &amp; High School Offer — Bring Your Team</div>
               <p className="text-[13px] text-light leading-[1.6]">
-                Register 4 athletes from the same club or coach and your coach or club director gets one complimentary entry to the full summit weekend. To claim it, email{" "}
+                When 6 or more athletes from the same club or the same high school register, every athlete pays $650 instead of $757. Your coach or club director also gets one complimentary entry for every 4 athletes. The 6 do not have to be on the same team. To get your group's code, email{" "}
                 <a href="mailto:info@beforged.co" className="text-gold-m hover:underline">info@beforged.co</a>{" "}
-                with your group's name and the 4 athlete registrations. We'll confirm your free entry within 48 hours.
+                or read{" "}
+                <a href="/clubs" className="text-gold-m hover:underline">how it works</a>.
               </p>
             </div>
           </div>
