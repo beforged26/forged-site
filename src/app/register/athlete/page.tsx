@@ -46,7 +46,7 @@ const included = [
 const PAYMENT_OPTIONS = [
   {
     label: "Register — $757",
-    url: "https://buy.stripe.com/5kQ5kD5xq8KBdqi2Uz3AY00",
+    url: "https://buy.stripe.com/cNi4gzf801i9dqidzd3AY0n",
     featured: true,
   },
   {

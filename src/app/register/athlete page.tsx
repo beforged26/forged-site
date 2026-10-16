@@ -96,7 +96,7 @@ export default function AthleteRegister() {
               Save $200 — first 50 spots only. The lowest rate FORGED will ever offer. Lock it in now.
             </p>
             <a
-              href="https://buy.stripe.com/5kQ5kD5xq8KBdqi2Uz3AY00"
+              href="https://buy.stripe.com/cNi4gzf801i9dqidzd3AY0n"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-7 py-3.5 hover:bg-gold-m transition-colors"
@@ -190,7 +190,7 @@ export default function AthleteRegister() {
         </FadeUp>
         <FadeUp className="flex items-center justify-center gap-4 flex-wrap">
           <a
-            href="https://buy.stripe.com/5kQ5kD5xq8KBdqi2Uz3AY00"
+            href="https://buy.stripe.com/cNi4gzf801i9dqidzd3AY0n"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-7 py-3.5 hover:bg-gold-m transition-colors"

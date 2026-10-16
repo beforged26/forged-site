@@ -89,7 +89,7 @@ export default function Register() {
             </p>
             <div className="flex flex-col gap-3">
               <a
-                href="https://buy.stripe.com/5kQ5kD5xq8KBdqi2Uz3AY00"
+                href="https://buy.stripe.com/cNi4gzf801i9dqidzd3AY0n"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-7 py-3.5 hover:bg-gold-m transition-colors text-center"
