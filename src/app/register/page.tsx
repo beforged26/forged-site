@@ -97,7 +97,7 @@ export default function Register() {
                 Register — $757
               </a>
               <a
-                href="https://buy.stripe.com/3cIcN51ha0e54TM7aP3AY02"
+                href="https://buy.stripe.com/dRm8wPf806Ct4TMfHl3AY0o"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[11px] text-muted hover:text-gold-m transition-colors tracking-[0.05em] text-center"
@@ -138,7 +138,7 @@ export default function Register() {
           <div className="flex-shrink-0">
             <div className="font-display text-[clamp(32px,4vw,48px)] tracking-[0.02em] text-cream leading-none mb-3">$350</div>
             <a
-              href="https://buy.stripe.com/3cIcN51ha0e54TM7aP3AY02"
+              href="https://buy.stripe.com/dRm8wPf806Ct4TMfHl3AY0o"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-gold border border-gold/40 px-7 py-3.5 hover:border-gold hover:text-[#F7EE78] transition-colors"

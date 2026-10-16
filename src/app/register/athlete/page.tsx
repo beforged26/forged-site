@@ -51,7 +51,7 @@ const PAYMENT_OPTIONS = [
   },
   {
     label: "Deposit — $350",
-    url: "https://buy.stripe.com/3cIcN51ha0e54TM7aP3AY02",
+    url: "https://buy.stripe.com/dRm8wPf806Ct4TMfHl3AY0o",
     featured: false,
   },
 ];
