@@ -17,7 +17,7 @@ const pillars = [
   {
     num: "03",
     title: "Wellness",
-    desc: "Sports nutrition, body image, and athlete identity. The whole person. Not just the player.",
+    desc: "Body image and athlete identity. The whole person. Not just the player.",
   },
   {
     num: "04",

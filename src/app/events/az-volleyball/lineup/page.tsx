@@ -19,6 +19,13 @@ const coaches: { name: string; role: string; bio: string; website: string; photo
     photo: "/Logan.jpeg",
   },
   {
+    name: "Danielle Scott-Arruda",
+    role: "5x Olympian — 2x Olympic Silver Medalist",
+    bio: "Danielle Scott-Arruda is a five-time Olympian and a two-time Olympic silver medalist, and one of the most accomplished players in U.S. volleyball history. At FORGED she brings that experience to the court with the next generation of athletes.",
+    website: "",
+    photo: "/Danielle.jpeg",
+  },
+  {
     name: "Deitre Collins-Parker",
     role: "1988 Olympian — Inaugural Head Coach, MLV Washington D.C. — AVCA Hall of Famer",
     bio: "Deitre Collins-Parker is one of the most accomplished figures in the history of American volleyball — as both a player and a coach. She led the University of Hawai'i to back-to-back National Championships and was the first volleyball player ever to win the Honda Broderick Cup, given to the nation's top female collegiate athlete, earning it twice (1983 and 1984). She competed in the 1988 Olympics and won the French League Championship and the European Cup of Champions as a professional. As a coach, she built a 25-year collegiate career with over 330 wins at UNLV, Cornell, San Diego State, Coastal Carolina, and Arizona — and served as head coach of the U.S. Junior National Team three times. She was inducted into the AVCA Hall of Fame in 2008. Most recently, she was named the inaugural Head Coach of the MLV Washington D.C. franchise, set to debut in 2027. At FORGED, Deitre brings the kind of depth that only comes from having done it all.",

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const included = [
   {
     title: "Full Athlete Session Access",
-    desc: "Experience everything the athletes go through — training, expert sessions, mental performance, nutrition. See the work from both sides and walk away with programming you can bring back to your team.",
+    desc: "Experience everything the athletes go through — training, expert sessions, mental performance. See the work from both sides and walk away with programming you can bring back to your team.",
   },
   {
     title: "Coaches-Only Huddle Sessions",
@@ -253,7 +253,7 @@ export default function CoachRegister() {
               { time: "7:30 AM", title: "Coaches Breakfast", desc: "Breakfast provided for coaches, experts, and staff.", tag: "FORGED Coaching Staff Only" },
               { time: "8:00 AM", title: "Morning Coaches Huddle", desc: "Intimate Q&A and discussion with the elite coaching staff. The real conversations — the ones you don't get at clinics.", tag: "Coaches Only" },
               { time: "8:30 AM", title: "Court Training Block 1", desc: "Observe and engage alongside athletes. Watch elite coaches work, take notes, ask questions between reps.", tag: "" },
-              { time: "10:30 AM", title: "Expert Session", desc: "Mental performance, nutrition, or recruiting — attend all sessions with the athletes.", tag: "" },
+              { time: "10:30 AM", title: "Expert Session", desc: "Mental performance, body image, or recruiting — attend all sessions with the athletes.", tag: "" },
               { time: "11:30 AM", title: "Expert Session", desc: "Second session of the morning block.", tag: "" },
               { time: "12:30 PM", title: "Lunch", desc: "Lunch provided for coaches. Time to connect with other coaches and staff.", tag: "All Coaches" },
               { time: "1:30 PM", title: "Court Training Block 2", desc: "Afternoon training block. Coaches are welcome to interact with athletes and coaching staff.", tag: "" },

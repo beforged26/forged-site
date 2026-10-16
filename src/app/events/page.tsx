@@ -22,7 +22,7 @@ const schedule = [
   {
     day: "Day 3",
     title: "Wellness & Mentorship",
-    desc: "Sports nutrition, body image, and athlete identity workshops, plus structured mentorship pairings between athletes, coaches, and performance experts.",
+    desc: "Body image and athlete identity workshops, plus structured mentorship pairings between athletes, coaches, and performance experts.",
   },
   {
     day: "Day 4",

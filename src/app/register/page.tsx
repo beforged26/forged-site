@@ -11,7 +11,6 @@ const included = [
   "All training sessions",
   "Expert speaker sessions",
   "Mental performance workshops",
-  "Sports nutrition programming",
   "Athlete & coach mentorship",
   "FORGED gear bag",
   "All meals included",
