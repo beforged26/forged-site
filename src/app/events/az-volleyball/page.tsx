@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const schedule = [
   { day: "Day 1", date: "Nov 26", label: "Arrival & Orientation", desc: "Check-in, welcome session, team building, opening dinner." },
-  { day: "Day 2", date: "Nov 27", label: "Performance & Mindset", desc: "Morning training, mental performance sessions, nutrition workshop, expert panels." },
+  { day: "Day 2", date: "Nov 27", label: "Performance & Mindset", desc: "Morning training, mental performance sessions, expert panels." },
   { day: "Day 3", date: "Nov 28", label: "Development & Access", desc: "Advanced skill sessions, recruiting education, coach development track, evening community gathering." },
   { day: "Day 4", date: "Nov 29", label: "Integration & Send-Off", desc: "Final training session, leadership workshop, closing ceremony, alumni network launch." },
 ];

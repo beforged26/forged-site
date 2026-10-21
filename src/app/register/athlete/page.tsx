@@ -15,15 +15,15 @@ const included = [
   },
   {
     title: "Full Expert Session Access",
-    desc: "Sports psychology, nutrition, recruiting, leadership development — every athlete goes through every session. Nothing is optional. It's all built into the schedule because all of it matters.",
+    desc: "Sports psychology, recruiting, leadership development — every athlete goes through every session. Nothing is optional. It's all built into the schedule because all of it matters.",
   },
   {
     title: "Mental Performance",
     desc: "Learn to compete under pressure, manage your identity, and build the mindset that separates good from elite. This is the work most programs skip. FORGED doesn't.",
   },
   {
-    title: "Sports Nutrition & Wellness",
-    desc: "Fuel, recovery, body image, and athlete longevity. The honest conversations about what you put in your body and how you treat it — because your body is your career.",
+    title: "Body Image & Wellness",
+    desc: "Recovery, body image, and athlete longevity. The honest conversations about how you treat your body — because your body is your career.",
   },
   {
     title: "Recruiting Education",
@@ -283,7 +283,7 @@ export default function AthleteRegister() {
               { time: "7:00 AM", title: "Yoga & Movement Prep", desc: "Guided movement session open to all athletes. 35–45 minutes." },
               { time: "8:00 AM", title: "Morning Movement & Activation", desc: "Guided warm-up and primal movement prep." },
               { time: "9:00 AM", title: "Court Training Block 1", desc: "First full training block with elite coaching staff. Technical, tactical, and competitive reps." },
-              { time: "10:30 AM", title: "Expert Session", desc: "Mental performance, nutrition, or recruiting — rotating by group across the expert lineup." },
+              { time: "10:30 AM", title: "Expert Session", desc: "Mental performance, body image, or recruiting — rotating by group across the expert lineup." },
               { time: "11:30 AM", title: "Expert Session", desc: "Second session of the morning block." },
               { time: "12:30 PM", title: "Lunch Break", desc: "Break to eat and reset. Food options available on-site and nearby." },
               { time: "1:30 PM", title: "Court Training Block 2", desc: "Afternoon training block. Competitive formats, small-group work, and coach feedback." },
