@@ -29,6 +29,13 @@ const eventsDropdown = [
   },
 ];
 
+const communityDropdown = [
+  { href: "/community", label: "Community Home" },
+  { href: "/community/perspectives", label: "Perspectives" },
+  { href: "/community/online", label: "Online Community" },
+  { href: "/community/podcasts", label: "Podcasts" },
+];
+
 const registerDropdown = [
   {
     label: "AZ Indoor Volleyball",
@@ -63,6 +70,9 @@ export default function Nav() {
   const [eventsFlyout, setEventsFlyout] = useState<string | null>(null);
   const [registerFlyout, setRegisterFlyout] = useState<string | null>(null);
   const [registerOpen, setRegisterOpen] = useState(false);
+  const [communityOpen, setCommunityOpen] = useState(false);
+  const [mobileCommunityOpen, setMobileCommunityOpen] = useState(false);
+  const communityRef = useRef<HTMLDivElement>(null);
   const [mobileAboutOpen, setMobileAboutOpen] = useState(false);
   const [mobileEventsOpen, setMobileEventsOpen] = useState(false);
   const [mobileRegisterOpen, setMobileRegisterOpen] = useState(false);
@@ -80,6 +90,7 @@ export default function Nav() {
     const handleClickOutside = (e: MouseEvent) => {
       if (aboutRef.current && !aboutRef.current.contains(e.target as Node)) setAboutOpen(false);
       if (eventsRef.current && !eventsRef.current.contains(e.target as Node)) setEventsOpen(false);
+      if (communityRef.current && !communityRef.current.contains(e.target as Node)) setCommunityOpen(false);
       if (registerRef.current && !registerRef.current.contains(e.target as Node)) setRegisterOpen(false);
     };
     document.addEventListener("mousedown", handleClickOutside);
@@ -192,7 +203,21 @@ export default function Nav() {
           )}
         </div>
 
-        <Link href="/community" className={navLinkClass}>Community</Link>
+        {/* Community dropdown */}
+        <div ref={communityRef} className="relative">
+          <button className={dropdownBtnClass} onClick={() => setCommunityOpen((o) => !o)}>
+            Community <ChevronIcon open={communityOpen} />
+          </button>
+          {communityOpen && (
+            <div className={dropdownClass}>
+              {communityDropdown.map((item) => (
+                <Link key={item.href} href={item.href} onClick={() => setCommunityOpen(false)} className={dropdownLinkClass}>
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+          )}
+        </div>
         <Link href="/partner" className={navLinkClass}>Partner</Link>
         <Link href="/contact" className={navLinkClass}>Contact</Link>
         <Link href="/register/athlete" className="text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-6 py-2.5 hover:bg-gold-m transition-colors">
@@ -251,7 +276,14 @@ export default function Nav() {
             </div>
           ))}
 
-          <Link href="/community" onClick={() => setOpen(false)} className="text-[11px] font-semibold tracking-[0.18em] uppercase text-light hover:text-gold transition-colors px-6 py-4 border-t border-gold/5">Community</Link>
+          <button onClick={() => setMobileCommunityOpen((o) => !o)} className="text-[11px] font-semibold tracking-[0.18em] uppercase text-light hover:text-gold transition-colors px-6 py-4 border-t border-gold/5 flex items-center justify-between">
+            Community <ChevronIcon open={mobileCommunityOpen} />
+          </button>
+          {mobileCommunityOpen && communityDropdown.map((item) => (
+            <Link key={item.href} href={item.href} onClick={() => { setOpen(false); setMobileCommunityOpen(false); }} className="text-[11px] font-semibold tracking-[0.18em] uppercase text-gold transition-colors pl-10 pr-6 py-3.5 border-t border-gold/5 bg-dark">
+              {item.label}
+            </Link>
+          ))}
           <Link href="/partner" onClick={() => setOpen(false)} className="text-[11px] font-semibold tracking-[0.18em] uppercase text-light hover:text-gold transition-colors px-6 py-4 border-t border-gold/5">Partner</Link>
           <Link href="/contact" onClick={() => setOpen(false)} className="text-[11px] font-semibold tracking-[0.18em] uppercase text-light hover:text-gold transition-colors px-6 py-4 border-t border-gold/5">Contact</Link>
         </div>
