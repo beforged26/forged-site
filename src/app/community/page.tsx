@@ -5,11 +5,11 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "FORGED Community",
   description:
-    "The FORGED Community is where the work continues after the summit ends: weekly perspectives, podcasts and an online community for athletes, coaches and families.",
+    "The FORGED Community is where the work continues after the summit ends: the weekly Huddle, podcasts and an online community for athletes, coaches and families.",
 };
 
 const tabs = [
-  { href: "/community/perspectives", tag: "Weekly", title: "PERSPECTIVES", desc: "Our thoughts and opinions on athlete development, coaching, wellness and access. A new piece every week, written for athletes, coaches and parents.", cta: "Read Perspectives" },
+  { href: "/community/huddle", tag: "Weekly", title: "THE HUDDLE", desc: "Our thoughts and opinions on athlete development, coaching, wellness and access. A new piece every week, written for athletes, coaches and parents.", cta: "Join the Huddle" },
   { href: "/community/online", tag: "Coming Soon", title: "ONLINE COMMUNITY", desc: "A year-round home for athletes and coaches: sport-specific groups, women's spaces, expert calls and accountability that lasts beyond the summit.", cta: "Learn More" },
   { href: "/community/podcasts", tag: "Coming Soon", title: "PODCASTS", desc: "The Sessions and Coach Unscripted: honest conversations with coaches and experts about development and the human side of coaching.", cta: "Hear What's Coming" },
 ];

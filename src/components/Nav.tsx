@@ -31,7 +31,7 @@ const eventsDropdown = [
 
 const communityDropdown = [
   { href: "/community", label: "Community Home" },
-  { href: "/community/perspectives", label: "Perspectives" },
+  { href: "/community/huddle", label: "The Huddle" },
   { href: "/community/online", label: "Online Community" },
   { href: "/community/podcasts", label: "Podcasts" },
 ];

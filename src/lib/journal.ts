@@ -1,4 +1,4 @@
-// FORGED Perspectives — one post per week, Wednesdays, starting June 17, 2026.
+// The FORGED Huddle — one post per week, Wednesdays, starting June 17, 2026.
 // A post goes live on the site when it has a `body`. Posts without one show as "Coming soon".
 // To publish: add paragraphs to `body` (an array of strings; "## " prefix = subheading).
 

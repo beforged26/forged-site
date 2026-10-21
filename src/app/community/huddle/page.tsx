@@ -4,17 +4,17 @@ import FadeUp from "@/components/FadeUp";
 import { posts, isLive, formatDate } from "@/lib/journal";
 
 export const metadata: Metadata = {
-  title: "Perspectives — FORGED",
+  title: "The Huddle — FORGED",
   description:
-    "FORGED Perspectives: weekly writing on athlete development, coaching, wellness, mental performance and access, from founder Pri Piantadosi-Lima.",
+    "The FORGED Huddle: weekly writing on athlete development, coaching, wellness, mental performance and access, from founder Pri Piantadosi-Lima.",
 };
 
-export default function Perspectives() {
+export default function Huddle() {
   const ordered = [...posts].sort((a, b) => b.issue - a.issue);
   return (
     <>
       <section className="hero-anim flex flex-col items-center justify-center text-center px-6 pt-36 pb-14 relative overflow-hidden">
-        <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-gold-m mb-5">FORGED Perspectives</p>
+        <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-gold-m mb-5">The FORGED Huddle</p>
         <h1 className="font-display text-[clamp(52px,10vw,120px)] leading-[0.95] tracking-[0.04em] text-cream mb-6">
           WHAT WE <span className="gold-gradient-text">BELIEVE.</span>
         </h1>
@@ -55,7 +55,7 @@ export default function Perspectives() {
             );
             return (
               <FadeUp key={p.slug}>
-                {live ? <Link href={`/community/perspectives/${p.slug}`}>{inner}</Link> : inner}
+                {live ? <Link href={`/community/huddle/${p.slug}`}>{inner}</Link> : inner}
               </FadeUp>
             );
           })}

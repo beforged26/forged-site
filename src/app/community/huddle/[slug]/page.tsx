@@ -12,7 +12,7 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const p = posts.find((x) => x.slug === params.slug);
   if (!p) return {};
-  return { title: `${p.title} — FORGED Perspectives`, description: p.summary };
+  return { title: `${p.title} — The FORGED Huddle`, description: p.summary };
 }
 
 export default function Post({ params }: { params: { slug: string } }) {
@@ -21,8 +21,8 @@ export default function Post({ params }: { params: { slug: string } }) {
   return (
     <article className="px-6 md:px-10 pt-36 pb-24">
       <div className="max-w-[720px] mx-auto">
-        <Link href="/community/perspectives" className="text-[11px] font-semibold tracking-[0.2em] uppercase text-gold-m hover:text-gold transition-colors">
-          ← Perspectives
+        <Link href="/community/huddle" className="text-[11px] font-semibold tracking-[0.2em] uppercase text-gold-m hover:text-gold transition-colors">
+          ← The Huddle
         </Link>
         <p className="text-[11px] font-semibold tracking-[0.2em] uppercase text-muted mt-8 mb-3">
           {p.pillar} · Issue {p.issue} · {formatDate(p.date)}
