@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import FadeUp from "@/components/FadeUp";
-import { posts, isLive, formatDate } from "@/lib/journal";
+import { posts, isLive, isVisible, formatDate } from "@/lib/journal";
 
 export const metadata: Metadata = {
   title: "The Huddle — FORGED",
@@ -9,8 +9,10 @@ export const metadata: Metadata = {
     "The FORGED Huddle: weekly writing on athlete development, coaching, wellness, mental performance and access, from founder Pri Piantadosi-Lima.",
 };
 
+export const revalidate = 86400;
+
 export default function Huddle() {
-  const ordered = [...posts].sort((a, b) => b.issue - a.issue);
+  const ordered = posts.filter(isVisible).sort((a, b) => b.issue - a.issue);
   return (
     <>
       <section className="hero-anim flex flex-col items-center justify-center text-center px-6 pt-36 pb-14 relative overflow-hidden">
