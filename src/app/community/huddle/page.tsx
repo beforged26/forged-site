@@ -32,8 +32,8 @@ export default function Huddle() {
           <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-gold-m mb-2">We&apos;re moving</p>
           <p className="text-[15px] text-light leading-[1.7]">
             We&apos;re moving our Substack and other posts into one place on our
-            website. Here are all of our past issues and posts, and every week
-            from now on we&apos;ll keep adding something new.
+            website. Every week we&apos;ll add something new, so check back, and
+            bring along the parents and coaches in your circle.
           </p>
         </div>
       </section>
@@ -46,8 +46,7 @@ export default function Huddle() {
               <div className={`py-7 border-b border-gold/10 ${live ? "group" : "opacity-60"}`}>
                 <div className="flex items-center gap-3 text-[11px] font-semibold tracking-[0.2em] uppercase mb-2">
                   <span className="text-gold-m">{p.pillar}</span>
-                  <span className="text-muted">Issue {p.issue}</span>
-                  <span className="text-muted">{live ? formatDate(p.date) : `Coming ${formatDate(p.date)}`}</span>
+                  <span className="text-muted">{formatDate(p.date)}</span>
                 </div>
                 <h2 className={`font-display text-[clamp(26px,4vw,38px)] tracking-[0.03em] leading-[1.05] text-cream mb-2 ${live ? "group-hover:text-gold transition-colors" : ""}`}>
                   {p.title}

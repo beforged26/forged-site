@@ -25,7 +25,7 @@ export default function Post({ params }: { params: { slug: string } }) {
           ← The Huddle
         </Link>
         <p className="text-[11px] font-semibold tracking-[0.2em] uppercase text-muted mt-8 mb-3">
-          {p.pillar} · Issue {p.issue} · {formatDate(p.date)}
+          {p.pillar} · {formatDate(p.date)}
         </p>
         <h1 className="font-display text-[clamp(40px,7vw,76px)] leading-[0.98] tracking-[0.03em] text-cream mb-10">{p.title}</h1>
         <div className="space-y-6">
