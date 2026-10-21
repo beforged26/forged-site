@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { checkWaiver, waiverEmailRows, clientIp, WAIVER_VERSION } from "@/lib/waiver";
 
 export async function POST(req: Request) {
   try {
@@ -19,6 +20,13 @@ export async function POST(req: Request) {
     if (!firstName || !lastName || !email || !email.includes("@")) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
+
+    const waiverError = checkWaiver(data, true);
+    if (waiverError) {
+      return NextResponse.json({ error: waiverError }, { status: 400 });
+    }
+    const acceptedAt = new Date().toLocaleString("en-US", { timeZone: "America/New_York" });
+    const ip = clientIp(req);
 
     const html = `
 <!DOCTYPE html>
@@ -73,6 +81,7 @@ export async function POST(req: Request) {
 
     <tr><td colspan="2" style="background: #f5f0e8; padding: 8px 12px; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; font-weight: bold; color: #C9A84C;">Their Goal</td></tr>
     <tr><td colspan="2" style="padding: 12px; color: #111; font-style: italic; border-bottom: 1px solid #eee;">${goal || "—"}</td></tr>
+  ${waiverEmailRows(data, ip, acceptedAt)}
   </table>
 
   <div style="margin-top: 32px; padding-top: 16px; border-top: 1px solid #eee; font-size: 12px; color: #888;">
@@ -116,7 +125,7 @@ export async function POST(req: Request) {
         await fetch(sheetUrl, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ type: "athlete", ...data }),
+          body: JSON.stringify({ type: "athlete", ...data, waiverAcceptedAt: acceptedAt, waiverVersion: WAIVER_VERSION, waiverIp: ip }),
         });
       } catch (err) {
         console.error("Sheet log error:", err);

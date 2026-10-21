@@ -1,5 +1,7 @@
 "use client";
 
+import WaiverAgreement from "./WaiverAgreement";
+import { BLANK_WAIVER, type WaiverFields } from "@/lib/waiver";
 import { useState, type InputHTMLAttributes, type SelectHTMLAttributes, type ReactNode } from "react";
 
 const POSITIONS = [
@@ -102,6 +104,7 @@ export default function AthleteInterestForm({ paymentOptions }: { paymentOptions
   const [fields, setFields] = useState<Fields>(BLANK);
   const [status, setStatus] = useState<"idle" | "loading" | "done" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
+  const [waiver, setWaiver] = useState<WaiverFields>(BLANK_WAIVER);
 
   function set(key: keyof Fields, value: string | boolean) {
     setFields((prev) => ({ ...prev, [key]: value }));
@@ -114,6 +117,14 @@ export default function AthleteInterestForm({ paymentOptions }: { paymentOptions
       setErrorMsg("Please enter your friend's email address.");
       return;
     }
+    if (!waiver.waiverAccepted) {
+      setErrorMsg("Please read and accept the waiver to continue.");
+      return;
+    }
+    if (waiver.isMinor && (!waiver.parentAccepted || !fields.guardianEmail)) {
+      setErrorMsg("For athletes 18 or younger, the parent or guardian must accept the waiver and we need their email.");
+      return;
+    }
     setErrorMsg("");
     setStatus("loading");
 
@@ -121,7 +132,7 @@ export default function AthleteInterestForm({ paymentOptions }: { paymentOptions
       const res = await fetch("/api/athlete-register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(fields),
+        body: JSON.stringify({ ...fields, ...waiver }),
       });
       if (!res.ok) throw new Error("failed");
       setStatus("done");
@@ -280,6 +291,10 @@ export default function AthleteInterestForm({ paymentOptions }: { paymentOptions
             onChange={(e) => set("goal", e.target.value)}
           />
         </div>
+      </div>
+
+      <div className="grid grid-cols-1">
+        <WaiverAgreement value={waiver} onChange={setWaiver} askAge guardianName={fields.guardianName} />
       </div>
 
       {errorMsg && (

@@ -1,5 +1,7 @@
 "use client";
 
+import WaiverAgreement from "./WaiverAgreement";
+import { BLANK_WAIVER, type WaiverFields } from "@/lib/waiver";
 import { useState, type InputHTMLAttributes, type SelectHTMLAttributes, type ReactNode } from "react";
 
 const SHIRT_SIZES = ["S", "M", "L", "XL", "XXL", "XXXL"];
@@ -78,6 +80,8 @@ function SectionLabel({ children }: { children: ReactNode }) {
 export default function CoachInterestForm({ stripeUrl }: { stripeUrl: string }) {
   const [fields, setFields] = useState<Fields>(BLANK);
   const [status, setStatus] = useState<"idle" | "loading" | "done" | "error">("idle");
+  const [waiver, setWaiver] = useState<WaiverFields>(BLANK_WAIVER);
+  const [errorMsg, setErrorMsg] = useState("");
 
   function set<K extends keyof Fields>(key: K, value: Fields[K]) {
     setFields((prev) => ({ ...prev, [key]: value }));
@@ -101,13 +105,18 @@ export default function CoachInterestForm({ stripeUrl }: { stripeUrl: string }) 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (fields.levels.length === 0) return;
+    if (!waiver.waiverAccepted) {
+      setErrorMsg("Please read and accept the waiver to continue.");
+      return;
+    }
+    setErrorMsg("");
     setStatus("loading");
 
     try {
       const res = await fetch("/api/coach-register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(fields),
+        body: JSON.stringify({ ...fields, ...waiver }),
       });
       if (!res.ok) throw new Error("failed");
       setStatus("done");
@@ -239,6 +248,12 @@ export default function CoachInterestForm({ stripeUrl }: { stripeUrl: string }) 
           <a href="mailto:info@beforged.co" className="underline">info@beforged.co</a>.
         </p>
       )}
+
+      <div className="grid grid-cols-1">
+        <WaiverAgreement value={waiver} onChange={setWaiver} askAge={false} />
+      </div>
+
+      {errorMsg && <p className="text-[12px] text-gold-m text-center">{errorMsg}</p>}
 
       <button
         type="submit"
