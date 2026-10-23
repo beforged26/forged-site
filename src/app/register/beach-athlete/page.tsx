@@ -187,7 +187,7 @@ export default function BeachAthleteRegister() {
           <p className="font-serif italic text-[clamp(15px,2vw,19px)] text-light max-w-[580px] leading-[1.6] mb-12">
             Fill out your info below — we&apos;ll be in touch directly. After submitting, you&apos;ll choose your payment option to hold your spot.
           </p>
-          <AthleteInterestForm paymentOptions={PAYMENT_OPTIONS} />
+          <AthleteInterestForm paymentOptions={PAYMENT_OPTIONS} event="beach" />
         </FadeUp>
       </div>
 
