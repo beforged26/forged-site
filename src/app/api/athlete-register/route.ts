@@ -1,5 +1,50 @@
 import { NextResponse } from "next/server";
 
+
+function esc(v: unknown): string {
+  return String(v ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function confirmationEmail(firstName: string, isBeach: boolean) {
+  const name = esc(firstName);
+  const title = isBeach ? "FORGED Beach Summit" : "FORGED Summit";
+  const when = isBeach
+    ? "February 2027 &middot; Dania Beach, Florida"
+    : "November 26&ndash;29, 2026 &middot; Mesa, Arizona";
+  const steps = isBeach
+    ? `<li style="margin-bottom:10px;">Choose your payment option on the registration page to hold your spot. Stripe will email you a receipt when your payment goes through.</li>
+       <li style="margin-bottom:10px;">A signed waiver is required at check-in. You can also email a signed copy ahead of time to <a href="mailto:info@beforged.co" style="color:#8a6d1f;">info@beforged.co</a>.</li>`
+    : `<li style="margin-bottom:10px;"><b>Hold your spot.</b> If you have not paid yet, choose your payment option on the registration page. The $350 deposit holds your spot. It is non-refundable, but you can transfer it to another athlete until Nov 10. Stripe emails you a receipt when your payment goes through.</li>
+       <li style="margin-bottom:10px;"><b>Balance due Nov 10.</b> The remaining balance is due Nov 10. If your club or high school reaches 6 registered athletes with your group code, every athlete in your group gets the $650 group rate.</li>
+       <li style="margin-bottom:10px;"><b>Waiver.</b> A signed waiver is required at check-in. You can also email a signed copy ahead of time to <a href="mailto:info@beforged.co" style="color:#8a6d1f;">info@beforged.co</a>.</li>`;
+  return `<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"></head>
+<body style="font-family: Georgia, serif; max-width: 600px; margin: 0 auto; padding: 24px; color: #111; line-height: 1.7; font-size: 15px;">
+  <div style="border-top: 3px solid #C9A84C; padding-top: 20px; margin-bottom: 24px;">
+    <p style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: #C9A84C; margin: 0 0 8px;">${title}</p>
+    <h1 style="font-size: 26px; margin: 0;">We received your registration, ${name}.</h1>
+  </div>
+  <p>Thank you for registering for the ${title}. We have your information, and we are glad you are coming.</p>
+  <p style="margin: 0 0 4px;"><b>When and where</b></p>
+  <p style="margin: 0 0 20px;">${when}</p>
+  <p style="margin: 0 0 8px;"><b>What happens next</b></p>
+  <ol style="padding-left: 20px; margin: 0 0 20px;">
+    ${steps}
+  </ol>
+  <p>Questions? Reply to this email or write to <a href="mailto:info@beforged.co" style="color:#8a6d1f;">info@beforged.co</a>.</p>
+  <p style="margin-top: 28px;">Stronger athletes. Stronger leaders.<br><b>FORGED</b></p>
+  <div style="margin-top: 28px; padding-top: 14px; border-top: 1px solid #eee; font-size: 12px; color: #888;">
+    FORGED is a DBA of Optimum Volleyball, Inc. &middot; beforged.co
+  </div>
+</body>
+</html>`;
+}
+
 export async function POST(req: Request) {
   try {
     const data = await req.json();
@@ -13,7 +58,7 @@ export async function POST(req: Request) {
       referFriend, friendName, friendEmail,
       suggestCoach, suggestCoachName, suggestCoachContact,
       guardianName, guardianPhone, guardianEmail,
-      goal,
+      goal, event,
     } = data;
 
     if (!firstName || !lastName || !email || !email.includes("@")) {
@@ -104,6 +149,38 @@ export async function POST(req: Request) {
         const err = await res.text();
         console.error("Resend error:", err);
         // Still return ok — don't lose the submission
+      }
+
+      // Confirmation to the athlete (and guardian, if given). Never blocks the submission.
+      try {
+        const recipients = [email];
+        if (
+          guardianEmail &&
+          typeof guardianEmail === "string" &&
+          guardianEmail.includes("@") &&
+          guardianEmail.toLowerCase() !== String(email).toLowerCase()
+        ) {
+          recipients.push(guardianEmail);
+        }
+        const confRes = await fetch("https://api.resend.com/emails", {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${apiKey}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            from: "FORGED Summit <noreply@beforged.co>",
+            to: recipients,
+            reply_to: "info@beforged.co",
+            subject: "We received your FORGED Summit registration",
+            html: confirmationEmail(firstName, event === "beach"),
+          }),
+        });
+        if (!confRes.ok) {
+          console.error("Resend confirmation error:", await confRes.text());
+        }
+      } catch (err) {
+        console.error("Confirmation email error:", err);
       }
     } else {
       console.log("ATHLETE REGISTRATION (no RESEND_API_KEY set):", JSON.stringify(data, null, 2));

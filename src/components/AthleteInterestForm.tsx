@@ -98,7 +98,7 @@ function SectionLabel({ children }: { children: ReactNode }) {
 
 export type PaymentOption = { label: string; url: string; featured?: boolean };
 
-export default function AthleteInterestForm({ paymentOptions }: { paymentOptions: PaymentOption[] }) {
+export default function AthleteInterestForm({ paymentOptions, event = "indoor" }: { paymentOptions: PaymentOption[]; event?: "indoor" | "beach" }) {
   const [fields, setFields] = useState<Fields>(BLANK);
   const [status, setStatus] = useState<"idle" | "loading" | "done" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
@@ -121,7 +121,7 @@ export default function AthleteInterestForm({ paymentOptions }: { paymentOptions
       const res = await fetch("/api/athlete-register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(fields),
+        body: JSON.stringify({ ...fields, event }),
       });
       if (!res.ok) throw new Error("failed");
       setStatus("done");
