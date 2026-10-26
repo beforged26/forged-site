@@ -117,7 +117,7 @@ export default function Clubs() {
             </li>
             <li>
               <span className="text-gold mr-2">✦</span>
-              Codes and the offer end Nov 10. The summit is capped at 120 athletes.
+              Codes and the offer end Nov 10.
             </li>
           </ul>
         </FadeUp>

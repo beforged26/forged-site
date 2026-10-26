@@ -10,6 +10,7 @@ const aboutDropdown = [
   { href: "/about/mission", label: "Our Mission" },
   { href: "/about/team", label: "Our Team" },
   { href: "/founding-family", label: "Founding Family" },
+  { href: "/programs", label: "Founding Programs" },
 ];
 
 const eventsDropdown = [
