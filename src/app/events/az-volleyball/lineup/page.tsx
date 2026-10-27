@@ -19,9 +19,9 @@ const coaches: { name: string; role: string; bio: string; website: string; photo
     photo: "/Logan.jpeg",
   },
   {
-    name: "Danielle Scott-Arruda",
+    name: "Danielle Scott",
     role: "5x Olympian — 2x Olympic Silver Medalist",
-    bio: "Danielle Scott-Arruda is a five-time Olympian and a two-time Olympic silver medalist, and one of the most accomplished players in U.S. volleyball history. At FORGED she brings that experience to the court with the next generation of athletes.",
+    bio: "Danielle Scott is a five-time Olympian and a two-time Olympic silver medalist, and one of the most accomplished players in U.S. volleyball history. At FORGED she brings that experience to the court with the next generation of athletes.",
     website: "",
     photo: "/Danielle.jpeg",
   },
