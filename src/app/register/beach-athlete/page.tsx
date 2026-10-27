@@ -45,14 +45,9 @@ const included = [
 
 const PAYMENT_OPTIONS = [
   {
-    label: "Early Bird",
+    label: "Register — $757",
     url: "https://buy.stripe.com/8x28wP7FybWN9a23YD3AY0g",
     featured: true,
-  },
-  {
-    label: "Full Registration",
-    url: "https://buy.stripe.com/3cIeVd0d6d0R71Ucv93AY0i",
-    featured: false,
   },
   {
     label: "Deposit — Hold My Spot",
@@ -102,29 +97,14 @@ export default function BeachAthleteRegister() {
           ENTRY.
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-[2px] bg-gold/[0.08] mb-[2px]">
-          {/* Early Bird */}
-          <FadeUp className="bg-dark p-9 border-t-2 border-gold relative">
-            <div className="absolute top-0 right-0 bg-gold text-black text-[10px] font-bold tracking-[0.2em] uppercase px-3 py-1">
-              First 20 Only
-            </div>
-            <div className="font-display text-xl tracking-[0.1em] text-gold mb-1">Early Bird</div>
+        <div className="grid grid-cols-1 gap-[2px] bg-gold/[0.08] mb-[2px]">
+          <FadeUp className="bg-dark p-9 border-t-2 border-gold">
+            <div className="font-display text-xl tracking-[0.1em] text-gold mb-1">Registration</div>
             <div className="font-display text-[clamp(48px,6vw,72px)] tracking-[0.02em] text-cream leading-none mb-3">
               $757
             </div>
             <p className="text-[13px] text-light leading-[1.6]">
-              Save $200 — for the first 20 registrations only. The lowest rate FORGED will ever offer. Lock it in now before it closes.
-            </p>
-          </FadeUp>
-
-          {/* Full Registration */}
-          <FadeUp className="bg-dark p-9 border-t-2 border-transparent">
-            <div className="font-display text-xl tracking-[0.1em] text-gold mb-1">Full Registration</div>
-            <div className="font-display text-[clamp(48px,6vw,72px)] tracking-[0.02em] text-cream leading-none mb-3">
-              $957
-            </div>
-            <p className="text-[13px] text-light leading-[1.6]">
-              Standard rate. Full access to everything FORGED has to offer — training, expert sessions, swag, and community.
+              Full access to everything FORGED has to offer — training, expert sessions, swag, and community.
             </p>
           </FadeUp>
         </div>
