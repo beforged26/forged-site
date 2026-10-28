@@ -28,6 +28,13 @@ const programs: Program[] = [
     logo: "/programs/acadian-juniors.png",
     url: "https://acadianjuniors.com",
   },
+  {
+    name: "Westminster Christian Academy",
+    location: "Opelousas, Louisiana",
+    tier: "founding",
+    logo: "/programs/westminster-christian-academy.png",
+    url: "https://wcala.org",
+  },
 ];
 // ─────────────────────────────────────────────────────────────────────────────
 
