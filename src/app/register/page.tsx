@@ -84,7 +84,7 @@ export default function Register() {
               $757
             </div>
             <p className="text-[13px] text-light leading-[1.6] mb-8">
-              Full access to all summit programming. Pay in full now, or hold your spot with a $350 deposit and pay the $407 balance by Nov 10.
+              Full access to all summit programming. Paid in full at checkout.
             </p>
             <div className="flex flex-col gap-3">
               <a
@@ -94,14 +94,6 @@ export default function Register() {
                 className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-7 py-3.5 hover:bg-gold-m transition-colors text-center"
               >
                 Register — $757
-              </a>
-              <a
-                href="https://buy.stripe.com/dRm8wPf806Ct4TMfHl3AY0o"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[11px] text-muted hover:text-gold-m transition-colors tracking-[0.05em] text-center"
-              >
-                Not ready to pay in full? Reserve with $350 deposit →
               </a>
             </div>
           </FadeUp>
@@ -126,26 +118,6 @@ export default function Register() {
           </FadeUp>
         </div>
 
-        {/* Deposit */}
-        <FadeUp className="bg-dark border border-gold/10 p-9 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-          <div>
-            <div className="font-display text-xl tracking-[0.1em] text-gold mb-1">Hold Your Spot — Deposit</div>
-            <p className="text-[13px] text-light leading-[1.6] max-w-[560px]">
-              Put down $350 now to secure your spot. The deposit is non-refundable. The balance is $407 (or $300 at the club and high school rate), due Nov 10.
-            </p>
-          </div>
-          <div className="flex-shrink-0">
-            <div className="font-display text-[clamp(32px,4vw,48px)] tracking-[0.02em] text-cream leading-none mb-3">$350</div>
-            <a
-              href="https://buy.stripe.com/dRm8wPf806Ct4TMfHl3AY0o"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-gold border border-gold/40 px-7 py-3.5 hover:border-gold hover:text-[#F7EE78] transition-colors"
-            >
-              Pay Deposit
-            </a>
-          </div>
-        </FadeUp>
       </FadeUp>
 
       {/* WHAT'S INCLUDED */}

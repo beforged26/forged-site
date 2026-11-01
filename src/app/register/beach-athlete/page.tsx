@@ -49,11 +49,6 @@ const PAYMENT_OPTIONS = [
     url: "https://buy.stripe.com/8x28wP7FybWN9a23YD3AY0g",
     featured: true,
   },
-  {
-    label: "Deposit — Hold My Spot",
-    url: "https://buy.stripe.com/7sY6oH3pi9OFeum1Qv3AY0h",
-    featured: false,
-  },
 ];
 
 export default function BeachAthleteRegister() {
@@ -108,19 +103,6 @@ export default function BeachAthleteRegister() {
             </p>
           </FadeUp>
         </div>
-
-        {/* Deposit */}
-        <FadeUp className="bg-dark border border-gold/10 p-9 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-          <div>
-            <div className="font-display text-xl tracking-[0.1em] text-gold mb-1">Hold Your Spot — Deposit</div>
-            <p className="text-[13px] text-light leading-[1.6] max-w-[560px]">
-              Not ready to pay in full? Put down a deposit now to secure your spot. Applied to your balance at checkout.
-            </p>
-          </div>
-          <div className="font-display text-[clamp(32px,4vw,48px)] tracking-[0.02em] text-cream leading-none flex-shrink-0">
-            $350
-          </div>
-        </FadeUp>
 
         {/* Club Deal */}
         <FadeUp className="mt-[2px]">

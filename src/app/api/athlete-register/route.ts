@@ -18,8 +18,8 @@ function confirmationEmail(firstName: string, isBeach: boolean) {
   const steps = isBeach
     ? `<li style="margin-bottom:10px;">Choose your payment option on the registration page to hold your spot. Stripe will email you a receipt when your payment goes through.</li>
        <li style="margin-bottom:10px;">A signed waiver is required at check-in. You can also email a signed copy ahead of time to <a href="mailto:info@beforged.co" style="color:#8a6d1f;">info@beforged.co</a>.</li>`
-    : `<li style="margin-bottom:10px;"><b>Hold your spot.</b> If you have not paid yet, choose your payment option on the registration page. The $350 deposit holds your spot. It is non-refundable, but you can transfer it to another athlete until Nov 10. Stripe emails you a receipt when your payment goes through.</li>
-       <li style="margin-bottom:10px;"><b>Balance due Nov 10.</b> The remaining balance is due Nov 10. If your club or high school reaches 6 registered athletes with your group code, every athlete in your group gets the $650 group rate.</li>
+    : `<li style="margin-bottom:10px;"><b>Hold your spot.</b> If you have not paid yet, complete your registration payment on the registration page. Stripe emails you a receipt when your payment goes through.</li>
+       <li style="margin-bottom:10px;"><b>Group rate.</b> If your club or high school reaches 6 registered athletes with your group code by Nov 10, every athlete in your group gets the $650 group rate.</li>
        <li style="margin-bottom:10px;"><b>Waiver.</b> A signed waiver is required at check-in. You can also email a signed copy ahead of time to <a href="mailto:info@beforged.co" style="color:#8a6d1f;">info@beforged.co</a>.</li>`;
   return `<!DOCTYPE html>
 <html>

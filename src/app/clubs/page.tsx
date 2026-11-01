@@ -21,12 +21,12 @@ const steps = [
   {
     num: "03",
     title: "Each family registers",
-    desc: "Each family registers at beforged.co with the code and pays the $350 deposit for their own athlete, which holds a spot.",
+    desc: "Each family registers at beforged.co with the code, for their own athlete.",
   },
   {
     num: "04",
     title: "Six registrations unlock $650",
-    desc: "Once 6 registrations are confirmed from your club or school, every athlete in your group gets the $650 rate. The remaining balance is $300, due Nov 10.",
+    desc: "Once 6 registrations are confirmed from your club or school, every athlete in your group gets the $650 rate.",
   },
 ];
 
@@ -109,11 +109,11 @@ export default function Clubs() {
             </li>
             <li>
               <span className="text-gold mr-2">✦</span>
-              The $350 deposit holds a spot and is non-refundable. Regular price is $757 with a $407 balance. If your group reaches 6 confirmed registrations by Nov 10, the rate for all of them is $650 and the balance is $300.
+              Regular price is $757, paid in full at checkout. If your group reaches 6 confirmed registrations by Nov 10, the rate for all of them is $650.
             </li>
             <li>
               <span className="text-gold mr-2">✦</span>
-              If your group has fewer than 6 confirmed registrations by Nov 10, the balance is the regular price.
+              If your group has fewer than 6 confirmed registrations by Nov 10, everyone pays the regular price.
             </li>
             <li>
               <span className="text-gold mr-2">✦</span>

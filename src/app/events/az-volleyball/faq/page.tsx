@@ -70,11 +70,11 @@ const faqs: { category: string; items: { q: string; a: string }[] }[] = [
     items: [
       {
         q: "Can I pay in installments?",
-        a: "Yes. We offer a deposit to secure your spot, with the remaining balance due by September 15, 2026. Payment details are available at checkout.",
+        a: "No. Registration is paid in full at checkout. Email info@beforged.co with any questions.",
       },
       {
         q: "What is the cancellation and refund policy?",
-        a: "Deposits are non-refundable, except in cases of extenuating circumstances reviewed on a case-by-case basis. For full registration: if you cancel by October 1, 2026, you will receive a 50% refund of your total registration. If you cancel by November 1, 2026, you will receive a 25% refund. No refunds are issued after November 1. Email info@beforged.co with any questions.",
+        a: "For registration: if you cancel by October 1, 2026, you will receive a 50% refund of your total registration. If you cancel by November 1, 2026, you will receive a 25% refund. No refunds are issued after November 1. Email info@beforged.co with any questions.",
       },
       {
         q: "Do you offer a sibling discount?",

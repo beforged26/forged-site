@@ -49,11 +49,6 @@ const PAYMENT_OPTIONS = [
     url: "https://buy.stripe.com/cNi4gzf801i9dqidzd3AY0n",
     featured: true,
   },
-  {
-    label: "Deposit — $350",
-    url: "https://buy.stripe.com/dRm8wPf806Ct4TMfHl3AY0o",
-    featured: false,
-  },
 ];
 
 export default function AthleteRegister() {
@@ -122,17 +117,6 @@ export default function AthleteRegister() {
             </p>
           </FadeUp>
         </div>
-
-        {/* Deposit */}
-        <FadeUp className="bg-dark border border-gold/10 p-9 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-          <div>
-            <div className="font-display text-xl tracking-[0.1em] text-gold mb-1">Hold Your Spot — Deposit</div>
-            <p className="text-[13px] text-light leading-[1.6] max-w-[560px]">
-              Put down $350 now to secure your spot. Non-refundable, but transferable to another athlete until Nov 10. Your balance is due Nov 10: $407 at the regular price, or $300 at the club and high school rate.
-            </p>
-          </div>
-          <div className="font-display text-[clamp(32px,4vw,48px)] tracking-[0.02em] text-cream leading-none flex-shrink-0">$350</div>
-        </FadeUp>
 
         {/* CLUB DEAL */}
         <FadeUp className="mt-[2px]">
