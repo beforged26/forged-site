@@ -109,15 +109,11 @@ export default function Clubs() {
             </li>
             <li>
               <span className="text-gold mr-2">✦</span>
-              Regular price is $757, paid in full at checkout. If your group reaches 6 confirmed registrations by Nov 10, the rate for all of them is $650.
+              Regular price is $757, paid in full at checkout. If your group reaches 6 confirmed registrations, the rate for all of them is $650.
             </li>
             <li>
               <span className="text-gold mr-2">✦</span>
-              If your group has fewer than 6 confirmed registrations by Nov 10, everyone pays the regular price.
-            </li>
-            <li>
-              <span className="text-gold mr-2">✦</span>
-              Codes and the offer end Nov 10.
+              If your group has fewer than 6 confirmed registrations, everyone pays the regular price.
             </li>
           </ul>
         </FadeUp>

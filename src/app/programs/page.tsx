@@ -141,7 +141,7 @@ export default function Programs() {
             ))}
           </div>
           <p className="text-[13px] text-muted mt-8 leading-[1.7]">
-            Every athlete in a group of 6 or more pays $650 instead of $757. Your club or school does not pay or sign anyone up. Offer ends Nov 10.
+            Every athlete in a group of 6 or more pays $650 instead of $757. Your club or school does not pay or sign anyone up.
           </p>
         </FadeUp>
       </div>
