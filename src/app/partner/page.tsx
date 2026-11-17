@@ -6,7 +6,7 @@ import PartnerForm from "@/components/PartnerForm";
 export const metadata: Metadata = {
   title: "Partner With Us — FORGED",
   description:
-    "Partner with FORGED — an elite athlete, coach, and expert development summit. First event: Mesa, AZ, November 26–29, 2026. Founding partner sponsorship tiers from $2,500 to $250,000+.",
+    "Partner with FORGED — an elite athlete, coach, and expert development summit. Next up: FORGED Beach, Dania Beach, FL, February 12–15, 2027. Founding partner sponsorship tiers from $2,500 to $250,000+.",
 };
 
 const audiences = [
@@ -164,7 +164,7 @@ const businessReasons = [
   },
   {
     title: "Compounding Reach",
-    desc: "120 athletes year one → 600+ year three → multi-city year five. Founding partners grow with the brand at entry-level cost.",
+    desc: "Events that start intimate and grow city by city, with a 600+ athlete year-three target. Founding partners grow with the brand at entry-level cost.",
   },
   {
     title: "Year-Round Visibility",
@@ -213,15 +213,15 @@ export default function Partner() {
         <div className="mb-10 relative z-[1]">
           <div className="flex items-center justify-center gap-6 flex-wrap mb-3.5">
             <span className="text-[11px] tracking-[0.22em] uppercase text-muted">
-              First Event — Mesa, AZ
+              Next Up — FORGED Beach
             </span>
             <span className="w-[3px] h-[3px] bg-gold-d rounded-full" />
             <span className="text-[11px] tracking-[0.22em] uppercase text-muted">
-              Nov 26–29, 2026
+              Feb 12–15, 2027
             </span>
             <span className="w-[3px] h-[3px] bg-gold-d rounded-full" />
             <span className="text-[11px] tracking-[0.22em] uppercase text-muted">
-              Indoor Volleyball
+              Beach Volleyball
             </span>
           </div>
           <p className="font-serif italic text-[clamp(14px,1.8vw,17px)] text-light text-center">

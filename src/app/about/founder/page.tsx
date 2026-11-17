@@ -79,8 +79,8 @@ export default function Founder() {
               { label: "Pro Coaching", value: "Active — FIVB Beach Pro Tour Athletes" },
               { label: "Recognition", value: "USAV Club Coach of the Year" },
               { label: "National Program", value: "USAV NTDP Coach" },
-              { label: "Inaugural Sport", value: "Indoor Volleyball — expanding across all sports" },
-              { label: "Founded", value: "FORGED — inaugural summit, Mesa AZ, Nov 2026" },
+              { label: "Sports", value: "Volleyball first — expanding across all sports" },
+              { label: "Founded", value: "FORGED — athlete & coach development summit, 2026" },
               { label: "Beach Pro", value: "AVP & FIVB Pro Beach Tour Coach" },
             ].map((item) => (
               <div key={item.label} className="bg-dark p-7 hover:bg-dark2 transition-colors">

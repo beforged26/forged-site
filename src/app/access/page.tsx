@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import FadeUp from "@/components/FadeUp";
-import AccessForm from "@/components/AccessForm";
+import WaitlistForm from "@/components/WaitlistForm";
 
 export const metadata: Metadata = {
   title: "FORGED Access Scholarship — Apply",
   description:
-    "No athlete is turned away for financial need. Apply for a FORGED Access Scholarship — fully funded by our brand partners — to attend the FORGED Summit in Mesa, AZ, November 26–29, 2026.",
+    "No athlete is turned away for financial need. Apply for a FORGED Access Scholarship — fully funded by our brand partners — to attend a FORGED event.",
 };
 
 const steps = [
@@ -186,11 +186,10 @@ export default function Access() {
           <span className="gold-gradient-text">MATTERS.</span>
         </h2>
         <p className="font-serif italic text-[clamp(16px,2vw,20px)] text-light leading-[1.6] mb-12">
-          Applications are open for the 2026 FORGED Summit — Mesa, AZ, November 26–29.
-          Write what's real. That's all we need.
+          Scholarship applications reopen when the next FORGED event opens for registration. Join the newsletter and you'll be the first to know.
         </p>
 
-        <AccessForm />
+        <WaitlistForm id="access-notify" label="Join our newsletter" />
       </FadeUp>
     </>
   );

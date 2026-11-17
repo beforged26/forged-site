@@ -1,21 +1,13 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import FadeUp from "@/components/FadeUp";
+import WaitlistForm from "@/components/WaitlistForm";
 
 export const metadata: Metadata = {
   title: "Register — FORGED",
   description:
-    "Secure your spot at the FORGED Summit. $757 regular, $650 for clubs and high schools with 6 or more athletes. Mesa, AZ — November 26–29, 2026.",
+    "FORGED Beach — Dania Beach, FL, February 12–15, 2027. Registration coming soon. Join the newsletter to be first to know.",
 };
-
-const included = [
-  "All training sessions",
-  "Expert speaker sessions",
-  "Mental performance workshops",
-  "Athlete & coach mentorship",
-  "FORGED gear bag",
-  "All meals included",
-  "Lifetime community access",
-];
 
 const donationTiers = [
   { name: "Community", amount: "$2,500", href: "https://donate.stripe.com/3cI8wPf80e4V3PI52H3AY06" },
@@ -40,105 +32,52 @@ export default function Register() {
           }}
         />
         <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-gold-m mb-5 relative z-[1]">
-          FORGED 2026
+          FORGED Beach
         </p>
         <h1 className="font-display text-[clamp(56px,11vw,130px)] leading-[0.95] tracking-[0.04em] text-cream mb-6 relative z-[1]">
-          SECURE YOUR
+          REGISTRATION
           <br />
-          <span className="gold-gradient-text">SPOT.</span>
+          <span className="gold-gradient-text">COMING SOON.</span>
         </h1>
-        <p className="font-serif italic text-[clamp(18px,3vw,26px)] text-light max-w-[620px] mx-auto relative z-[1] leading-[1.5]">
-          Mesa, AZ &middot; Nov 26&ndash;29, 2026 &middot; Indoor Volleyball
+        <p className="font-serif italic text-[clamp(18px,3vw,26px)] text-light max-w-[620px] mx-auto relative z-[1] leading-[1.5] mb-4">
+          Dania Beach, FL &middot; Feb 12&ndash;15, 2027 &middot; Beach Volleyball
         </p>
+        <p className="text-[13px] text-muted max-w-[560px] mx-auto relative z-[1] leading-[1.7] mb-10">
+          The Mesa, AZ summit (November 26&ndash;29, 2026) has been cancelled and all registrations have been refunded.
+        </p>
+        <div className="flex items-center gap-4 flex-wrap justify-center relative z-[1]">
+          <Link
+            href="/events/fl-beach-volleyball"
+            className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-8 py-4 hover:bg-gold-m transition-colors"
+          >
+            Beach Details
+          </Link>
+          <Link
+            href="/events"
+            className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-gold border border-gold/40 px-8 py-4 hover:border-gold transition-colors"
+          >
+            All Events
+          </Link>
+        </div>
       </section>
 
       <div className="gold-rule" />
 
-      {/* ACCESS SCHOLARSHIP BANNER */}
-      <div className="bg-[#0D0D0D] border-b border-gold/10 py-5 px-6 text-center">
-        <p className="text-[13px] text-light">
-          Cost shouldn&rsquo;t stop a great athlete.{" "}
-          <a href="/access" className="text-gold underline underline-offset-4 hover:text-gold-m transition-colors font-semibold">
-            Apply for a FORGED Access Scholarship →
-          </a>
-        </p>
-      </div>
-
-      {/* REGISTRATION PRICING */}
-      <FadeUp className="max-w-[1100px] mx-auto px-6 md:px-10 py-24">
-        <p className="section-eyebrow">Registration</p>
-        <h2 className="font-display text-[clamp(36px,6vw,64px)] tracking-[0.04em] leading-[0.95] text-cream mb-14">
-          CHOOSE YOUR
+      {/* NOTIFY */}
+      <FadeUp className="max-w-[640px] mx-auto px-6 md:px-10 py-24 text-center">
+        <p className="section-eyebrow center justify-center">Stay in the Loop</p>
+        <h2 className="font-display text-[clamp(38px,6vw,72px)] tracking-[0.04em] leading-[0.95] text-cream mb-4">
+          BE FIRST
           <br />
-          ENTRY.
+          <span className="gold-gradient-text">TO KNOW.</span>
         </h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-[2px] bg-gold/[0.08] mb-[2px]">
-          {/* Register Now */}
-          <FadeUp className="bg-dark p-9 border-t-2 border-gold relative">
-            <div className="absolute top-0 right-0 bg-gold text-black text-[10px] font-bold tracking-[0.2em] uppercase px-3 py-1">
-              120 Spots
-            </div>
-            <div className="font-display text-xl tracking-[0.1em] text-gold mb-1">Athlete Registration</div>
-            <div className="font-display text-[clamp(48px,6vw,72px)] tracking-[0.02em] text-cream leading-none mb-3">
-              $757
-            </div>
-            <p className="text-[13px] text-light leading-[1.6] mb-8">
-              Full access to all summit programming. Paid in full at checkout.
-            </p>
-            <div className="flex flex-col gap-3">
-              <a
-                href="https://buy.stripe.com/cNi4gzf801i9dqidzd3AY0n"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-7 py-3.5 hover:bg-gold-m transition-colors text-center"
-              >
-                Register — $757
-              </a>
-            </div>
-          </FadeUp>
-
-          {/* Club and school rate */}
-          <FadeUp className="bg-dark p-9 border-t-2 border-transparent">
-            <div className="font-display text-xl tracking-[0.1em] text-gold mb-1">Club &amp; High School Rate</div>
-            <div className="font-display text-[clamp(48px,6vw,72px)] tracking-[0.02em] text-cream leading-none mb-3">
-              $650
-            </div>
-            <p className="text-[13px] text-light leading-[1.6] mb-8">
-              When 6 or more athletes from the same club or the same high school register, every one of them pays $650 instead of $757. The 6 can come from any teams or age groups. The club or school pays nothing.
-            </p>
-            <div className="flex flex-col gap-3">
-              <a
-                href="/clubs"
-                className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-gold border border-gold/40 px-7 py-3.5 hover:border-gold hover:text-[#F7EE78] transition-colors text-center"
-              >
-                How the Club Rate Works
-              </a>
-            </div>
-          </FadeUp>
-        </div>
-
+        <p className="font-serif italic text-[clamp(16px,2vw,20px)] text-light leading-[1.6] mb-10">
+          Join the newsletter and you&rsquo;ll hear the moment registration opens.
+        </p>
+        <WaitlistForm id="register-notify" label="Join our newsletter" />
       </FadeUp>
 
-      {/* WHAT'S INCLUDED */}
-      <div className="bg-dark border-y border-gold/10 py-20 px-6 md:px-10">
-        <FadeUp className="max-w-[900px] mx-auto">
-          <p className="section-eyebrow center justify-center text-center">What's Included</p>
-          <h2 className="font-display text-center text-[clamp(36px,6vw,64px)] tracking-[0.04em] leading-[0.95] text-cream mb-12">
-            EVERYTHING.
-            <br />
-            <span className="gold-gradient-text">EXCEPT HOUSING.</span>
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {included.map((item) => (
-              <div key={item} className="flex items-start gap-2.5">
-                <span className="text-gold mt-[2px] flex-shrink-0">✦</span>
-                <span className="text-[13px] text-light leading-[1.5]">{item}</span>
-              </div>
-            ))}
-          </div>
-        </FadeUp>
-      </div>
+      <div className="gold-rule" />
 
       {/* DONATE */}
       <FadeUp className="max-w-[1100px] mx-auto px-6 md:px-10 py-24">

@@ -10,18 +10,9 @@ const aboutDropdown = [
   { href: "/about/mission", label: "Our Mission" },
   { href: "/about/team", label: "Our Team" },
   { href: "/founding-family", label: "Founding Family" },
-  { href: "/programs", label: "Founding Programs" },
 ];
 
 const eventsDropdown = [
-  {
-    label: "AZ — Indoor Volleyball",
-    children: [
-      { href: "/events/az-volleyball", label: "Overview" },
-      { href: "/events/az-volleyball/lineup", label: "Lineup" },
-      { href: "/events/az-volleyball/faq", label: "FAQ" },
-    ],
-  },
   {
     label: "FL — Beach",
     children: [
@@ -38,15 +29,6 @@ const communityDropdown = [
 ];
 
 const registerDropdown = [
-  {
-    label: "AZ Indoor Volleyball",
-    children: [
-      { href: "/register/athlete", label: "Athletes" },
-      { href: "/register/coach", label: "Coaches" },
-      { href: "/clubs", label: "Clubs & Schools" },
-      { href: "/access", label: "Access Scholarship" },
-    ],
-  },
   {
     label: "FL Beach Volleyball",
     children: [
@@ -221,7 +203,7 @@ export default function Nav() {
         </div>
         <Link href="/partner" className={navLinkClass}>Partner</Link>
         <Link href="/contact" className={navLinkClass}>Contact</Link>
-        <Link href="/register/athlete" className="text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-6 py-2.5 hover:bg-gold-m transition-colors">
+        <Link href="/register" className="text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-6 py-2.5 hover:bg-gold-m transition-colors">
           Register
         </Link>
       </div>

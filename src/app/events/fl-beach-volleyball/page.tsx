@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import FadeUp from "@/components/FadeUp";
-import Link from "next/link";
 import WaitlistForm from "@/components/WaitlistForm";
 
 export const metadata: Metadata = {
@@ -22,7 +21,7 @@ export default function FLBeachVolleyball() {
           }}
         />
         <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-gold-m mb-5 relative z-[1]">
-          Registration Open
+          Registration Coming Soon
         </p>
         <h1 className="font-display text-[clamp(52px,10vw,120px)] leading-[0.95] tracking-[0.04em] text-cream mb-4 relative z-[1]">
           FLORIDA
@@ -34,15 +33,9 @@ export default function FLBeachVolleyball() {
         </p>
         <p className="font-serif italic text-[clamp(16px,2.5vw,22px)] text-light max-w-[580px] mx-auto relative z-[1] leading-[1.6] mb-10">
           FORGED is coming to the sand. The same elite development model — expert coaches,
-          mental performance, community — built for beach volleyball. Registrations opening soon.
+          mental performance, community — built for beach volleyball. Registration coming soon.
         </p>
         <div className="flex items-center gap-4 flex-wrap justify-center relative z-[1]">
-          <Link
-            href="/register/beach-athlete"
-            className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-8 py-4 hover:bg-gold-m transition-colors"
-          >
-            Register Now
-          </Link>
           <a
             href="#notify"
             className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-gold border border-gold/40 px-8 py-4 hover:border-gold transition-colors"
@@ -99,45 +92,12 @@ export default function FLBeachVolleyball() {
           <span className="gold-gradient-text">TO KNOW.</span>
         </h2>
         <p className="font-serif italic text-[clamp(16px,2vw,20px)] text-light leading-[1.6] mb-10">
-          Registrations open soon. Sign up to our newsletter and you'll hear
+          Registration is coming soon. Sign up to our newsletter and you'll hear
           about it before anyone else.
         </p>
         <WaitlistForm id="fl-beach-notify" label="Join our newsletter" />
       </FadeUp>
 
-      <div className="gold-rule" />
-
-      {/* AZ CTA */}
-      <div className="px-6 md:px-10 py-20 text-center">
-        <FadeUp>
-          <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-gold-m mb-5">
-            While You Wait
-          </p>
-          <h2 className="font-display text-[clamp(38px,6vw,72px)] tracking-[0.04em] leading-[0.95] text-cream mb-5">
-            JOIN US IN
-            <br />
-            ARIZONA FIRST.
-          </h2>
-          <p className="font-serif italic text-[clamp(15px,2vw,18px)] text-light max-w-[500px] mx-auto mb-10 leading-[1.6]">
-            The inaugural FORGED summit is November 26–29, 2026 in Mesa, AZ — indoor volleyball.
-            Registration is open now.
-          </p>
-          <div className="flex items-center justify-center gap-4 flex-wrap">
-            <Link
-              href="/events/az-volleyball"
-              className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-8 py-3.5 hover:bg-gold-m transition-colors"
-            >
-              View AZ Event
-            </Link>
-            <Link
-              href="/register/athlete"
-              className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-gold border border-gold/40 px-8 py-3.5 hover:border-gold transition-colors"
-            >
-              Register Now
-            </Link>
-          </div>
-        </FadeUp>
-      </div>
     </>
   );
 }

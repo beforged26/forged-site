@@ -27,9 +27,8 @@ const pillars = [
 ];
 
 const stats = [
-  { number: "120", label: "Athletes Expected" },
-  { number: "4", label: "Day Immersive Summit" },
-  { number: "2026", label: "Inaugural Year — Mesa, AZ" },
+    { number: "4", label: "Day Immersive Summit" },
+  { number: "2027", label: "Next Event Year" },
   { number: "ALL", label: "Sports — Long-Term Vision" },
 ];
 
@@ -117,10 +116,7 @@ export default function About() {
             THE NUMBERS.
           </h2>
           <p className="font-serif italic text-[clamp(18px,2.5vw,22px)] text-light max-w-[760px] mx-auto text-center leading-[1.6] mb-14">
-            FORGED launches its inaugural summit Thanksgiving weekend 2026 in
-            Mesa, Arizona — a 4-day immersive development experience for
-            athletes, coaches, and performance professionals. This is year one
-            of a long-term national ecosystem. Brands and families that join
+            FORGED is building a 4-day immersive development experience for athletes, coaches, and performance professionals, starting with FORGED Beach in Dania Beach, Florida (February 12–15, 2027). This is the start of a long-term national ecosystem. Brands and families that join
             now become part of the founding story.
           </p>
 

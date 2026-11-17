@@ -1,0 +1,193 @@
+import type { Metadata } from "next";
+import FadeUp from "@/components/FadeUp";
+
+export const metadata: Metadata = {
+  title: "Register — FORGED",
+  description:
+    "Secure your spot at the FORGED Summit. $757 regular, $650 for clubs and high schools with 6 or more athletes. Mesa, AZ — November 26–29, 2026.",
+};
+
+const included = [
+  "All training sessions",
+  "Expert speaker sessions",
+  "Mental performance workshops",
+  "Athlete & coach mentorship",
+  "FORGED gear bag",
+  "All meals included",
+  "Lifetime community access",
+];
+
+const donationTiers = [
+  { name: "Community", amount: "$2,500", href: "https://donate.stripe.com/3cI8wPf80e4V3PI52H3AY06" },
+  { name: "Bronze", amount: "$5,000", href: "https://buy.stripe.com/6oU4gzf80gd3ae652H3AY07" },
+  { name: "Silver", amount: "$10,000", href: "https://donate.stripe.com/4gMbJ11haf8Zeum2Uz3AY09" },
+  { name: "Gold", amount: "$25,000", href: "https://donate.stripe.com/5kQ14n5xqd0RgCu7aP3AY0a" },
+  { name: "Presenting", amount: "$50,000", href: "https://donate.stripe.com/fZu3cv8JC0e59a2fHl3AY0b" },
+  { name: "Legacy", amount: "$100,000", href: "https://donate.stripe.com/9B600j2lebWNfyq2Uz3AY0c" },
+  { name: "Transformational", amount: "$250,000+", href: "https://donate.stripe.com/00waEX4tm2mdfyq2Uz3AY0d" },
+];
+
+export default function Register() {
+  return (
+    <>
+      {/* HERO */}
+      <section className="hero-anim min-h-[60vh] flex flex-col items-center justify-center text-center px-6 pt-36 pb-16 relative overflow-hidden">
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              "radial-gradient(ellipse 60% 50% at 50% 60%, rgba(201,148,26,0.07) 0%, transparent 70%), radial-gradient(ellipse 80% 60% at 50% 100%, rgba(201,164,76,0.04) 0%, transparent 60%)",
+          }}
+        />
+        <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-gold-m mb-5 relative z-[1]">
+          FORGED 2026
+        </p>
+        <h1 className="font-display text-[clamp(56px,11vw,130px)] leading-[0.95] tracking-[0.04em] text-cream mb-6 relative z-[1]">
+          SECURE YOUR
+          <br />
+          <span className="gold-gradient-text">SPOT.</span>
+        </h1>
+        <p className="font-serif italic text-[clamp(18px,3vw,26px)] text-light max-w-[620px] mx-auto relative z-[1] leading-[1.5]">
+          Mesa, AZ &middot; Nov 26&ndash;29, 2026 &middot; Indoor Volleyball
+        </p>
+      </section>
+
+      <div className="gold-rule" />
+
+      {/* ACCESS SCHOLARSHIP BANNER */}
+      <div className="bg-[#0D0D0D] border-b border-gold/10 py-5 px-6 text-center">
+        <p className="text-[13px] text-light">
+          Cost shouldn&rsquo;t stop a great athlete.{" "}
+          <a href="/access" className="text-gold underline underline-offset-4 hover:text-gold-m transition-colors font-semibold">
+            Apply for a FORGED Access Scholarship →
+          </a>
+        </p>
+      </div>
+
+      {/* REGISTRATION PRICING */}
+      <FadeUp className="max-w-[1100px] mx-auto px-6 md:px-10 py-24">
+        <p className="section-eyebrow">Registration</p>
+        <h2 className="font-display text-[clamp(36px,6vw,64px)] tracking-[0.04em] leading-[0.95] text-cream mb-14">
+          CHOOSE YOUR
+          <br />
+          ENTRY.
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-[2px] bg-gold/[0.08] mb-[2px]">
+          {/* Register Now */}
+          <FadeUp className="bg-dark p-9 border-t-2 border-gold relative">
+            <div className="absolute top-0 right-0 bg-gold text-black text-[10px] font-bold tracking-[0.2em] uppercase px-3 py-1">
+              120 Spots
+            </div>
+            <div className="font-display text-xl tracking-[0.1em] text-gold mb-1">Athlete Registration</div>
+            <div className="font-display text-[clamp(48px,6vw,72px)] tracking-[0.02em] text-cream leading-none mb-3">
+              $757
+            </div>
+            <p className="text-[13px] text-light leading-[1.6] mb-8">
+              Full access to all summit programming. Paid in full at checkout.
+            </p>
+            <div className="flex flex-col gap-3">
+              <a
+                href="https://buy.stripe.com/cNi4gzf801i9dqidzd3AY0n"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-black bg-gold px-7 py-3.5 hover:bg-gold-m transition-colors text-center"
+              >
+                Register — $757
+              </a>
+            </div>
+          </FadeUp>
+
+          {/* Club and school rate */}
+          <FadeUp className="bg-dark p-9 border-t-2 border-transparent">
+            <div className="font-display text-xl tracking-[0.1em] text-gold mb-1">Club &amp; High School Rate</div>
+            <div className="font-display text-[clamp(48px,6vw,72px)] tracking-[0.02em] text-cream leading-none mb-3">
+              $650
+            </div>
+            <p className="text-[13px] text-light leading-[1.6] mb-8">
+              When 6 or more athletes from the same club or the same high school register, every one of them pays $650 instead of $757. The 6 can come from any teams or age groups. The club or school pays nothing.
+            </p>
+            <div className="flex flex-col gap-3">
+              <a
+                href="/clubs"
+                className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-gold border border-gold/40 px-7 py-3.5 hover:border-gold hover:text-[#F7EE78] transition-colors text-center"
+              >
+                How the Club Rate Works
+              </a>
+            </div>
+          </FadeUp>
+        </div>
+
+      </FadeUp>
+
+      {/* WHAT'S INCLUDED */}
+      <div className="bg-dark border-y border-gold/10 py-20 px-6 md:px-10">
+        <FadeUp className="max-w-[900px] mx-auto">
+          <p className="section-eyebrow center justify-center text-center">What's Included</p>
+          <h2 className="font-display text-center text-[clamp(36px,6vw,64px)] tracking-[0.04em] leading-[0.95] text-cream mb-12">
+            EVERYTHING.
+            <br />
+            <span className="gold-gradient-text">EXCEPT HOUSING.</span>
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {included.map((item) => (
+              <div key={item} className="flex items-start gap-2.5">
+                <span className="text-gold mt-[2px] flex-shrink-0">✦</span>
+                <span className="text-[13px] text-light leading-[1.5]">{item}</span>
+              </div>
+            ))}
+          </div>
+        </FadeUp>
+      </div>
+
+      {/* DONATE */}
+      <FadeUp className="max-w-[1100px] mx-auto px-6 md:px-10 py-24">
+        <p className="section-eyebrow">Support FORGED</p>
+        <h2 className="font-display text-[clamp(36px,6vw,64px)] tracking-[0.04em] leading-[0.95] text-cream mb-5">
+          INVEST IN
+          <br />
+          THE MISSION.
+        </h2>
+        <p className="font-serif italic text-[clamp(16px,2vw,20px)] text-light max-w-[640px] leading-[1.6] mb-14">
+          Every dollar funds athlete scholarships, expert programming, and a movement built to last. Partner with FORGED at any level.
+        </p>
+
+        <div className="grid gap-[2px] bg-gold/[0.08] grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          {donationTiers.map((tier) => (
+            <FadeUp key={tier.name} className="bg-dark p-7 border-t-2 border-transparent transition-colors hover:border-gold-m hover:bg-dark2 flex flex-col justify-between gap-6">
+              <div>
+                <div className="font-display text-lg tracking-[0.1em] text-gold mb-1">{tier.name}</div>
+                <div className="font-display text-[clamp(28px,3vw,36px)] tracking-[0.02em] text-cream leading-none">{tier.amount}</div>
+              </div>
+              <a
+                href={tier.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-[10px] font-bold tracking-[0.18em] uppercase text-gold border border-gold/30 px-5 py-2.5 hover:border-gold hover:text-[#F7EE78] transition-colors text-center"
+              >
+                Donate
+              </a>
+            </FadeUp>
+          ))}
+        </div>
+      </FadeUp>
+
+      {/* CONTACT */}
+      <div className="px-6 md:px-10 py-16 text-center border-t border-gold/[0.08]">
+        <FadeUp>
+          <p className="text-sm text-muted tracking-[0.04em]">
+            Questions? Email{" "}
+            <a href="mailto:pri@beforged.co" className="text-gold-m no-underline hover:underline">
+              pri@beforged.co
+            </a>{" "}
+            or call{" "}
+            <a href="tel:5164055549" className="text-gold-m no-underline hover:underline">
+              516.405.5549
+            </a>
+            .
+          </p>
+        </FadeUp>
+      </div>
+    </>
+  );
+}

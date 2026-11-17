@@ -27,12 +27,12 @@ const pillars = [
   {
     num: "05",
     title: "Opportunity & Access",
-    desc: "Registration is open to all. Scholarships are awarded on talent and character — because finances should never be the barrier to growth. Any sport. Any background.",
+    desc: "FORGED is open to all. Scholarships are awarded on talent and character — because finances should never be the barrier to growth. Any sport. Any background.",
   },
 ];
 
 const stats = [
-  { number: "2026", label: "Inaugural Class" },
+  { number: "2027", label: "Next Event Year" },
   { number: "4", label: "Days of Development" },
   { number: "6+", label: "Expert Sessions" },
   { number: "ALL", label: "Sports Welcome" },
@@ -86,15 +86,15 @@ export default function Home() {
         <div className="mb-14 relative z-[1]">
           <div className="flex items-center justify-center gap-6 flex-wrap mb-3.5">
             <span className="text-[11px] tracking-[0.22em] uppercase text-muted">
-              First Event — Mesa, AZ
+              Next Up — FORGED Beach
             </span>
             <span className="w-[3px] h-[3px] bg-gold-d rounded-full" />
             <span className="text-[11px] tracking-[0.22em] uppercase text-muted">
-              Nov 26–29, 2026
+              Feb 12–15, 2027
             </span>
             <span className="w-[3px] h-[3px] bg-gold-d rounded-full" />
             <span className="text-[11px] tracking-[0.22em] uppercase text-muted">
-              Indoor Volleyball
+              Registration Coming Soon
             </span>
           </div>
           <p className="font-serif italic text-[clamp(14px,1.8vw,17px)] text-light">
@@ -176,7 +176,7 @@ export default function Home() {
           WHO SHOW UP.
         </h2>
         <p className="font-serif italic text-[clamp(18px,2.5vw,22px)] text-light max-w-[640px] leading-[1.6] mb-14">
-          FORGED is for the athlete who shows up ready to work — whatever level you&rsquo;re at right now. Registration is open to all. Scholarships exist for those who need financial support, awarded on talent and character. The coach who gives everything deserves development in return too.
+          FORGED is for the athlete who shows up ready to work — whatever level you&rsquo;re at right now. FORGED is open to all. Scholarships exist for those who need financial support, awarded on talent and character. The coach who gives everything deserves development in return too.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[2px] bg-gold/[0.08]">
@@ -218,7 +218,7 @@ export default function Home() {
             </p>
             <p className="text-[14px] text-light leading-[1.8] mb-6">
               FORGED is coming to the sand. The same elite development model — expert coaches,
-              mental performance, community — built for beach volleyball. Registrations opening soon.
+              mental performance, community — built for beach volleyball. Registration coming soon.
             </p>
             <a
               href="#email-input"
@@ -253,8 +253,8 @@ export default function Home() {
         </FadeUp>
         <FadeUp>
           <p className="text-sm text-muted tracking-[0.08em] mb-12">
-            First event: Mesa, AZ · Nov 26–29, 2026 · Indoor Volleyball —
-            all sports coming soon.
+            Next up: FORGED Beach · Dania Beach, FL · Feb 12–15, 2027 —
+            registration coming soon.
           </p>
         </FadeUp>
 
